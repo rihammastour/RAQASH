@@ -1,0 +1,86 @@
+body{
+    background-color: #f8f8f8;
+    font:Geneva;
+
+}
+.inner_navBar {
+
+    margin:0 auto  ;
+    width:1170 px;
+}
+.inner_navBar ul{
+    margin: 0  ;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+   
+
+}
+.inner_navBar ul li{
+  float: none;
+  display: inline-block;
+}
+.inner_navBar ul li:nth-child(1){ 
+  float: left;
+  }
+  .inner_navBar ul li:nth-child(2){
+    float: left;
+    }
+    .inner_navBar ul li:nth-child(3){
+        float: left;
+        }
+.inner_navBar ul li a{
+color: red;
+font-size: 15px;
+text-decoration: none;
+display: block;
+padding:  30px 30px;
+text-align: center;
+}
+
+.inner_navBar ul li a:hover{
+    color: gray;
+}
+#navBar{
+    width: 100%;
+    position: relative;
+}
+.logo{
+width: 300px;
+height: 300px;
+position: absolute;
+left: 50%
+top 0;
+content: "";
+margin-left: -150px;
+}
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: green;
+  }
+  
+  /* Show the dropdown menu on hover */
+ .submenu :hover .dropdown-content {
+    display: block;
+  }
+
+
