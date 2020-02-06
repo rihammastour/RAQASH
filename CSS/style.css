@@ -16,6 +16,7 @@ body{
     letter-spacing: 2px;
     font-size: x-small;
     position: fixed;
+    width: 100%;
 }
 
 .menu-bar ul{
