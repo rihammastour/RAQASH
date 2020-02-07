@@ -84,7 +84,6 @@ nav ul li a:hover::after{
     position: relative;
     display: inline-block;
     margin-top: 40px;
-    /* background-color: #5c5c5c; */
   }
   
 .dropContent {
@@ -110,5 +109,4 @@ nav ul li a:hover::after{
 
 .drop:hover .dropContent {
     display: block;
-    /* transition: all .20s; */
 }
