@@ -35,7 +35,26 @@
         </nav>
          
     </header>
-
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="assets/Raqash Icon-up.svg" width="30px" height="30px" alt="up"></button>
+    <script>//Get the button:
+        mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }</script>
 <div class = "content">
     <!-- page title -->
     <label class = "title"> <span id = "dot">•</span> FAVOURITES <span id = "dot">•</span> </label>
@@ -163,6 +182,69 @@
     </div>
   </div>
 </div>
+
+ <!--Grid row-->
+ <div class="row my-4">
+    <div class = "cards-container"> 
+        <div class="card-deck">
+
+    <!--Grid column-->
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top img-resize" src="assets/pic1.jpg" alt="planet line art" >
+        <div class="card-body">
+          <h5 class="card-title">Artist Account</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <div class="card-footer">
+            <a href="#"><img src="assets/Raqash Icon-share.svg" alt="share icon" width="30px" height="30px"></a>
+            <a href="#"><img src="assets/Raqash Icon-favActivated.svg" alt="bookmark icon" height="30px" width="30px"></a>
+          </div>
+      </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top img-resize" src="assets/pic2.jpg" alt="face line art">
+        <div class="card-body">
+          <h5 class="card-title">Artist Account</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <div class="card-footer">
+            <a href="#"><img src="assets/Raqash Icon-share.svg" alt="share icon" width="30px" height="30px"></a>
+            <a href="#"><img src="assets/Raqash Icon-favActivated.svg" alt="bookmark icon" height="30px" width="30px"></a>
+          </div>
+      </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top img-resize" src="assets/pic3.jpg" alt="wolf line art">
+        <div class="card-body">
+          <h5 class="card-title">Artist Account</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <div class="card-footer">
+            <a href="#"><img src="assets/Raqash Icon-share.svg" alt="share icon" width="30px" height="30px"></a>
+            <a href="#"><img src="assets/Raqash Icon-favActivated.svg" alt="bookmark icon" height="30px" width="30px"></a>
+          </div>
+      </div>
+    <!--Grid column-->
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top img-resize" src="assets/pic4.jpg" alt="human line art">
+        <div class="card-body">
+          <h5 class="card-title">Artist Account</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <div class="card-footer">
+            <a href="#"><img src="assets/Raqash Icon-share.svg" alt="share icon" width="30px" height="30px"></a>
+            <a href="#"><img src="assets/Raqash Icon-favActivated.svg" alt="bookmark icon" height="30px" width="30px"></a>
+          </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
 
 </div>
 </body>
