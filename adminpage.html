@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admain page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="adminpage.css">
+
+</head>
+<body>
+
+
+
+
+    <!-- Nav Bar -->
+    <header class="menu-bar">
+        <nav>
+            <ul>
+                <li id ="Gsize"><a href="#">GALLERY</a></li>
+
+                <!-- dropdown menue -->
+                <div class = "drop">
+                  <li class = "dropAccount"><a href="#">ACCOUNT▽</a></li>
+                    <div class = "dropContent">
+                        <a href="#">Approval requests</a>
+                        <a href="#">LOG OUT</a>
+                    </div>
+                </div>
+
+                  <!-- logo -->
+                <img src="assets/RAQASHLogo.png" alt="RAQASH Logo">
+
+                <li id ="Asize"><a href="#">ABOUT US</a></li>
+                <li id ="Csize"><a href="#">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+      <div class="content">
+  <label class = "title"> <span id = "dot">•</span> ACCOUNTS WAITING LIST <span id = "dot">•</span> </label>
+
+    <div class="accounts">
+
+        <ul class="list-group">
+        <li class="list-group-item" > <label><input type="checkbox" value=""> account 1</label> </li>
+        <li class="list-group-item"<label><input type="checkbox" value=""> account 2</label> </li>
+        <li class="list-group-item"><label><input type="checkbox" value=""> account 3</label> </li>
+        <li class="list-group-item"><label><input type="checkbox" value=""> account 4</label> </li>
+        <li class="list-group-item"><label><input type="checkbox" value=""> account 5</label> </li>
+        </ul>
+<div class = "Approvalbutton" >
+        <button type="mybutton" class="btn btn-default"> <img src="Raqash Icon-disapprove.svg" width="60px"> </button>
+        <button type="mybutton" class="btn btn-default"> <img src="Raqash Icon-approve.svg" width="80px"></button>
+
+    </div>
+</div>
+  </div>
+    </body>
+<!--       <button type="mybutton" class="btn btn-default">Approve</button>
+      <button type="mybutton" class="btn btn-default"> Disapprove</button>
+-->
+    </html>
