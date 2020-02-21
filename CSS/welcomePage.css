@@ -178,7 +178,7 @@ nav ul li a:hover::after{
   width: 20rem;
   height: 20rem;
   cursor: pointer;
-  background: url(helloImg.jpg) no-repeat 100% 50%;
+  background: url(assets/helloImg.jpg) no-repeat 100% 50%;
   background-size: 120%;
   border-radius: 50%;
   -webkit-transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
