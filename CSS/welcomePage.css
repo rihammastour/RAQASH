@@ -1,0 +1,239 @@
+
+
+*{
+  color: #5c5c5c;
+  font-family: Geneva;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #f8f8f8 ;
+    font-family: Geneva;
+ 
+  
+}
+
+
+.inner-buttons{
+  padding-top: 40px;
+  padding-left: 15px;
+ margin: 0 auto;
+  height: 30px;
+  width: 200px;
+letter-spacing: 1px;
+ border: none;
+border-radius: 8px;
+outline: none;
+cursor: pointer;
+}
+
+  
+   .btn:hover {
+    background-color: #a5afa6cc;
+    border-color: #a49c9a !important;
+    color: white;
+  }
+
+  
+
+/* AboutUs */
+
+
+#AboutUs {
+  background-color:  #f8f8f8;
+  padding-top: 400px;
+  text-align: center;
+}
+  
+  /* contact us */
+  #contactUs h2 {
+
+    text-align: center;
+   
+  }
+ 
+  #contactUs {
+   
+    text-decoration: none;
+    background-color: #ede9ea;
+    text-align:left;
+  }
+   #contactUs a {
+    color: #5c5c5c;
+    text-decoration: none;
+    background-color: #ede9ea;
+    
+  
+  }
+  #contactUs a:hover {
+    color: #a5afa6;
+  }
+ /* new nav  */
+ 
+
+
+.menu-bar{
+    background-color: #ede9ea;
+    height: 100px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: x-small;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #5c5c5c;
+}
+
+.menu-bar ul li{
+    width: 90px;
+    padding-bottom: 3px;
+    margin: 40px 50px 5px 50px;
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #5c5c5c;
+    padding: 0.5rem 0;
+    margin: 0 ;
+    position: relative;
+   
+}
+
+.menu-bar ul img{
+    width: 100px;
+    height: 100px;
+
+}
+
+nav ul li a::before,
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #a5afa6;
+    left: 0;
+    transform: scale(0);
+    transition: all .5s;
+}
+
+nav ul li a::before{
+    top: 0;
+    transform-origin: left;
+}
+
+nav ul li a::after{
+    bottom: 0;
+    transform-origin: right;
+}
+
+nav ul li a:hover::before,
+nav ul li a:hover::after{
+    transform: scale(1);
+}
+
+
+  
+
+
+
+
+/*  */
+/* titles */
+.title{
+    font-size: 33px;;
+    text-align:  center;
+    text-decoration: underline  #5c5c5c;
+    text-transform: uppercase ;
+    color: #5c5c5c;
+   letter-spacing: 2px;
+    
+}
+.title{
+  font-size: xx-large;
+  letter-spacing: 2px;
+  content: ""; 
+  display: block; 
+  margin: 0 auto;
+  width: 50%; 
+  padding-top: 20px; 
+  border-bottom: 1.5px solid #a5afa6 ;
+}
+
+#dot{
+    color: #a5afa6;
+}
+
+/* hello */
+.badge {
+
+  display: block;
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  cursor: pointer;
+  background: url(helloImg.jpg) no-repeat 100% 50%;
+  background-size: 120%;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+  box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.75);
+  
+ 
+}
+.badge:hover .text {
+  -webkit-transform: rotate(-45deg) translate(0px) rotate(-315deg);
+          transform: rotate(-45deg) translate(0px) rotate(-315deg);
+  background: #a5afa694;
+ 
+  width: 20rem;
+  letter-spacing: 1rem;
+  line-height: 20rem;
+  height: 20rem;
+  margin-top: -10rem;
+  margin-left: -10rem;
+  -webkit-transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1), letter-spacing 1.5s ease-out;
+  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1), letter-spacing 1.5s ease-out;
+}
+.badge .text {
+  display: block;
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  line-height: 10rem;
+  left: 50%;
+  top: 50%;
+  margin-top: -5rem;
+  margin-left: -5rem;
+  font-size: 2rem;
+  text-align: center;
+  color:#5c5c5c;
+  border-radius: 50%;
+  background: #ede9ea;
+  -webkit-transform: rotate(-180deg) translate(-10rem) rotate(180deg);
+          transform: rotate(-180deg) translate(-10rem) rotate(180deg);
+  box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+  
+}
+
+.hello{
+padding-top: 200px;
+  min-height: 100%;
+  display: -webkit-box;
+  display: flex;
+          align-items: center;
+          justify-content: center;
+
+}
+.content{
+  padding-top: 110px;
+  overflow-x: hidden;
+}
