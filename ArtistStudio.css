@@ -1,0 +1,332 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #5c5c5c;
+}
+body{
+    background-color: #f8f8f8 ;
+    font-family: Geneva;
+}
+
+.menu-bar{
+    background-color: #ede9ea;
+    height: 100px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: x-small;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    /* margin-top: -180px; */
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    position: relative;
+}
+
+.menu-bar ul li{
+    width: 90px;
+    padding-bottom: 3px;
+    margin: 40px 50px 5px 50px;
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #5c5c5c;
+    padding: 0.5rem 0;
+    margin: 0 ;
+    position: relative;
+}
+
+
+nav ul li a::before,
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #a5afa6;
+    left: 0;
+    transform: scale(0);
+    transition: all .5s;
+}
+
+nav ul li a::before{
+    top: 0;
+    transform-origin: left;
+}
+
+nav ul li a::after{
+    bottom: 0;
+    transform-origin: right;
+}
+
+nav ul li a:hover::before,
+nav ul li a:hover::after{
+    transform: scale(1);
+}
+
+.drop{
+    height: 0;
+    padding-bottom: 3px;
+    margin: -3px 1px 5px 0px ;
+    transition: all .0s;
+}
+
+.dropAccount {
+    position: relative;
+    display: inline-block;
+    margin-top: 40px;
+  }
+  
+.dropContent {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 130px;
+    margin-left: 27px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+.dropContent a {
+    color: #5c5c5c;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+  }
+
+.dropContent a:hover {
+    background-color: #ddd;
+    color: #5c5c5c;
+    text-decoration: none;
+}
+
+.drop:hover .dropContent {
+    display: block;
+}
+/* bio information */
+  /* to top button */
+  #myBtn{
+    display: none; 
+    position: fixed; 
+    bottom: 35px;
+    right: 30px; 
+    z-index: 99;
+    border: none;
+    outline: none; 
+    background-color: #ede9ea;
+    color: white; 
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 100px; 
+    font-size: 18px; 
+  }
+
+#myBtn:hover{
+    background-color: #f1f1f1;
+  }
+.account{
+
+
+    background-color:#a49c9a;
+       background-size: cover;
+       background-position: center;
+       height: 500px;
+       margin-bottom: 170px;
+       margin-top: 0px;
+    
+   }
+   
+   .account.row{
+       margin-top: 750px;
+   }   
+   .bio{
+      width: 500px;
+       margin-top:-340px;
+      padding: 30px;
+     margin-left: 700px;
+    background-color: #ffffff8c;
+      margin-bottom: 190px;
+      border-radius: 5px;
+      height: 300px;
+      line-height: 20px;
+      position: relative;
+      
+      
+   
+   }   
+   .bio p{
+       padding-top:20px;
+   } 
+   .account  img  {
+       width: 300px;
+       height: 400px;
+       margin-bottom:-165px ;
+       margin-top: 250px;
+       /* border-radius: 7px; */
+   
+   
+   }   
+   .Artist-image{
+       margin-top:130px;
+       margin-bottom: -90px;
+       border-radius: 5px;
+   }
+   .contact-info{
+    text-align: left;
+    margin-left: 20px;
+}
+
+.edit {
+    line-height: 2px;
+     text-align: center;
+     font-size: 20px;
+     border: none; /* Remove borders */
+     outline: none; /* Remove outline */
+     background-color: #ede9ea;
+     cursor: pointer; /* Add a mouse pointer on hover */
+    padding:20px;
+    border-radius: 20px;
+    width: 120px;
+     height: 10px;
+     margin-top: -40px;
+     margin-left: 10px;   
+      
+        }
+    .contanct-icon{
+        margin-left: -120px;
+    }
+    .contanct-icon img{
+     margin-top: -40px;
+      margin-bottom: 70px;
+      margin-left: 15px;
+        height: 30px;
+        width: 30px;
+        max-width: 10px;
+        max-height: 10px;
+        text-align: left;
+    }
+        /* ADD button */
+        .add {
+
+            position: fixed;
+            text-align: end;
+         
+          padding-left: 3px;
+            font-size: 30px;
+                bottom: 643px; /* Place the button at the bottom of the page */
+                 right: -10px;
+                z-index: 99; /* Make sure it does not overlap */
+                border: none; /* Remove borders */
+                outline: none; /* Remove outline */
+                background-color: #ffffff8c;
+                color: white; /* Text color */
+                cursor: pointer; /* Add a mouse pointer on hover */
+                padding: 20px 20px 5px 20px ;
+                border-radius: 50px; /* Rounded corners */
+                /* Increase font size */
+                transform:rotate(90deg);
+               
+               width: 10px;
+               height: 120px;
+            
+        }
+         
+        .add:hover {
+         background-color: #f1f1f1;
+             }
+
+             /* ART  */
+             .title{
+                font-size: x-large;
+                letter-spacing: 2px;
+                content: ""; 
+                display: block; 
+                margin: 20px auto;
+                width: 50%; 
+                padding-top: 80px; 
+                border-bottom: 1.5px solid #a5afa6 ;
+              }
+              
+              #dot{
+                  color: #a5afa6;
+              }
+              
+              .content{
+                  overflow-x: hidden;
+              }
+              
+              .cards-container{
+                  position: relative;
+                  width: 70%;
+                  margin:0 auto;
+                  font-size: x-small; 
+              }
+              
+              .cards-container .card{
+                  display: inline-block;
+                  padding: 0;
+              }
+              
+              /* Shadow hover*/
+              .cards-container .card:hover{
+                 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                 transition:  box-shadow .3s;
+                 transform: translate3D(0,-15px,0) scale(1.03);
+              }
+              
+              .card-footer{
+                  padding: 0px;
+                  margin: 0;
+              }
+              
+              .img-resize{
+                  height: 300px;
+                  object-fit: cover;
+                  object-position: center center;
+              }
+        
+#AboutUs {
+    background-color:  #f8f8f8;
+    padding-top: 400px;
+    text-align: center;
+  }
+  /* concat us */
+
+  #contactUs {
+   
+    text-decoration: none;
+    background-color: #ede9ea;
+    text-align:left;
+  }
+   #contactUs a {
+    color: #5c5c5c;
+    text-decoration: none;
+    background-color: #ede9ea;
+    
+  
+  }
+  #contactUs a:hover {
+    color: #a5afa6;
+  }
+
+/* footer */
+.footer{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0.5%;
+    background-color: #f1f1f1;
+    color: #5c5c5c;
+    text-align: center;
+    font-size: x-small;
+    }
+ 
+   
