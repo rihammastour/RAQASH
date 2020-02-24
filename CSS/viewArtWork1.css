@@ -46,13 +46,14 @@
     width: 50%;
     height:100%;
     background:#ede9ea ;
-  
+    margin-left: -20px;
     overflow: hidden;
   
   
   }
   
-  .container .left img , .container .right img{
+  .container .left img {
+   
    position:relative;
    /* top: 0px;
    left: 0px; */
