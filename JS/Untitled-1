@@ -1,0 +1,49 @@
+   
+   
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="assets/Raqash Icon-up.svg" width="30px" height="30px" alt="up"></button>
+    <script>//Get the button:
+        mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }</script>
+
+
+
+  <div class="container " id="signIn" >
+
+            <div class ="Lleft"><img src="assets/aleph.jpg">
+    </div>
+           <div class ="Lright">
+             <div class = "title"> <h3> SIGN IN </h3></div>
+             <form class ="formbox">
+    
+    
+       <input type="text" name="username" placeholder="username">
+    
+    
+    
+       <input type="password" name="pass" placeholder=" password">
+    <a class = "forgetPass"href="#"> forget Password?</a>
+    
+       <input type="submit"value="Sign in" >
+         <p>Don't have an account yet? <a href="#">Sign up.</a> </p>
+     </form> </div>
+    
+    </div>
+
+
+    <link rel="icon" href="assets/raqash_icon.png" type="image/png" sizes="16x16">

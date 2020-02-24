@@ -162,8 +162,9 @@ input[type = "submit"]{
   outline: none;
   cursor: pointer;
   position: absolute;
-  left: 50%;
+  left: 415px;
   margin-left: -50px;
+
     }
     .list-group-item{
       background: none;
