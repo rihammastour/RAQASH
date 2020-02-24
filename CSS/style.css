@@ -183,12 +183,10 @@ nav ul li a:hover::after{
 #myBtn:hover{
     background-color: #f1f1f1;
   }
-
-.container{
+  .container{
     background: #a49c9a ;
     position: relative;
-    width: 400px;
-    height:718px;
+    width: 70%;
     overflow: hidden;
     margin: 20px auto;
     border-radius:10px;
@@ -213,41 +211,33 @@ nav ul li a:hover::after{
     overflow: hidden;
     }
 
-.close{
-    margin:0;
-    border: none;
-    background: none;
-    }
-
 .formbox{
     position: relative;
     text-align: left;
-    width: 100%;
     padding: 190px 150px;
+    margin-left: -10px;
     box-sizing: border-box;
-    height: 400px;
+    height: 718px;
     }
 
 .uploadbox{
     position: relative;
     text-align: center;
-    width: 100%;
     padding: 220px 150px;
     box-sizing: border-box;
-    height: 400px;
+    height: 718px;
     }
 
 
 .textarea{
     margin-bottom: 50px;
     height: 100px;
-    width: 200px;
     }
     
 .container .left .formbox input{
     margin-bottom: 30px;
     height: 30px;
-    width: 200px;
+    width: 300px;
     }
 
 .formbox input[type = "text"],
@@ -257,17 +247,18 @@ textarea{
     border: none;
     border-bottom: 1px solid #5c5c5c;
     outline: none;
-    width: 100%;
+    width: 300px;
     background: transparent;
     }
     
 .formbox input[type = "button"]{
     width: 100%;
-    margin-top:30px;
+    margin-top:50px;
     border: none;
     border-radius: 8px;
     outline: none;
     cursor: pointer;
+
     }
 
     
@@ -281,7 +272,48 @@ textarea:focus{
 .container .left .formbox input[type = "button"]:hover{
     background-color: #ede9ea;
     }
+    .checkBox{
+position: absolute;
+  top: 61%;
+  left: 12%;
 
+    }
+    /*
+.checkBox .disableCommentL{
+    display: block;
+    float: left;
+    padding-right: 10px;
+    white-space: nowrap;
+    }
+    
+.checkBox #disableComment{
+    vertical-align: middle;
+    }
+    
+.checkBox .disableCommentL span{
+    vertical-align: middle;
+    margin-right: 20px;
+    }
+*/
+.colse{
+    background: none;
+    border: 0;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    margin: 20px;
+    }
+/* 
+.close:hover,
+.close:focus {
+    background: #ede9ea;
+    }
+
+
+.close:active {
+    transform: scale(0.99);
+    } */
+    
 .footer{
     left: 0;
     bottom: 0;
