@@ -186,7 +186,6 @@ cursor: pointer;
 /* titles */
 
 .title{
-  text-decoration: underline  #5c5c5c;
   text-transform: uppercase ;
   color: #5c5c5c;
   text-align: center;
@@ -555,33 +554,47 @@ background-color: #ede9ea;
   
   /* contact us */
   
-  #contactUs {
-   
-    text-decoration: none;
-    background-color: #ede9ea;
-    text-align:left;
-  }
-  #RAQASHTEAM{
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding: 0.5%;
-    background-color: #f1f1f1;
-    color: #5c5c5c;
-    text-align: center;
-    font-size: x-small;
+#AboutUs {
+  background-color:  #f8f8f8;
+  /* padding-top: 500px; */
+  text-align: center;
+}
+/* concat us */
 
-  }
-   #contactUs a {
-    color: #5c5c5c;
-    text-decoration: none;
-    background-color: #ede9ea;
-    
+#contactUs {
+ 
+  text-decoration: none;
+  background-color: #b1a6a4;
+  border:none;
+}
+#contactUs a {
+  background-color: transparent;
+  background-color: #b1a6a4;
+
+}
+#RAQASHTEAM{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 0.5%;
+  background-color: #f1f1f1;
+  color: #5c5c5c;
+  text-align: center;
+  font-size: x-small;
+
+}
+ #contactUs a {
+  color: #5c5c5c;
+  text-decoration: none;
   
-  }
-  #contactUs a:hover {
-    color: #a5afa6;
-  }
+
+}
+#contactUs a:hover {
+  color: #a5afa6;
+}
+
+
+
 
   /* top up button */
   #myBtn{
