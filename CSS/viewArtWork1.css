@@ -5,68 +5,43 @@
     padding: 0;
     letter-spacing: 2px;
   }
-  body{
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-        background-color:#f8f8f8 ;
-        font-family: geneva ;
-        letter-spacing: 2px;
-         color: #5c5c5c;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-       margin: -20px 0 50px;
-  }
-  
-  
-  
-  .container{
+
+  #viewArt , #commentsPost{
     background: #ede9ea ;
     position:relative;
     overflow: hidden;
-    width: 70%;
+    width: 800px;
     margin: 0 auto;
-    max-width:100%;
-    min-height: 480px;
-    height: 80%;
+      height: 650px;
     border-radius:10px ;
     box-shadow: 0 14px 28px rgba(0,0,0,0.15),
     0 10px 10px rgba(0,0,0,0.13);
-   
-  
+  display: none;
   }
   
   .container .left {
     position:relative;
    top: 0px;
-   left: 0px;
+ 
     float: left;
-    width: 50%;
-    height:100%;
+    width: 350px;
+    height:650px;
     background:#ede9ea ;
     margin-left: -20px;
     overflow: hidden;
-  
-  
-  }
-  
-  .container .left img {
-   
-   position:relative;
-   /* top: 0px;
-   left: 0px; */
+
   
   }
+  
+  
   
   .container .right {
     position:relative;
    top: 0px;
    right: 0px;
     float: right;
-    width: 50%;
-    height:100%;
+    width: 350px;
+    height:650px;
     background:#ede9ea ;
     overflow: hidden;
   }
@@ -86,16 +61,16 @@
     padding-bottom: 55px;
     font-size: 15px;
   }
-  .right .artist a{
+  .right .artistAccount a{
       text-align: center;
      color:  #5c5c5c;
   }
-  .right .artist {
+  .right .artistAccount {
     text-align: right;
    
 }
   .comment-btn{
-    margin-bottom: 70px;
+  margin-top: 20px;
   border: none;
   border-radius: 8px;
   outline: none;
@@ -118,11 +93,12 @@
    
     .addCommentArea{
 
-      padding-top: 30px;
-      padding-left: 300px;
+      /* padding-top: 10px;
+      padding-left: 100px; */
       overflow: scroll;
 
     }
+   
    
     #commentTextArea{
         background-color: #ede9ea;
@@ -172,6 +148,7 @@ input[type = "submit"]{
     }
 
     .list-group{
+      margin-bottom: 20px;
       padding-top: 30px;
       overflow: scroll;
     }
@@ -180,7 +157,13 @@ input[type = "submit"]{
   background-color: #5c5c5c36;
  }   
 
-.title{
+
+   #commentsPost{
+     display: none;
+
+   }
+ 
+/* .title{
 font-size: xx-large;
 letter-spacing: 2px;
 content: ""; 
@@ -196,4 +179,4 @@ padding-left: 50px;
 #dot{
   color: #a5afa6;
 }
-
+ */

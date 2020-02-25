@@ -1,0 +1,354 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ARTIST STUDIO</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="icon" href="/Users/mihaf/Desktop/level6/381SWE❤️ /RAQASH/RAQASH-1/raqash_icon.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" type="text/css" href="ArtistStudio.css">
+    <link rel="stylesheet" href="CSS/viewArtWork1.css"  type = "text/css" />
+
+    <script src="JS/viewArtwork.js"></script>
+
+</head>
+
+
+<body>
+<!-- nav bar  -->
+        <header class="menu-bar">
+                <nav>
+                    <ul>
+                        <li id ="Gsize"><a href="#">GALLERY</a></li>
+        
+                        <!-- dropdown menue -->
+                        <div class = "drop">
+                          <li class = "dropAccount"><a href="#">ACCOUNT▽</a></li>
+                            <div class = "dropContent">
+                                <!-- <a href="#">ARTST STUDIO</a> -->
+                                <a href="#">BOOKMARK</a>
+                                <a href="#">LOG OUT</a>
+                            </div>
+                        </div>
+                        
+                          <!-- logo -->
+                        <img src="assets/RAQASHLogo.png" alt="RAQASH Logo"width="100px" height="100px">
+        
+                        <li id ="Asize"><a href="#AboutUs">ABOUT US</a></li>
+                        <li id ="Csize"><a href="#contactUs">CONTACT US</a></li>
+                    </ul>
+                </nav>
+            </header>
+             <!-- to top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="assets/Raqash Icon-up.svg" width="20px" height="20px" alt="up"></button>
+    <script>//Get the button:
+        mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }</script>
+ 
+
+
+            <!-- Bio  -->
+
+            <div class="account">
+                    <div class="row">
+                        <div class="col-md-6 text-center">
+                            <img  class= "Artist-image"src="assets/pic4.jpg" alt=" artist image ">
+                            <div class="bio">
+                              <h3>A Few Words About Me </h3>
+                              <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate consequuntur doloribus quae iusto consectetur repellendus quis dolorem provident quam laudantium.</p>
+                             <p class="contact-info"> contact me:</p>
+                  
+                                   <div class="contanct-icon">
+                                   <a   href="#"><img src="assets/Raqash Icon-twitter.svg" alt="twitter icon" width="30px" height="30px"></a>
+                                   <a   href="#"><img src="assets/Raqash Icon-email.svg" alt="email icon" width="30px" height="30px"></a>
+                                </div>
+                              <!-- <button class ="edit">  Edit  </button> -->
+            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ADD button -->
+                <!-- <button class ="add"> +  </button> -->
+
+
+<!-- view art work  -->
+<div class = "container" id="viewArt">
+    <button type="button" class="close" aria-label="Close" >
+            <span aria-hidden="true">&times;</span>
+          </button>
+  <div class="left">
+    <img id="userPost" src="assets/viewArtWorkImg.jpg" alt="">
+  </div>
+  <div class="right">
+    <div class=" date">
+        <label class = "title"> <span id = "dot">•</span>Stars<span id = "dot">•</span> </label>
+        <p id="date"> </p>
+    </div>
+   
+    <div class="description">
+        <p>
+             "go where the stars take you" 
+        </p>
+    </div>
+    <div class="artistAccount">
+        <a href="#" id="userName">By: @latifah</a>
+    </div>
+    
+    
+      <button class="btn comment-btn " type="button"   onclick="viewArt('commentsView')"  > Comments </button>
+    
+   
+  </div>
+  
+  
+  
+  
+  </div>  
+  
+  <!-- comments -->
+          
+  
+  
+  <div class="container" id="commentsPost">
+
+  
+  <button type="button" class="close" aria-label="Close" >
+     
+      <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="left">
+          <img id="userPost" src="assets/viewArtWorkImg.jpg" alt="">
+        </div>
+      <div class="right">
+          <label class = "title"> Comments</label>
+
+          <div class="commentsArea">
+
+             <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action">woow! shiny star =)</a>
+              <a href="#" class="list-group-item list-group-item-action">Shine bright like a diamond in a sky***</a>
+              <a href="#" class="list-group-item list-group-item-action">Fairies Wear Boots</a>
+              <a href="#" class="list-group-item list-group-item-action">Fairies Wear Boots</a>
+              <a href="#" class="list-group-item list-group-item-action">Fairies Wear Boots</a>
+              </div>
+
+              <div class="addCommentArea">
+                   <textarea name="add Comment" id="commentTextArea" cols="20" rows="4"></textarea>  
+                   <button class="btn comment-btn " type="button"  > submit </button>
+ 
+ 
+              </div>
+  
+  
+           </div> 
+          </div>
+       </div>
+   
+  
+  
+
+                <!-- Arts  -->
+                <div class = "content">
+
+                        <!-- page title -->
+                        <label class = "title"> <span id = "dot">•</span> ARTS <span id = "dot">•</span> </label>
+                    
+                         <!--Grid row-->
+                         <div class="row my-4">
+                    
+                            <div class = "cards-container"> 
+                                <div class="card-deck">
+                            <!--Grid column-->
+                            <div class="card" style="width: 18rem;" >
+                              <a class ="lightox" href="#">  <img class="card-img-top img-resize" src="assets/pic1.jpg" alt="planet line art" onclick="viewArt('artView' , src)"></a>
+                                <div class="card-body">
+                                  <h5 class="card-title">Art</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#"><img src="assets/Raqash Icon-like.svg" alt="like  icon" width="30px" height="30px"></a>
+                                    <a href="#"><img src="assets/Raqash Icon-dislike.svg" alt ="dislike icon" height="30px" width="30px"></a>
+                                    <a href="#"><img src="assets/Raqash Icon-fav.svg" alt ="bookmark icon" height="30px" width="30px"></a>
+                                    <a href="#"><img src="assets/Raqash Icon-share.svg" alt ="share icon" height="30px" width="30px"></a>
+                                  </div>
+                              </div>
+                            <!--Grid column-->
+                        
+                            <!--Grid column-->
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top img-resize" src="assets/disappointment-one-line-draw-prints.jpg" alt="face line art">
+                                <div class="card-body">
+                                  <h5 class="card-title">Art </h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#"><img src="assets/Raqash Icon-like.svg" alt="like  icon" width="30px" height="30px"></a>
+                                    <a href="#"><img src="assets/Raqash Icon-dislike.svg" alt ="dislike icon" height="30px" width="30px"></a>
+                                    <a href="#"><img src="assets/Raqash Icon-fav.svg" alt ="bookmark icon" height="30px" width="30px"></a>
+                                    <a href="#"><img src="assets/Raqash Icon-share.svg" alt ="share icon" height="30px" width="30px"></a>
+                                  </div>
+
+                              </div>
+                            <!--Grid column-->
+                        
+                            <!--Grid column-->
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top img-resize" src="assets/p9.jpg" alt="wolf line art">
+                                <div class="card-body">
+                                  <h5 class="card-title">Art</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#"><img src="assets/Raqash Icon-like.svg" alt="like  icon" width="30px" height="30px"></a>
+                                    <a href="#"><img src="assets/Raqash Icon-dislike.svg" alt ="dislike icon" height="30px" width="30px"></a>
+                                    <a href="#"><img src="assets/Raqash Icon-fav.svg" alt ="bookmark icon" height="30px" width="30px"></a>
+                                    <a href="#"><img src="assets/Raqash Icon-share.svg" alt ="share icon" height="30px" width="30px"></a>
+                                  </div>
+                              </div>
+                            <!--Grid column-->
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top img-resize" src="assets/Login.jpeg" alt="human line art">
+                                <div class="card-body">
+                                  <h5 class="card-title">Art</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#"><img src="assets/Raqash Icon-like.svg" alt="like  icon" width="30px" height="30px"></a>
+                                    <a href="#"><img src="assets/Raqash Icon-dislike.svg" alt ="dislike icon" height="30px" width="30px"></a>
+                                    <a href="#"><img src="assets/Raqash Icon-fav.svg" alt ="bookmark icon" height="30px" width="30px"></a>
+                                    <a href="#"><img src="assets/Raqash Icon-share.svg" alt ="share icon" height="30px" width="30px"></a>
+                                  </div>
+                              </div>
+                              
+                            </div>
+                          </div>
+                        </div>
+                    
+                     <!--Grid row-->
+                     <div class="row my-4">
+                        <div class = "cards-container"> 
+                            <div class="card-deck">
+                    
+                        <!--Grid column-->
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top img-resize" src="art.jpg" alt="planet line art" >
+                            <div class="card-body">
+                              <h5 class="card-title">Art</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#"><img src="assets/Raqash Icon-like.svg" alt="like  icon" width="30px" height="30px"></a>
+                                <a href="#"><img src="assets/Raqash Icon-dislike.svg" alt ="dislike icon" height="30px" width="30px"></a>
+                                <a href="#"><img src="assets/Raqash Icon-fav.svg" alt ="bookmark icon" height="30px" width="30px"></a>
+                                <a href="#"><img src="assets/Raqash Icon-share.svg" alt ="share icon" height="30px" width="30px"></a>
+                              </div>
+                          </div>
+                        <!--Grid column-->
+                    
+                        <!--Grid column-->
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top img-resize" src="assets/pic2.jpg" alt="face line art">
+                            <div class="card-body">
+                              <h5 class="card-title">Art</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#"><img src="assets/Raqash Icon-like.svg" alt="like  icon" width="30px" height="30px"></a>
+                                <a href="#"><img src="assets/Raqash Icon-dislike.svg" alt ="dislike icon" height="30px" width="30px"></a>
+                                <a href="#"><img src="assets/Raqash Icon-fav.svg" alt ="bookmark icon" height="30px" width="30px"></a>
+                                <a href="#"><img src="assets/Raqash Icon-share.svg" alt ="share icon" height="30px" width="30px"></a>
+                              </div>
+                          </div>
+                        <!--Grid column-->
+                    
+                        <!--Grid column-->
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top img-resize" src="assets/pic3.jpg" alt="wolf line art">
+                            <div class="card-body">
+                              <h5 class="card-title">Art</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#"><img src="assets/Raqash Icon-like.svg" alt="like  icon" width="30px" height="30px"></a>
+                                <a href="#"><img src="assets/Raqash Icon-dislike.svg" alt ="dislike icon" height="30px" width="30px"></a>
+                                <a href="#"><img src="assets/Raqash Icon-fav.svg" alt ="bookmark icon" height="30px" width="30px"></a>
+                                <a href="#"><img src="assets/Raqash Icon-share.svg" alt ="share icon" height="30px" width="30px"></a>
+                              </div>
+                          </div>
+                        <!--Grid column-->
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top img-resize" src="assets/pic4.jpg" alt="human line art">
+                            <div class="card-body">
+                              <h5 class="card-title">Art</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#"><img src="assets/Raqash Icon-like.svg" alt="like  icon" width="30px" height="30px"></a>
+                                <a href="#"><img src="assets/Raqash Icon-dislike.svg" alt ="dislike icon" height="30px" width="30px"></a>
+                                <a href="#"><img src="assets/Raqash Icon-fav.svg" alt ="bookmark icon" height="30px" width="30px"></a>
+                                <a href="#"><img src="assets/Raqash Icon-share.svg" alt ="share icon" height="30px" width="30px"></a>
+                              </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    
+                    </div>
+                 <!-- end -->
+
+          <!-- about us -->
+
+          <div id="AboutUs" >
+                <label class = "title"> <span id = "dot">•</span> About US<span id = "dot">•</span> </label>
+                <br>
+
+              <p>
+
+                  Line art or line drawing is any image that consists of distinct straight or curved lines placed against a (usually plain) background<br> 
+                  without gradations in shade (darkness) or hue (color) to represent two-dimensional or three-dimensional objects <br>
+                  Our website is grate place for artist to represnt there works and share it with athors.
+                
+                </p>
+             
+            </div>
+            <!-- contact us -->
+            <footer>
+                    <div id="contactUs">
+                        <label class = "title"> <span id = "dot">•</span> Conact US <span id = "dot">•</span> </label>
+            
+                              <ul class="list-unstyled">
+                                    <li> <img src="tele icon.png" alt="twitter icon" width="30px" height="30px"> 0558807732 </li>
+                                    <li> <img src="email.png" alt="twitter icon" width="25px" height="25px"> <a href="mailto:RAQASH@gmail.com">
+                                      Contact us</a></li>
+                                    <li><img src="marker.png" alt="twitter icon" width="30px" height="30px">Riyadh</li>
+                                    <a href="https://twitter.com/RAQASH381"><img src="Raqash Icon-twitter.svg" alt="twitter icon" width="30px" height="30px"> twitter</a>
+            
+                                  </ul>
+                    </div>
+                   </footer>
+                    
+         
+          <!-- footer -->
+          <div class = "footer">&copy;RAQASH Team 2020</div>
+            
+</body>
+</html>
