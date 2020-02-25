@@ -5,7 +5,7 @@ function start(){
  
 }
 
-function viewArt(clicked , imgSrc){
+function viewArt(clicked ){
     if(clicked=="artView"){
     document.getElementById("viewArt").style.display="block";
     document.getElementById("commentsPost").style.display="none";

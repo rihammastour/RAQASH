@@ -189,7 +189,7 @@ margin-top: -8px;
 
   position: fixed;
   padding-left: 20px;
-  bottom: 687px; 
+  bottom: 680px; 
    right: -20px;
    z-index: 99; 
 border: none; 
@@ -254,7 +254,7 @@ height: 32px;
 
     #AboutUs {
         background-color:  #f8f8f8;
-        padding-top: 400px;
+        padding-top: 180px;
         text-align: center;
       }
       #contactUs {
@@ -262,6 +262,7 @@ height: 32px;
         text-decoration: none;
         background-color: #ede9ea;
         text-align:left;
+        
       }
       #contactUs a {
         color: #5c5c5c;

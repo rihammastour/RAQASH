@@ -12,6 +12,9 @@ body{
     font-family: Geneva;
 }
 
+    
+        /* ADD button */
+  
 .menu-bar{
     background-color: #ede9ea;
     height: 100px;
@@ -121,6 +124,7 @@ nav ul li a:hover::after{
     margin: 0 auto;
     width: 50%; 
     padding-top: 150px; 
+    margin-bottom: 30px;
 
     border-bottom: 1.5px solid #a5afa6 ;
     
@@ -400,7 +404,7 @@ opacity: 1;
 .image-gallery .div4{
     grid-column:5/7;
     grid-row:3/7; 
-    background-image: url("/Users/mihaf/Desktop/level6/381SWE❤️ /RAQASH/RAQASH-1/artist2.jpg"); 
+    background-image: url("assets/color.jpg"); 
     background-position: center  ;
     background-size: cover;
     background-repeat: no-repeat;
@@ -622,7 +626,7 @@ margin-top: 800px;
   
   
   .flex-container > div {
-    background-color:#a5afa6;
+    background-color:#ede9ea;
     width: 500px;
     height: 200px;
     text-align: center;

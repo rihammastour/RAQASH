@@ -5,12 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ARTIST STUDIO</title>
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="icon" href="/Users/mihaf/Desktop/level6/381SWE❤️ /RAQASH/RAQASH-1/raqash_icon.png" type="image/png" sizes="16x16">
-    <link rel="stylesheet" type="text/css" href="ArtistStudio.css">
-    <link rel="stylesheet" href="CSS/viewArtWork1.css"  type = "text/css" />
-
-    <script src="JS/viewArtwork.js"></script>
-
+    <link rel="icon" href="/Users/mihaf/Desktop/level6/381SWE❤️ /RAQASH/RAQASH-1/raqash_icon.png" type="image/png" >
+    <link rel="stylesheet" type="text/css" href="Studio.css">
 </head>
 
 
@@ -19,15 +15,15 @@
         <header class="menu-bar">
                 <nav>
                     <ul>
-                        <li id ="Gsize"><a href="#">GALLERY</a></li>
+                        <li id ="Gsize"><a href="VistorHomePage.html">GALLERY</a></li>
         
                         <!-- dropdown menue -->
                         <div class = "drop">
                           <li class = "dropAccount"><a href="#">ACCOUNT▽</a></li>
                             <div class = "dropContent">
                                 <!-- <a href="#">ARTST STUDIO</a> -->
-                                <a href="#">BOOKMARK</a>
-                                <a href="#">LOG OUT</a>
+                                <a href="FAVOURITS.html">BOOKMARK</a>
+                                <a href="welcomPage.html">LOG OUT</a>
                             </div>
                         </div>
                         
@@ -64,7 +60,7 @@
 
 
             <!-- Bio  -->
-
+        
             <div class="account">
                     <div class="row">
                         <div class="col-md-6 text-center">
@@ -72,12 +68,13 @@
                             <div class="bio">
                               <h3>A Few Words About Me </h3>
                               <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate consequuntur doloribus quae iusto consectetur repellendus quis dolorem provident quam laudantium.</p>
-                             <p class="contact-info"> contact me:</p>
+                             <p class="contact-info"> contact me:
                   
-                                   <div class="contanct-icon">
+                                   <!-- <div class="contanct-icon"> -->
                                    <a   href="#"><img src="assets/Raqash Icon-twitter.svg" alt="twitter icon" width="30px" height="30px"></a>
                                    <a   href="#"><img src="assets/Raqash Icon-email.svg" alt="email icon" width="30px" height="30px"></a>
-                                </div>
+                             </p>
+                                <!-- </div> -->
                               <!-- <button class ="edit">  Edit  </button> -->
             
                             </div>
@@ -85,85 +82,8 @@
                     </div>
                 </div>
 
-                <!-- ADD button -->
-                <!-- <button class ="add"> +  </button> -->
+              
 
-
-<!-- view art work  -->
-<div class = "container" id="viewArt">
-    <button type="button" class="close" aria-label="Close" >
-            <span aria-hidden="true">&times;</span>
-          </button>
-  <div class="left">
-    <img id="userPost" src="assets/viewArtWorkImg.jpg" alt="">
-  </div>
-  <div class="right">
-    <div class=" date">
-        <label class = "title"> <span id = "dot">•</span>Stars<span id = "dot">•</span> </label>
-        <p id="date"> </p>
-    </div>
-   
-    <div class="description">
-        <p>
-             "go where the stars take you" 
-        </p>
-    </div>
-    <div class="artistAccount">
-        <a href="#" id="userName">By: @latifah</a>
-    </div>
-    
-    
-      <button class="btn comment-btn " type="button"   onclick="viewArt('commentsView')"  > Comments </button>
-    
-   
-  </div>
-  
-  
-  
-  
-  </div>  
-  
-  <!-- comments -->
-          
-  
-  
-  <div class="container" id="commentsPost">
-
-  
-  <button type="button" class="close" aria-label="Close" >
-     
-      <span aria-hidden="true">&times;</span>
-      </button>
-      <div class="left">
-          <img id="userPost" src="assets/viewArtWorkImg.jpg" alt="">
-        </div>
-      <div class="right">
-          <label class = "title"> Comments</label>
-
-          <div class="commentsArea">
-
-             <div class="list-group">
-              <a href="#" class="list-group-item list-group-item-action">woow! shiny star =)</a>
-              <a href="#" class="list-group-item list-group-item-action">Shine bright like a diamond in a sky***</a>
-              <a href="#" class="list-group-item list-group-item-action">Fairies Wear Boots</a>
-              <a href="#" class="list-group-item list-group-item-action">Fairies Wear Boots</a>
-              <a href="#" class="list-group-item list-group-item-action">Fairies Wear Boots</a>
-              </div>
-
-              <div class="addCommentArea">
-                   <textarea name="add Comment" id="commentTextArea" cols="20" rows="4"></textarea>  
-                   <button class="btn comment-btn " type="button"  > submit </button>
- 
- 
-              </div>
-  
-  
-           </div> 
-          </div>
-       </div>
-   
-  
-  
 
                 <!-- Arts  -->
                 <div class = "content">
@@ -172,13 +92,13 @@
                         <label class = "title"> <span id = "dot">•</span> ARTS <span id = "dot">•</span> </label>
                     
                          <!--Grid row-->
-                         <div class="row my-4">
+                         <div class="row my-4" >
                     
                             <div class = "cards-container"> 
                                 <div class="card-deck">
                             <!--Grid column-->
-                            <div class="card" style="width: 18rem;" >
-                              <a class ="lightox" href="#">  <img class="card-img-top img-resize" src="assets/pic1.jpg" alt="planet line art" onclick="viewArt('artView' , src)"></a>
+                            <div class="card" style="width: 18rem;">
+                              <a class ="lightox" href="#">  <img class="card-img-top img-resize" src="assets/1.jpeg" alt="planet line art" ></a>
                                 <div class="card-body">
                                   <h5 class="card-title">Art</h5>
                                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -335,14 +255,14 @@
                     <div id="contactUs">
                         <label class = "title"> <span id = "dot">•</span> Conact US <span id = "dot">•</span> </label>
             
-                              <ul class="list-unstyled">
-                                    <li> <img src="tele icon.png" alt="twitter icon" width="30px" height="30px"> 0558807732 </li>
-                                    <li> <img src="email.png" alt="twitter icon" width="25px" height="25px"> <a href="mailto:RAQASH@gmail.com">
-                                      Contact us</a></li>
-                                    <li><img src="marker.png" alt="twitter icon" width="30px" height="30px">Riyadh</li>
-                                    <a href="https://twitter.com/RAQASH381"><img src="Raqash Icon-twitter.svg" alt="twitter icon" width="30px" height="30px"> twitter</a>
-            
-                                  </ul>
+                        <ul class="list-unstyled">
+                            <li> <img src="assets/tele icon.png" alt="twitter icon" width="30px" height="30px"> 0558807732 </li>
+                            <li> <img src="assets/Raqash Icon-email.svg" alt="twitter icon" width="25px" height="25px"> <a href="mailto:RAQASH@gmail.com">
+                              Contact us</a></li>
+                            <li><img src="assets/Raqash Icon-loc.svg" alt="twitter icon" width="30px" height="30px">Riyadh</li>
+                            <a href="https://twitter.com/RAQASH381"><img src="assets/Raqash Icon-twitter.svg" alt="twitter icon" width="30px" height="30px"> twitter</a>
+    
+                          </ul>
                     </div>
                    </footer>
                     
