@@ -676,7 +676,7 @@ margin-top: 800px;
 
 #AboutUs {
     background-color:  #f8f8f8;
-    padding-top: 400px;
+    /* padding-top: 500px; */
     text-align: center;
   }
   /* concat us */
@@ -684,8 +684,14 @@ margin-top: 800px;
   #contactUs {
    
     text-decoration: none;
-    background-color: #ede9ea;
+    background-color: #b1a6a4;
     text-align:left;
+    border:none;
+  }
+  #contactUs a {
+    background-color: transparent;
+    background-color: #b1a6a4;
+
   }
   #RAQASHTEAM{
     left: 0;
@@ -701,7 +707,6 @@ margin-top: 800px;
    #contactUs a {
     color: #5c5c5c;
     text-decoration: none;
-    background-color: #ede9ea;
     
   
   }

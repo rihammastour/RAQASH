@@ -309,6 +309,7 @@ background:#a49c9a;
  
   #commentTextArea{
       background-color: #ede9ea;
+
   
   }
   
@@ -328,7 +329,6 @@ background:#a49c9a;
       
 input[type = "submit"]:hover{
  background-color: #a5afa6;
- padding-top: 30px;
   
   }
   
@@ -336,6 +336,7 @@ input[type = "submit"]:hover{
   .usersComments a{
      color: #5c5c5c;
   }
+
 input[type = "submit"]{
   height: 30px;
   width: 200px;
@@ -348,6 +349,9 @@ position: absolute;
 left: 50%;
 margin-left: -50px;
 margin-top: 20px;
+border: none;
+outline: none;
+cursor: pointer;
   }
   .list-group-item{
     background: none;
@@ -382,4 +386,13 @@ color: #a5afa6;
 
 #commentsPost{
   display: none;
+}
+
+#submitButton{
+  position: absolute;
+  left: 41%;
+  padding-right: 30px;
+
+
+
 }

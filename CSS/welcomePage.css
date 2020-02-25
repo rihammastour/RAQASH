@@ -96,7 +96,7 @@ nav ul li a:hover::after{
   width: 20rem;
   height: 20rem;
   cursor: pointer;
-  background: url(/Users/latifah/Documents/GitHub/RAQASH/assets/helloImg.jpg) no-repeat 100% 50%;
+  background: url(file:///Users/rihammastour/Documents/riri/University/Level6/Web/RAQASH%20%20/RAQASH/assets/helloImg.jpg) no-repeat 100% 50%;
   background-size: 120%;
   border-radius: 50%;
   -webkit-transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
