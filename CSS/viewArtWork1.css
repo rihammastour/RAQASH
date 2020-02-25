@@ -1,72 +1,61 @@
-
+/* 
   *{
     color: #5c5c5c;
     margin: 0;
     padding: 0;
     letter-spacing: 2px;
   }
-  body{
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-        background-color:#f8f8f8 ;
-        font-family: geneva ;
-        letter-spacing: 2px;
-         color: #5c5c5c;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-       margin: -20px 0 50px;
-  }
-  
-  
-  
-  .container{
+body{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color:#f8f8f8 ;
+  font-family: geneva ;
+  letter-spacing: 2px;
+color: #5c5c5c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ height: 110vh;
+	margin: -20px 0 50px;
+
+}
+  #viewArt , #commentsPost{
     background: #ede9ea ;
     position:relative;
     overflow: hidden;
-    width: 70%;
+    width: 800px;
     margin: 0 auto;
-    max-width:100%;
-    min-height: 480px;
-    height: 80%;
+      height: 650px;
     border-radius:10px ;
     box-shadow: 0 14px 28px rgba(0,0,0,0.15),
     0 10px 10px rgba(0,0,0,0.13);
-   
   
   }
   
   .container .left {
     position:relative;
    top: 0px;
-   left: 0px;
+ 
     float: left;
-    width: 50%;
-    height:100%;
+    width: 350px;
+    height:650px;
     background:#ede9ea ;
     margin-left: -20px;
     overflow: hidden;
-  
-  
-  }
-  
-  .container .left img {
-   
-   position:relative;
-   /* top: 0px;
-   left: 0px; */
+
   
   }
+  
+  
   
   .container .right {
     position:relative;
    top: 0px;
    right: 0px;
     float: right;
-    width: 50%;
-    height:100%;
+    width: 350px;
+    height:650px;
     background:#ede9ea ;
     overflow: hidden;
   }
@@ -86,16 +75,16 @@
     padding-bottom: 55px;
     font-size: 15px;
   }
-  .right .artist a{
+  .right .artistAccount a{
       text-align: center;
      color:  #5c5c5c;
   }
-  .right .artist {
+  .right .artistAccount {
     text-align: right;
    
 }
   .comment-btn{
-    margin-bottom: 70px;
+  margin-top: 20px;
   border: none;
   border-radius: 8px;
   outline: none;
@@ -118,11 +107,12 @@
    
     .addCommentArea{
 
-      padding-top: 30px;
-      padding-left: 300px;
+       padding-top: 10px;
+      padding-left: 100px; 
       overflow: scroll;
 
     }
+   
    
     #commentTextArea{
         background-color: #ede9ea;
@@ -162,8 +152,9 @@ input[type = "submit"]{
   outline: none;
   cursor: pointer;
   position: absolute;
-  left: 50%;
+  left: 415px;
   margin-left: -50px;
+
     }
     .list-group-item{
       background: none;
@@ -171,6 +162,7 @@ input[type = "submit"]{
     }
 
     .list-group{
+      margin-bottom: 20px;
       padding-top: 30px;
       overflow: scroll;
     }
@@ -178,6 +170,198 @@ input[type = "submit"]{
 
   background-color: #5c5c5c36;
  }   
+
+
+   #commentsPost{
+     display: none;
+
+   }
+ 
+ */
+
+
+ *{
+  color: #5c5c5c;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 2px;
+}
+body{
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      background-color:#f8f8f8 ;
+      font-family: geneva ;
+      letter-spacing: 2px;
+       color: #5c5c5c;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+     margin: -20px 0 50px;
+}
+
+
+
+.container{
+  background: #ede9ea ;
+  position:relative;
+  overflow: hidden;
+  width: 70%;
+  margin: 0 auto;
+  max-width:100%;
+  min-height: 480px;
+  height: 80%;
+  border-radius:10px ;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.15),
+  0 10px 10px rgba(0,0,0,0.13);
+ 
+
+}
+
+.container .left {
+  position:relative;
+ top: 0px;
+ left: 0px;
+  float: left;
+  width: 50%;
+  height:100%;
+  background:#ede9ea ;
+  margin-left: -20px;
+  overflow: hidden;
+
+
+}
+
+.container .left img {
+ 
+ position:relative;
+  top: 0px;
+ left: 0px; 
+ height: 100%;
+ margin-left: -30px;
+
+}
+
+.container .right {
+  position:relative;
+ top: 0px;
+ right: 0px;
+  float: right;
+  width: 50%;
+  height:100%;
+  background:#ede9ea ;
+  overflow: hidden;
+}
+.container .right .description{
+  position: relative;
+  text-align: left;
+  font-size: 20px;
+  padding: 0 30px 0 30px;
+  height: 40%;
+  overflow-y:scroll;
+  
+}
+
+.right #date{
+  position: relative;
+  text-align: center;
+  padding-bottom: 55px;
+  font-size: 15px;
+}
+.right .artist a{
+    text-align: center;
+   color:  #5c5c5c;
+}
+.right .artist {
+  text-align: right;
+ 
+}
+.comment-btn{
+  margin-bottom: 70px;
+border: none;
+border-radius: 8px;
+outline: none;
+cursor: pointer;
+background:#a49c9a;
+
+
+
+
+}
+.comment-btn:hover{
+  background-color: #a5afa69f;
+ 
+
+  }
+  .comments{
+  padding-left: 30%;
+  padding-top: 80px;
+  }
+ 
+  .addCommentArea{
+
+    padding-top: 30px;
+    padding-left: 300px;
+    overflow: scroll;
+
+  }
+ 
+  #commentTextArea{
+      background-color: #ede9ea;
+  
+  }
+  
+  #commentTextArea:hover{
+      background-color: #f8f8f8b7;
+      border: #a5afa6;
+  }
+  #commentTextArea:focus {
+      outline: none !important;
+     
+      box-shadow: 0 0 10px #5c5c5c ;
+  }
+  .usersComments{
+      padding: 80px 0 0 100px;
+      overflow-y: scroll;
+  }
+      
+input[type = "submit"]:hover{
+ background-color: #a5afa6;
+ padding-top: 30px;
+  
+  }
+  
+
+  .usersComments a{
+     color: #5c5c5c;
+  }
+input[type = "submit"]{
+  height: 30px;
+  width: 200px;
+letter-spacing: 1px;
+ border: none;
+border-radius: 8px;
+outline: none;
+cursor: pointer;
+position: absolute;
+left: 50%;
+margin-left: -50px;
+margin-top: 20px;
+  }
+  .list-group-item{
+    background: none;
+    overflow: scroll;
+  }
+
+  .list-group{
+    padding-top: 30px;
+    overflow: scroll;
+  }
+.list-group :hover{
+
+background-color: #5c5c5c36;
+}   
 
 .title{
 font-size: xx-large;
@@ -193,6 +377,9 @@ padding-left: 50px;
 }
 
 #dot{
-  color: #a5afa6;
+color: #a5afa6;
 }
 
+#commentsPost{
+  display: none;
+}

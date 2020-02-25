@@ -8,68 +8,17 @@
   box-sizing: border-box;
 }
 body{
+  margin: 0px;
+  padding: 0px;
   background-color: #f8f8f8 ;
     font-family: Geneva;
+    box-sizing: border-box;
  
   
 }
 
 
-.inner-buttons{
-  padding-top: 40px;
-  padding-left: 15px;
- margin: 0 auto;
-  height: 30px;
-  width: 200px;
-letter-spacing: 1px;
- border: none;
-border-radius: 8px;
-outline: none;
-cursor: pointer;
-}
-
-  
-   .btn:hover {
-    background-color: #a5afa6cc;
-    border-color: #a49c9a !important;
-    color: white;
-  }
-
-  
-
-/* AboutUs */
-
-
-#AboutUs {
-  background-color:  #f8f8f8;
-  padding-top: 400px;
-  text-align: center;
-}
-  
-  /* contact us */
-  #contactUs h2 {
-
-    text-align: center;
-   
-  }
- 
-  #contactUs {
-   
-    text-decoration: none;
-    background-color: #ede9ea;
-    text-align:left;
-  }
-   #contactUs a {
-    color: #5c5c5c;
-    text-decoration: none;
-    background-color: #ede9ea;
-    
-  
-  }
-  #contactUs a:hover {
-    color: #a5afa6;
-  }
- /* new nav  */
+ /*  nav bar */
  
 
 
@@ -139,38 +88,7 @@ nav ul li a:hover::after{
 }
 
 
-  
-
-
-
-
-/*  */
-/* titles */
-.title{
-    font-size: 33px;;
-    text-align:  center;
-    text-decoration: underline  #5c5c5c;
-    text-transform: uppercase ;
-    color: #5c5c5c;
-   letter-spacing: 2px;
-    
-}
-.title{
-  font-size: xx-large;
-  letter-spacing: 2px;
-  content: ""; 
-  display: block; 
-  margin: 0 auto;
-  width: 50%; 
-  padding-top: 20px; 
-  border-bottom: 1.5px solid #a5afa6 ;
-}
-
-#dot{
-    color: #a5afa6;
-}
-
-/* hello */
+/* hello img and hover*/
 .badge {
 
   display: block;
@@ -178,7 +96,7 @@ nav ul li a:hover::after{
   width: 20rem;
   height: 20rem;
   cursor: pointer;
-  background: url(assets/helloImg.jpg) no-repeat 100% 50%;
+  background: url(/Users/latifah/Documents/GitHub/RAQASH/assets/helloImg.jpg) no-repeat 100% 50%;
   background-size: 120%;
   border-radius: 50%;
   -webkit-transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
@@ -237,3 +155,451 @@ padding-top: 200px;
   padding-top: 110px;
   overflow-x: hidden;
 }
+  
+
+
+
+/* login sigin up buttons */
+.inner-buttons{
+  padding-top: 40px;
+  padding-left: 15px;
+ margin: 0 auto;
+  height: 30px;
+  width: 200px;
+letter-spacing: 1px;
+ border: none;
+border-radius: 8px;
+outline: none;
+cursor: pointer;
+}
+
+  
+   .btn:hover {
+    background-color: #a5afa6cc;
+    border-color: #a49c9a !important;
+    color: white;
+  }
+
+  
+
+/*  */
+/* titles */
+
+.title{
+  text-decoration: underline  #5c5c5c;
+  text-transform: uppercase ;
+  color: #5c5c5c;
+  text-align: center;
+  font-size: xx-large;
+  letter-spacing: 2px;
+  content: ""; 
+  display: block; 
+  margin: 0 auto;
+  width: 50%; 
+  padding-top: 20px; 
+  border-bottom: 1.5px solid #a5afa6 ;
+}
+
+#dot{
+    color: #a5afa6;
+}
+
+/* sign up and login divs */
+
+/* .container .Lleft ,.container .Sright{
+  position:relative;
+ top: 0px;
+ left: 0px;
+  float: left;
+  width: 50%;
+  height:100%;
+  background:#a5afa6 ;
+  overflow: hidden;
+
+
+}
+
+.container .Lleft img , .container .Sright img{
+  position:relative;
+ top: 0px;
+ left: 0px;
+
+}
+
+.container .Lright , .container .Sleft{
+  position:relative;
+ top: 0px;
+ right: 0px;
+  float: right;
+  width: 50%;
+  height:100%;
+  background:#ede9ea ;
+
+}
+.container .Lright .title {
+  position: relative;
+  text-align: center;
+  padding: 100px 0px 0px;
+}
+
+.container .Sright .title {
+  position: relative;
+  text-align: center;
+  padding: 40px 100px 5px;
+ text-transform: uppercase;
+}
+
+.formbox{
+  position: relative;
+  text-align: left;
+  width: 100%;
+  padding: 20px 80px;
+  box-sizing: border-box;
+  height: 400px;
+
+}
+
+.formbox input{
+  margin-bottom: 50px;
+  height: 30px;
+  width: 200px;
+
+}
+
+.container .Sright .formbox input{
+  margin-bottom: 30px;
+  height: 30px;
+  width: 200px;
+
+}
+
+.formbox input[type = "text"],
+.formbox input[type = "password"]{
+border: none;
+border-bottom: 1px solid #5c5c5c;
+outline: none;
+background: transparent;
+
+}
+
+.container .Lright .formbox input[type = "text"]:hover,
+.container .Lright .formbox input[type = "password"]:hover{
+border-bottom: 1px solid #a5afa6;
+}
+
+ .formbox input[type = "submit"]{
+  margin-bottom: 70px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+cursor: pointer;
+
+}
+
+.container .Lright .formbox input[type = "submit"]:hover{
+background-color: #a5afa6;
+}
+
+.formbox .forgetPass {
+  display: block;
+  margin: -50px 0px 50px 90px;
+}
+.formbox a , .container .Lright .formbox p ,  .container .Sright .formbox p{
+
+  display: inline;
+	font-family: Poppins-Regular;
+	font-size: 14px;
+	line-height: 1.7;
+	margin: 0px;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  text-decoration: none;
+  letter-spacing: 1px;
+
+}
+.formbox a:hover{
+color: #a5afa6;
+}
+
+.container .Sright .formbox a:hover{
+color: #ede9ea;
+}
+
+.formbox a{
+  font-weight: bold;
+  color: #5c5c5c;
+}
+
+
+.container .Sright .formbox input[type = "text"]:hover,
+.container .Sright .formbox input[type = "password"]:hover{
+border-bottom: 3px solid #ede9ea;
+}
+
+
+
+.container .Sright .formbox input[type = "submit"]:hover{
+background-color: #ede9ea;
+}
+
+#signIn{
+  display: none;
+  background: #ede9ea ;
+    position:relative;
+    overflow: hidden;
+width: 800px;
+margin: 0 auto;
+max-width:100%;
+min-height: 480px;
+height: 80%;
+border-radius:10px ;
+box-shadow: 0 14px 28px rgba(0,0,0,0.15),
+    0 10px 10px rgba(0,0,0,0.13);
+
+
+} */
+
+
+#signup , #forgetPassword{
+  
+      position:relative;
+      overflow: hidden;
+  width: 800px;
+  margin: 0 auto;
+  max-width:100%;
+  min-height: 480px;
+  height: 480px;
+  border-radius:10px ;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.15),
+      0 10px 10px rgba(0,0,0,0.13);
+  display: none;
+  background:#a5afa6 ;
+
+  
+  
+  }
+  #login{
+    background: #ede9ea ;
+      position:relative;
+      overflow: hidden;
+  width: 800px;
+  margin: 0 auto;
+  max-width:100%;
+  min-height: 480px;
+  height: 480px;
+  border-radius:10px ;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.15),
+      0 10px 10px rgba(0,0,0,0.13);
+  display: none;
+
+ 
+  }
+
+.container .Lleft ,.container .Sright{
+  position:relative;
+ top: 0px;
+ left: 0px;
+  float: left;
+  width: 50%;
+  height:100%;
+  background:#a5afa6 ;
+  margin-left: -15px;
+  overflow: hidden;
+
+
+}
+
+.container .Lleft img , .container .Sright img{
+  position:relative;
+ top: 0px;
+ left: 0px;
+
+}
+
+.container .Lright , .container .Sleft{
+  position:relative;
+ top: 0px;
+ right: 0px;
+  float: right;
+  width: 50%;
+  height:00%;
+  background:#ede9ea ;
+
+}
+.container .Lright .title {
+  position: relative;
+  text-align: center;
+  padding: 100px 0px 0px;
+}
+
+ .formsTitle{
+  position: relative;
+  text-align: center;
+  padding: 20px 100px 5px;
+ text-transform: uppercase;
+}
+
+.formbox{
+  position: relative;
+  text-align: left;
+  width: 100%;
+  padding: 20px 80px;
+  box-sizing: border-box;
+  height: 400px;
+  
+}
+
+.formbox input{
+  margin-bottom: 50px;
+  height: 30px;
+  width: 200px;
+  
+
+}
+
+.container .Sright .formbox input{
+  margin-bottom: 30px;
+  height: 30px;
+  width: 200px;
+  
+
+}
+
+.formbox input[type = "text"],
+.formbox input[type = "password"]{
+border: none;
+border-bottom: 1px solid #5c5c5c;
+outline: none;
+background: transparent;
+
+
+}
+
+.container .Lright .formbox input[type = "text"]:hover,
+.container .Lright .formbox input[type = "password"]:hover{
+border-bottom: 1px solid #a5afa6;
+}
+
+ .formbox input[type = "submit"]{
+  margin-bottom: 70px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+cursor: pointer;
+
+}
+
+.container .Lright .formbox input[type = "submit"]:hover{
+background-color: #a5afa6;
+}
+
+.formbox .forgetPass {
+  display: block;
+  margin: -50px 0px 50px 90px;
+}
+.formbox a , .container .Lright .formbox p ,  .container .Sright .formbox p{
+
+  display: inline;
+	font-family: Poppins-Regular;
+	font-size: 14px;
+	line-height: 1.7;
+	margin: 0px;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  text-decoration: none;
+  letter-spacing: 1px;
+  
+}
+.formbox a:hover{
+color: #a5afa6;
+}
+
+.container .Sright .formbox a:hover{
+color: #ede9ea;
+}
+
+.formbox a{
+  font-weight: bold;
+  color: #5c5c5c;
+}
+
+
+.container .Sright .formbox input[type = "text"]:hover,
+.container .Sright .formbox input[type = "password"]:hover{
+border-bottom: 3px solid #ede9ea;
+}
+
+
+
+.container .Sright .formbox input[type = "submit"]:hover{
+background-color: #ede9ea;
+}
+
+::placeholder{
+  color:#ccc6c8;
+  font-size: x-small;
+}
+
+/* AboutUs */
+
+
+#AboutUs {
+  background-color:  #f8f8f8;
+  padding-top: 400px;
+  text-align: center;
+}
+  
+  /* contact us */
+  
+  #contactUs {
+   
+    text-decoration: none;
+    background-color: #ede9ea;
+    text-align:left;
+  }
+  #RAQASHTEAM{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0.5%;
+    background-color: #f1f1f1;
+    color: #5c5c5c;
+    text-align: center;
+    font-size: x-small;
+
+  }
+   #contactUs a {
+    color: #5c5c5c;
+    text-decoration: none;
+    background-color: #ede9ea;
+    
+  
+  }
+  #contactUs a:hover {
+    color: #a5afa6;
+  }
+
+  /* top up button */
+  #myBtn{
+    display: none; 
+    position: fixed; 
+    bottom: 35px;
+    right: 30px; 
+    z-index: 99;
+    border: none;
+    outline: none; 
+    background-color: #ede9ea;
+    color: white; 
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 100px; 
+    font-size: 18px; 
+  }
+
+#myBtn:hover{
+    background-color: #f1f1f1;
+  }
