@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="icon" href="assets/raqash_icon.png">
     <link rel="stylesheet" type="text/css" href="HomePage.css">
+    <script src="JS/viewArtwork.js"></script>
+
 </head>
 
 
@@ -60,9 +62,82 @@
         }</script>
  
 
+
+
+
     <!-- image gallery -->
 
-    <label class = "title"> <span id = "dot">•</span> ARTS <span id = "dot">•</span> </label>
+    <label class = "title" id="artsTitle"> <span id = "dot">•</span> ARTS <span id = "dot">•</span> </label>
+
+
+<!-- view art work  -->
+<div class = "container" id="viewArt">
+  <button type="button" class="close" aria-label="Close" >
+          <span aria-hidden="true">&times;</span>
+        </button>
+<div class="left">
+  <img id="userPost" src="assets/viewArtWorkImg.jpg" alt="">
+</div>
+<div class="right">
+  <div class=" date">
+      <label class = "title" > <span id = "dot">•</span>Stars<span id = "dot">•</span> </label>
+      <p id="date"> </p>
+  </div>
+ 
+  <div class="description">
+      <p>
+           "go where the stars take you" 
+      </p>
+  </div>
+  <div class="artistAccount">
+      <a href="#" id="userName">By: @latifah</a>
+      <br>
+      <a href="#">  <img src="assets/Raqash Icon-dislike.svg"  alt="dislike icon " height="30px" width="30px">  </a>
+      <a href="#">  <img src="assets/Raqash Icon-like.svg"  alt="like icon " height="30px" width="30px">  </a>
+      <a href="#">  <img src="assets/Raqash Icon-fav.svg" alt= "BOOKMARK icon " height="30px" width="30px">  </a>
+      <a href="#">  <img src="assets/Raqash Icon-share.svg" alt= "BOOKMARK icon " height="30px" width="30px">  </a>
+  
+  </div>
+  <div class="comments">
+  
+    <button class="btn comment-btn " type="button"   onclick="viewArt('commentsView')"  > Comments </button>
+  </div>  
+ 
+</div>
+
+
+
+
+</div>   
+<div class="container" id="commentsPost">
+
+<button type="button" class="close" aria-label="Close" >
+  <span aria-hidden="true">&times;</span>
+</button>
+<label class = "title"> <span id = "dot">•</span> Comments<span id = "dot">•</span> </label>
+
+
+<div class="commentsArea">
+
+
+
+  <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action">@latifa </a>
+          <a href="#" class="list-group-item list-group-item-action">Shine bright like a diamond in a sky***</a>
+          <a href="#" class="list-group-item list-group-item-action">Fairies Wear Boots</a>
+          <a href="#" class="list-group-item list-group-item-action">Fairies Wear Boots</a>
+          <a href="#" class="list-group-item list-group-item-action">Fairies Wear Boots</a>
+  </div>
+<div class="addCommentArea">
+      <textarea name="add Comment" id="commentTextArea" cols="30" rows="4" placeholder="write a comment"></textarea>    
+
+</div>
+<div id="submitButton">    <input type="submit" value="submit"  > </div>
+
+
+
+</div>   
+</div>
     <div class="image-gallery">
 
 

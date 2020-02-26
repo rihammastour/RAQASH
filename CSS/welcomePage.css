@@ -203,163 +203,6 @@ cursor: pointer;
     color: #a5afa6;
 }
 
-/* sign up and login divs */
-
-/* .container .Lleft ,.container .Sright{
-  position:relative;
- top: 0px;
- left: 0px;
-  float: left;
-  width: 50%;
-  height:100%;
-  background:#a5afa6 ;
-  overflow: hidden;
-
-
-}
-
-.container .Lleft img , .container .Sright img{
-  position:relative;
- top: 0px;
- left: 0px;
-
-}
-
-.container .Lright , .container .Sleft{
-  position:relative;
- top: 0px;
- right: 0px;
-  float: right;
-  width: 50%;
-  height:100%;
-  background:#ede9ea ;
-
-}
-.container .Lright .title {
-  position: relative;
-  text-align: center;
-  padding: 100px 0px 0px;
-}
-
-.container .Sright .title {
-  position: relative;
-  text-align: center;
-  padding: 40px 100px 5px;
- text-transform: uppercase;
-}
-
-.formbox{
-  position: relative;
-  text-align: left;
-  width: 100%;
-  padding: 20px 80px;
-  box-sizing: border-box;
-  height: 400px;
-
-}
-
-.formbox input{
-  margin-bottom: 50px;
-  height: 30px;
-  width: 200px;
-
-}
-
-.container .Sright .formbox input{
-  margin-bottom: 30px;
-  height: 30px;
-  width: 200px;
-
-}
-
-.formbox input[type = "text"],
-.formbox input[type = "password"]{
-border: none;
-border-bottom: 1px solid #5c5c5c;
-outline: none;
-background: transparent;
-
-}
-
-.container .Lright .formbox input[type = "text"]:hover,
-.container .Lright .formbox input[type = "password"]:hover{
-border-bottom: 1px solid #a5afa6;
-}
-
- .formbox input[type = "submit"]{
-  margin-bottom: 70px;
-  border: none;
-  border-radius: 8px;
-  outline: none;
-cursor: pointer;
-
-}
-
-.container .Lright .formbox input[type = "submit"]:hover{
-background-color: #a5afa6;
-}
-
-.formbox .forgetPass {
-  display: block;
-  margin: -50px 0px 50px 90px;
-}
-.formbox a , .container .Lright .formbox p ,  .container .Sright .formbox p{
-
-  display: inline;
-	font-family: Poppins-Regular;
-	font-size: 14px;
-	line-height: 1.7;
-	margin: 0px;
-	transition: all 0.4s;
-	-webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  text-decoration: none;
-  letter-spacing: 1px;
-
-}
-.formbox a:hover{
-color: #a5afa6;
-}
-
-.container .Sright .formbox a:hover{
-color: #ede9ea;
-}
-
-.formbox a{
-  font-weight: bold;
-  color: #5c5c5c;
-}
-
-
-.container .Sright .formbox input[type = "text"]:hover,
-.container .Sright .formbox input[type = "password"]:hover{
-border-bottom: 3px solid #ede9ea;
-}
-
-
-
-.container .Sright .formbox input[type = "submit"]:hover{
-background-color: #ede9ea;
-}
-
-#signIn{
-  display: none;
-  background: #ede9ea ;
-    position:relative;
-    overflow: hidden;
-width: 800px;
-margin: 0 auto;
-max-width:100%;
-min-height: 480px;
-height: 80%;
-border-radius:10px ;
-box-shadow: 0 14px 28px rgba(0,0,0,0.15),
-    0 10px 10px rgba(0,0,0,0.13);
-
-
-} */
-
 
 #signup , #forgetPassword{
   
@@ -616,3 +459,11 @@ background-color: #ede9ea;
 #myBtn:hover{
     background-color: #f1f1f1;
   }
+
+
+.check{
+ 
+  
+
+}
+

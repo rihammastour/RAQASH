@@ -55,4 +55,9 @@ function openForm(clicked) {
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
     window.addEventListener("scroll",scrollFunction,false);
-  
+  function signUp(){
+   if(document.getElementById("artistCheck").checked == true){ 
+     alert("please wait for the approval email")
+
+   }
+  }
