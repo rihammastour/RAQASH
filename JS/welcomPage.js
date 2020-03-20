@@ -14,6 +14,9 @@ function openForm(clicked) {
   
     }
     
+ document.getElementById('bg-model').style.display = 'flex';
+
+
     }
 
     
@@ -55,9 +58,20 @@ function openForm(clicked) {
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
     window.addEventListener("scroll",scrollFunction,false);
-  function signUp(){
+  
+  
+    function signUp(){
    if(document.getElementById("artistCheck").checked == true){ 
      alert("please wait for the approval email")
 
    }
+
+  }
+
+     function close(){
+  document.getElementById("loging").style.display = none ;
+  document.getElementById("signup").style.display = none ;
+  document.getElementById("forgetPassword").style.display = none ;
+
+  
   }
