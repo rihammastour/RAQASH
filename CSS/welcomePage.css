@@ -19,8 +19,6 @@ body{
 
 
  /*  nav bar */
- 
-
 
 .menu-bar{
     background-color: #ede9ea;
@@ -136,6 +134,7 @@ padding-top: 200px;
           justify-content: center;
 
 }
+
 .content{
   padding-top: 110px;
   overflow-x: hidden;
@@ -145,6 +144,24 @@ padding-top: 200px;
 
 
 /* login sigin up buttons */
+/*close button*/
+
+.close button{
+ cursor: pointer;
+   width: 10px;
+   height: 20px;
+}
+
+
+.Sright .close{
+float: left;
+size: 20px;
+}
+
+.Lright .close{
+  float: right;
+
+}
 .inner-buttons{
   padding-top: 40px;
   padding-left: 15px;
@@ -188,27 +205,37 @@ cursor: pointer;
     color: #a5afa6;
 }
 
-
-#signup , #forgetPassword{
-  
-      position:relative;
-      overflow: hidden;
+#signup , #forgetPassword ,  #login{
+z-index: 2;
+  position:fixed;
+  top: 15;
+  left: 0;
+  right: 0;
+  bottom: 10;
   width: 800px;
+  min-height: 480px;
   margin: 0 auto;
   max-width:100%;
   height: 480px;
-  border-radius:10px ;
+  overflow: hidden;
+  border-radius:10px;
   box-shadow: 0 14px 28px rgba(0,0,0,0.15),
-      0 10px 10px rgba(0,0,0,0.13);
+  0 10px 10px rgba(0,0,0,0.13);
+
+}
+
+
+
+
+#signup , #forgetPassword{
   display: none;
   background:#a5afa6 ;
-
-  
-  
   }
+
   #login{
     background: #ede9ea ;
   display: none;
+  /*opacity 0*/
 
  
   }
@@ -435,3 +462,12 @@ background-color: #ede9ea;
     background-color: #f1f1f1;
   }
 
+  #bg-model{
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position:fixed;
+    top: 0;
+    display: none;
+  }
