@@ -130,15 +130,15 @@ nav ul li a:hover::after{
     
   }
   .title{
-  margin-top:0px;
+  margin-top:300px;
   font-size: x-large;
   letter-spacing: 2px;
   content: ""; 
   display: block; 
   margin: 0 auto;
   width: 50%; 
-  margin-bottom: 30px;
-  padding-top: 50px; 
+  margin-bottom: 20px;
+  padding-top: 120px; 
 
   border-bottom: 1.5px solid #a5afa6 ;
   }
@@ -616,7 +616,7 @@ opacity: 1;
     display: block; 
     margin: 0 auto;
     width: 50%; 
-    padding-top: 190px; 
+    padding-top: 100px; 
 margin-top: 800px;
     border-bottom: 1.5px solid #a5afa6 ;
 
