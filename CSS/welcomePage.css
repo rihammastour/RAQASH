@@ -299,8 +299,12 @@ background: transparent;
 
 }
 
-.container .Lright .formbox input[type = "text"]:hover,
-.container .Lright .formbox input[type = "password"]:hover{
+#usernamePass{
+  margin-top: 20%;
+}
+
+.container .Lright .formbox input[type = "text"]:focus,
+.container .Lright .formbox input[type = "password"]:focus{
 border-bottom: 1px solid #a5afa6;
 }
 
@@ -311,17 +315,17 @@ border-bottom: 1px solid #a5afa6;
   border: none;
   border-radius: 8px;
   outline: none;
-cursor: pointer;
+  cursor: pointer;
 
 }
 
-.container .Lright .formbox input[type = "submit"]:hover{
+.container .Lright .formbox input[type = "submit"]:focus{
 background-color: #a5afa6;
 }
 
 .formbox .forgetPass {
   display: block;
-  margin: -50px 0px 50px 90px;
+  margin: 50px 0px 0px 90px;
 }
 .formbox a , .container .Lright .formbox p ,  .container .Sright .formbox p{
 
@@ -352,8 +356,8 @@ color: #ede9ea;
 }
 
 
-.container .Sright .formbox input[type = "text"]:hover,
-.container .Sright .formbox input[type = "password"]:hover{
+.container .Sright .formbox input[type = "text"]:focus,
+.container .Sright .formbox input[type = "password"]:focus{
 border-bottom: 3px solid #ede9ea;
 }
 
@@ -364,8 +368,8 @@ background-color: #ede9ea;
 }
 
 ::placeholder{
-  color:#ccc6c8;
-  font-size: x-small;
+  color: #808080;
+  font-size: 13px;
 }
 
 /* AboutUs */
