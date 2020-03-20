@@ -196,7 +196,6 @@ cursor: pointer;
   width: 800px;
   margin: 0 auto;
   max-width:100%;
-  min-height: 480px;
   height: 480px;
   border-radius:10px ;
   box-shadow: 0 14px 28px rgba(0,0,0,0.15),
@@ -209,16 +208,6 @@ cursor: pointer;
   }
   #login{
     background: #ede9ea ;
-      position:relative;
-      overflow: hidden;
-  width: 800px;
-  margin: 0 auto;
-  max-width:100%;
-  min-height: 480px;
-  height: 480px;
-  border-radius:10px ;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.15),
-      0 10px 10px rgba(0,0,0,0.13);
   display: none;
 
  
