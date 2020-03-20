@@ -306,6 +306,9 @@ background:#a49c9a;
     overflow: scroll;
 
   }
+  .list-group a #Commentusername{
+    display: inline;
+  }
  
   #commentTextArea{
       background-color: #ede9ea;
@@ -390,7 +393,7 @@ color: #a5afa6;
 
 #submitButton{
   position: absolute;
-  left: 41%;
+  left: 51%;
   padding-right: 30px;
 
 
