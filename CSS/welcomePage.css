@@ -96,7 +96,7 @@ nav ul li a:hover::after{
   width: 20rem;
   height: 20rem;
   cursor: pointer;
-  background: url(file:///Users/rihammastour/Documents/riri/University/Level6/Web/RAQASH%20%20/RAQASH/assets/helloImg.jpg) no-repeat 100% 50%;
+  background: url(RAQASH/assets/helloImg.jpg) no-repeat 100% 50%;
   background-size: 120%;
   border-radius: 50%;
   -webkit-transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
@@ -324,16 +324,20 @@ background: transparent;
 border-bottom: 1px solid #a5afa6;
 }
 
- .formbox input[type = "submit"]{
-  margin-bottom: 70px;
+ input[type = "submit"]{
+  margin-bottom: 50px;
   border: none;
   border-radius: 8px;
   outline: none;
   cursor: pointer;
+<<<<<<< HEAD
 
+=======
+  background-color: #f1f1f1;
+>>>>>>> 0a28e8b4d6aeccc107824e1d7e9bc10557627650
 }
 
-.container .Lright .formbox input[type = "submit"]:hover{
+.container .Lright input[type = "submit"]:hover{
 background-color: #a5afa6;
 }
 
@@ -377,7 +381,7 @@ border-bottom: 3px solid #ede9ea;
 
 
 
-.container .Sright .formbox input[type = "submit"]:hover{
+.container .Sright input[type = "submit"]:hover{
 background-color: #ede9ea;
 }
 
@@ -467,3 +471,29 @@ background-color: #ede9ea;
     background-color: #f1f1f1;
   }
 
+<<<<<<< HEAD
+=======
+
+  .check{
+   position:absolute;
+   top: 77%;
+   left: 20%;
+  }
+  
+  .submitButton {
+ position:absolute;
+    top: 70%;
+    left: 50%;
+    width:50%;
+    height: 5%;
+  }
+  .haveAnAccount{
+    position:absolute;
+    font-size: 12;
+    top: 90%;
+    left: 17%;
+  }
+   .haveAnAccount a:hover{
+     color:  #ede9ea;
+   }
+>>>>>>> 0a28e8b4d6aeccc107824e1d7e9bc10557627650
