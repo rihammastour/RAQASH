@@ -8,6 +8,10 @@
     <link rel="icon" href="assets/raqash_icon.png">
     <link rel="stylesheet" type="text/css" href="HomePage.css">
     <script src="JS/viewArtwork.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="JS/onClickButtons.js"></script>
+
+    
 
 </head>
 
@@ -68,13 +72,14 @@
     <!-- image gallery -->
 
     <label class = "title" id="artsTitle"> <span id = "dot">•</span> ARTS <span id = "dot">•</span> </label>
+   
 
 
 <!-- view art work  -->
 <div class = "container" id="viewArt">
-  <button type="button" class="close" aria-label="Close" >
-          <span aria-hidden="true">&times;</span>
-        </button>
+    <button type="button" class="close" aria-label="Close" >
+        <span aria-hidden="true">&times;</span>
+      </button>
 <div class="left">
   <img id="userPost" src="assets/viewArtWorkImg.jpg" alt="">
 </div>
@@ -122,11 +127,16 @@
 
 
   <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action">@latifa </a>
-          <a href="#" class="list-group-item list-group-item-action">Shine bright like a diamond in a sky***</a>
-          <a href="#" class="list-group-item list-group-item-action">Fairies Wear Boots</a>
-          <a href="#" class="list-group-item list-group-item-action">Fairies Wear Boots</a>
-          <a href="#" class="list-group-item list-group-item-action">Fairies Wear Boots</a>
+    <a href="#" class="list-group-item list-group-item-action"> <p id="Commentusername">@username:</p>
+      woow! shiny star =)</a>
+    <a href="#" class="list-group-item list-group-item-action"> <p id="Commentusername">@username:</p>
+      Shine bright like a diamond in a sky***</a>
+    <a href="#" class="list-group-item list-group-item-action"><p id="Commentusername">@username:</p>
+      Fairies Wear Boots</a>
+    <a href="#" class="list-group-item list-group-item-action"><p id="Commentusername">@username:</p>
+      Fairies Wear Boots</a>
+    <a href="#" class="list-group-item list-group-item-action"><p id="Commentusername">@username:</p>
+      Fairies Wear Boots</a>
   </div>
 <div class="addCommentArea">
       <textarea name="add Comment" id="commentTextArea" cols="30" rows="4" placeholder="write a comment"></textarea>    
@@ -138,10 +148,12 @@
 
 </div>   
 </div>
+
+<!-- gallery -->
     <div class="image-gallery">
 
 
-            <div class="div1">
+            <div class="div1 post" >
                 <div class="imginfo1">
                 
                      <h5>title</h5>
@@ -154,7 +166,7 @@
                 </div>
             </div>
 
-            <div class="div2">
+            <div class="div2 post">
                     <div class="imginfo2">
                          
                              <h5>title</h5>
@@ -167,7 +179,7 @@
                         </div>
             </div>
 
-            <div class="div3">
+            <div class="div3 post">
                     <div class="imginfo3">
                           
                              <h5>title</h5>
@@ -179,7 +191,7 @@
                         
                         </div>
             </div>
-            <div class="div4">
+            <div class="div4 post">
                     <div class="imginfo4">
                         
                              <h5>title</h5>
@@ -194,7 +206,7 @@
                         
                         </div>
             </div>
-            <div class="div5">
+            <div class="div5 post">
                     <div class="imginfo5">
                      
                              <h5>title</h5>
@@ -294,7 +306,7 @@
           &copy;RAQASH Team 2020
          </footer>
      
-                    
+         <div id="bg-model"></div>  
     
 </body>
 </html>

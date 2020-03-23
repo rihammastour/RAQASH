@@ -284,3 +284,193 @@ height: 32px;
         text-align: center;
         font-size: x-small;
         }
+
+
+/* view art work */
+
+
+#viewArt , #commentsPost{
+  position:fixed;
+  z-index: 2;
+  background: #ede9ea ;
+  position:relative;
+  overflow: hidden;
+  width: 800px;
+  margin: 0 auto;
+  height: 650px;
+  border-radius:10px ;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.15),
+  0 10px 10px rgba(0,0,0,0.13);
+
+}
+
+.container .left {
+  position:relative;
+ top: 0px;
+
+ 
+  float: left;
+  width: 350px;
+  height:100%;
+  background:#ede9ea ;
+  margin-left: -20px;
+  overflow: hidden;
+
+
+}
+
+
+.container .left img {
+ 
+  position:relative;
+   top: 0px;
+  left: 0px; 
+  height: 100%;
+  margin-left: -30px;
+ 
+ }
+
+.container .right {
+  position:relative;
+ top: 0px;
+ right: 0px;
+  float: right;
+  width: 350px;
+  height:650px;
+  background:#ede9ea ;
+  overflow: hidden;
+}
+.container .right .description{
+  position: relative;
+  text-align: left;
+  font-size: 20px;
+  padding: 0 30px 0 30px;
+  height: 40%;
+  overflow-y:scroll;
+  
+}
+
+.right #date{
+  position: relative;
+  text-align: center;
+  padding-bottom: 55px;
+  font-size: 15px;
+}
+.right .artistAccount a{
+    text-align: center;
+   color:  #5c5c5c;
+}
+.right .artistAccount {
+  text-align: right;
+ 
+}
+.comment-btn{
+margin-top: 20px;
+border: none;
+border-radius: 8px;
+outline: none;
+cursor: pointer;
+background:#a49c9a;
+
+
+
+
+}
+.comment-btn:hover{
+  background-color: #a5afa69f;
+ 
+
+  }
+  .comments{
+  padding-left: 30%;
+ 
+  }
+ 
+  .addCommentArea{
+
+     padding-top: 10px;
+    padding-left: 100px; 
+    overflow: scroll;
+
+  }
+ 
+ 
+  #commentTextArea{
+      background-color: #ede9ea;
+      margin-bottom: 20px;
+  
+  }
+  
+  #commentTextArea:hover{
+      background-color: #f8f8f8b7;
+      border: #a5afa6;
+  }
+  #commentTextArea:focus {
+      outline: none !important;
+     
+      box-shadow: 0 0 10px #5c5c5c ;
+  }
+  .usersComments{
+      padding: 80px 0 0 100px;
+      overflow-y: scroll;
+  }
+      
+input[type = "submit"]:hover{
+ background-color: #a5afa6;
+ padding-top: 30px;
+  
+  }
+  
+
+  .usersComments a{
+     color: #5c5c5c;
+  }
+input[type = "submit"]{
+  height: 30px;
+  width: 200px;
+letter-spacing: 1px;
+ border: none;
+border-radius: 8px;
+outline: none;
+cursor: pointer;
+position: absolute;
+left: 415px;
+margin-left: -50px;
+cursor: pointer;
+
+
+  }
+  .list-group-item{
+    background: none;
+    overflow: scroll;
+  }
+
+  .list-group{
+    margin-bottom: 20px;
+    padding-top: 30px;
+    overflow: scroll;
+  }
+.list-group :hover{
+
+background-color: #5c5c5c36;
+}   
+
+
+ #commentsPost{
+   display: none;
+
+ }
+
+ #bg-model{
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position:fixed;
+  top: 0;
+  display: none;
+}
+
+.list-group a #Commentusername{
+  display: inline;
+}
