@@ -124,7 +124,7 @@ nav ul li a:hover::after{
        background-size: cover;
        background-position: center;
        height: 550px;
-       /* margin-bottom: 170px; */
+       margin-bottom: 170px;
        margin-top: 0px;
        max-width: 100%;
     /* new */
