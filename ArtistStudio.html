@@ -6,15 +6,72 @@
     <title>ARTIST STUDIO</title>
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="icon" href="assets/raqash_icon.png">
-    <link rel="stylesheet" type="text/css" href="Studio.css"">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="Studio.css">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+
+    <script src="ArtistStudio.js"></script>
     <!-- <link rel="stylesheet" type="text/css" href="ArtistStudio.css"> -->
     
+    <script>
+        $(document).ready(function(){
+          $(".editbio").hide();
+          $(".editemail").hide();
+          $(".editname").hide();
+          $(".edittwitter").hide();
+          $(".save").hide();
+          $(".cancel").hide();
+          $("h6").hide();
+          $(".addCard").hide();
+          $(".manage-artwork").hide();
+          $(".edit").click(function(){
+            $("p").hide();
+            $("h3").hide();
+            $(".editbio").show();
+          $(".editemail").show();
+          $(".editname").show();
+          $(".edittwitter").show();
+            $(".cancel").show();
+          $(".save").show();
+          $("h6").show();
+            $(this).hide();
+        
 
+
+          });
+          $(".cancel,.save").click(function(){
+            $("p").show();
+            $("h3").show();
+            $(".text").hide();
+            $(".cancel").hide();
+          $(".save").hide();
+            $(".edit").show();
+            $(".editbio").hide();
+          $(".editemail").hide();
+          $(".editname").hide();
+          $(".edittwitter").hide()
+        
+
+
+          });
+          $(".add").click(function(){
+            $(".addCard").show();
+            $("#bg-model").show();
+          });
+          $(".manage").click(function(){
+            $(".manage-artwork").show();
+          });
+        });
+      ;
+
+
+        </script>
 </head>
 
 
 <body>
 <!-- nav bar  -->
+
         <header class="menu-bar">
                 <nav>
                     <ul>
@@ -66,46 +123,138 @@
 
          
         
-                <button class ="add"> 
-            
-                      <img src="assets/Raqash Icon-add.svg" alt="Add button" width="25px" height="25px">
+                <button class ="add" type="button"> 
+       <div class="addtext">ADD</div>
+                      <img src="assets/Raqash Icon-add.svg" alt="Add button" width="25px" height="40px">
                  
                 </button> 
+        <!--  add artwork card  -->
+ 
+            <!-- page title -->
+         
+  
+         
         
 
-            
+                <button id ="add-image" type="button"> 
+                    <!-- <input type="file" id="file" name="" multiple /> -->
+
+                            <img src="assets/camera.svg "alt="Add image" width="30px" height="40px">
+                              
+                             </button> 
 
             <div class="account">
+      
                     <div class="row">
+                        <div class="addCard" >
+                            <div class ="right">
+                              <div class ="uploadbox">
+                                <input type="image"  src="assets/Raqash Icon-upload.svg" width="200px" height="200px" alt="Submit">
+                                <label class="uploadTitle"> UPLOAD AN IMAGE</label>
+                             </div>
+                             </div>
+                             <div class ="left">
+                               <button class = "colse float-left" ><img src="assets/Raqash Icon-close.svg" alt="close button" width="30px" height="30px"></button>
+                       <div>
+                               <form class ="formbox">
+                                  <input type="text" name="Title" placeholder="Title">
+                                  <!-- <input type="date" name="Date" placeholder="Date"> -->
+                                  <textarea name="desc" placeholder="Description" id="desc" cols="17" rows="5"></textarea>
+                                
+                                  <input type="button" value="Post" >
+                               </form> </div>
+                               <div class = "checkBox">
+                                 <input type="checkbox" checked/><label>  Disable Comment</label>
+                                 <!-- class="disableCommentL" <span>Disable Comment</span>--> 
+                               </div>
+                               
+                            </div>
+                          
+                           </div>
                         <div class="col-md-6 text-center">
                             <img  class= "Artist-image"src="assets/pic4.jpg" alt="artist image">
                           
                             <div class="bio">
-                              <h3>A Few Words About Me </h3>
-                              <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate consequuntur doloribus quae iusto consectetur repellendus quis dolorem provident quam laudantium.</p>
-                             <p class="contact-info">
-                                 contact me: 
-                                 <a   href="#"><img src="assets/Raqash Icon-twitter.svg" alt="twitter icon" width="30px" height="30px"></a>
-                                 <a   href="#"><img src="assets/Raqash Icon-email.svg" alt="Email icon" width="30px" height="30px"></a> </p>
-                             
+                                <h3>Artist</h3>
+                              <h4>A Few Words About Me </h4>
+                              <p>  Lorem ipsum dolor sit amet consectetuiusto consectetur repellendus quis dolorem provident quam laudantium.</p>
+                        
+                                <div class="editname">
+                                  <input type="text" name="" required="">
+                                  <label >Name</label>
+                                </div>
+                                <div class="editbio">
+                                   <textarea  name=""  cols="30" rows="2"></textarea>
+                                    <label >Bio</label>
+                                  </div>
+                                  <h6>Contact Information </h6>
+                                  <div class="editemail">
+                                      <input type="text" name="" required="">
+                                      <label >Email</label>
+                                    </div>
+                                    <div class="edittwitter">
+                                        <input type="text" name="" required="">
+                                        <label >Twitter</label>
+                                      </div>
                               
-                                 
-                                 
+                             <p class="contact-info">
+
+                                 contact me: 
+                                 <a    href="https://twitter.com/RAQASH381"><img src="assets/Raqash Icon-twitter.svg" alt="twitter icon" width="30px" height="30px"></a>
+                                 <a  href="mailto:RAQASH@gmail.com"><img src="assets/Raqash Icon-email.svg" alt="Email icon" width="30px" height="30px"></a> </p>
+                                
+                             
+                              <div>
+                                 <button class ="save">  Save  </button>
+                                 <button class ="cancel">  Cancel  </button>
                                  <button class ="edit">  Edit  </button>
                                 </div>
+                                </div>
+                                
+
                              
             
                             </div>
                         </div>
                     </div>
+                    
                 </div>
-
-                <!-- ADD button -->
-                <!-- <button class ="add"> <img src="assets/Raqash Icon-add.svg" alt="Add button" width="20px" height="20px">  </button> -->
+                
+                   <!-- Edit card  -->
+            
+                   <!-- manage artwork -->
+                   <div class="manage-artwork" >
+                      <div class ="right">
+                        <div class ="uploadbox">
+                          <input type="image"  src="assets/draw-one-line-art.jpg" width="200px" height="200px" alt="Submit">
+                          
+                          <label class="uploadTitle"> IMAGE TITlE</label>
+                          <p id="date"> </p>
+                         
+                       </div>
+                       </div>
+                       <div class ="left">
+                         <button class = "colse float-left" ><img src="assets/Raqash Icon-close.svg" alt="close button" width="30px" height="30px"></button>
+                 <div>
+                         <form class ="formbox">
+                            <input type="text" name="Title" placeholder="Title">
+                         
+                            <textarea name="desc" placeholder="Description" id="desc" cols="17" rows="5"></textarea>
+                          
+                            <input type="button" value="Save" >
+                         </form> </div>
+                         <div class = "checkBox">
+                           <input type="checkbox" checked/><label>  Disable Comment</label>
+                     
+                         </div>
+                         
+                      </div>
+                    
+                     </div> 
             
                 <!-- Arts  -->
                 <div class = "content">
-
+                
                         <!-- page title -->
                         <label class = "title"> <span id = "dot">•</span> ARTS <span id = "dot">•</span> </label>
                     
@@ -123,7 +272,7 @@
                                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <div class="card-footer">
-                                    <a href="#"><img src="assets/Raqash Icon-edit.svg" alt="edit icon" width="30px" height="30px"></a>
+                                    <a href="#" class="manage"><img src="assets/Raqash Icon-edit.svg" alt="edit icon" width="30px" height="30px"></a>
                                     <a href="#"><img src="assets/Raqash Icon-remove.svg" alt ="delete icon" height="30px" width="30px"></a>
                                   </div>
                               </div>
@@ -137,7 +286,7 @@
                                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <div class="card-footer">
-                                    <a href="#"><img src="assets/Raqash Icon-edit.svg" alt="edit icon" width="30px" height="30px"></a>
+                                    <a href="#" class="manage"><img src="assets/Raqash Icon-edit.svg" alt="edit icon" width="30px" height="30px"></a>
                                     <a href="#"><img src="assets/Raqash Icon-remove.svg" alt ="delete icon" height="30px" width="30px"></a>
                                   </div>
                               </div>
@@ -151,7 +300,7 @@
                                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <div class="card-footer">
-                                    <a href="#"><img src="assets/Raqash Icon-edit.svg" alt="edit icon" width="30px" height="30px"></a>
+                                    <a href="#" class="manage"><img src="assets/Raqash Icon-edit.svg" alt="edit icon" width="30px" height="30px"></a>
                                     <a href="#"><img src="assets/Raqash Icon-remove.svg" alt ="delete icon" height="30px" width="30px"></a>
                                   </div>
                               </div>
@@ -164,7 +313,7 @@
                                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <div class="card-footer">
-                                    <a href="#"><img src="assets/Raqash Icon-edit.svg" alt="edit icon" width="30px" height="30px"></a>
+                                    <a href="#" class="manage"><img src="assets/Raqash Icon-edit.svg" alt="edit icon" width="30px" height="30px"></a>
                                     <a href="#"><img src="assets/Raqash Icon-remove.svg" alt ="delete icon" height="30px" width="30px"></a>
                                   </div>
                               </div>
@@ -187,7 +336,7 @@
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                             <div class="card-footer">
-                                <a href="#"><img src="assets/Raqash Icon-edit.svg" alt="edit icon" width="30px" height="30px"></a>
+                                <a href="#"class="manage"><img src="assets/Raqash Icon-edit.svg" alt="edit icon" width="30px" height="30px"></a>
                                 <a href="#"><img src="assets/Raqash Icon-remove.svg" alt ="delete icon" height="30px" width="30px"></a>
                               </div>
                           </div>
@@ -201,7 +350,7 @@
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                             <div class="card-footer">
-                                <a href="#"><img src="assets/Raqash Icon-edit.svg" alt="edit icon" width="30px" height="30px"></a>
+                                <a href="#" class="manage"><img src="assets/Raqash Icon-edit.svg" alt="edit icon" width="30px" height="30px"></a>
                                 <a href="#"><img src="assets/Raqash Icon-remove.svg" alt ="delete icon" height="30px" width="30px"></a>
                               </div>
                           </div>
@@ -215,7 +364,7 @@
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                             <div class="card-footer">
-                                <a href="#"><img src="assets/Raqash Icon-edit.svg" alt="edit icon" width="30px" height="30px"></a>
+                                <a href="#"class="manage"><img src="assets/Raqash Icon-edit.svg" alt="edit icon" width="30px" height="30px"></a>
                                 <a href="#"><img src="assets/Raqash Icon-remove.svg" alt ="delete icon" height="30px" width="30px"></a>
                               </div>
                           </div>
@@ -227,7 +376,7 @@
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                             <div class="card-footer">
-                                <a href="#"><img src="assets/Raqash Icon-edit.svg" alt="edit icon" width="30px" height="30px"></a>
+                                <a href="#"class="manage"><img src="assets/Raqash Icon-edit.svg" alt="edit icon" width="30px" height="30px"></a>
                                 <a href="#"><img src="assets/Raqash Icon-remove.svg" alt ="delete icon" height="30px" width="30px"></a>
                               </div>
                           </div>
@@ -239,7 +388,7 @@
                     </div>
                  <!-- end -->
 
-         
+                 <div id="bg-model"></div>
           <!-- footer -->
           <div class = "footer">&copy;RAQASH Team 2020</div>
 </body>

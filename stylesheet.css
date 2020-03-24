@@ -113,7 +113,7 @@ button{
 }
 
  .submitButtonL input , .formbox input{
-  margin-bottom: 50px;
+  margin: 50px;
   height: 30px;
   width: 200px;
 
