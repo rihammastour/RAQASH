@@ -226,7 +226,7 @@ height: 32px;
         overflow-x: hidden;
     }
     .cards-container{
-        position: relative;
+        /* position: relative; */
         width: 70%;
         margin:0 auto;
         font-size: x-small; 
@@ -247,6 +247,7 @@ height: 32px;
         margin: 0;
     }
     .img-resize{
+       
         height: 300px;
         object-fit: cover;
         object-position: center center;

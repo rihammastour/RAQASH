@@ -9,8 +9,9 @@
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="icon" href="assets/raqash_icon.png">
   <link rel="stylesheet" type="text/css" href="Studio.css">
-  <script src="jquery-3.4.1.min.js"></script>
-    <script src="JS/onClickButtons.js"></script>
+  <script src="JS/viewArtwork.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="JS/onClickButtons.js"></script>
 </head>
 
 
@@ -112,11 +113,10 @@
       <div class="artistAccount">
         <a href="#" id="userName">By: @latifah</a>
         <br>
-        <a href="#"> <img src="assets/Raqash Icon-dislike.svg" alt="dislike icon " height="30px" width="30px"> </a>
-        <a href="#"> <img src="assets/Raqash Icon-like.svg" alt="like icon " height="30px" width="30px"> </a>
-        <a href="#"> <img src="assets/Raqash Icon-fav.svg" alt="BOOKMARK icon " height="30px" width="30px"> </a>
-        <a href="#"> <img src="assets/Raqash Icon-share.svg" alt="BOOKMARK icon " height="30px" width="30px"> </a>
-
+        <img src="assets/Raqash Icon-dislike.svg"  alt="dislike icon " height="30px" width="30px" class="dislike">  
+        <img src="assets/Raqash Icon-like.svg"  alt="like icon " height="30px" width="30px" class = "like"> 
+       <img src="assets/Raqash Icon-fav.svg" alt="fav icon " height="30px" width="30px" id='favbutton' onclick="favButton(this)">    
+       <a href="#">  <img src="assets/Raqash Icon-share.svg" alt= "BOOKMARK icon " height="30px" width="30px">  </a>
       </div>
       <div class="comments">
 
@@ -175,26 +175,27 @@
       <div class="cards-container">
         <div class="card-deck">
           <!--Grid column-->
-          <div class="card" style="width: 18rem;">
-            <a class="lightox" href="#"> <img class="card-img-top img-resize" src="assets/1.jpeg"
-                alt="planet line art"></a>
+          <div class="card " style="width: 18rem;">
+            <a class="lightox" > <img class="card-img-top img-resize post" src="assets/1.jpeg"
+                alt="planet line art" ></a>
             <div class="card-body">
               <h5 class="card-title">Art</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
             </div>
             <div class="card-footer">
-              <a href="#"><img src="assets/Raqash Icon-like.svg" alt="like  icon" width="30px" height="30px"></a>
-              <a href="#"><img src="assets/Raqash Icon-dislike.svg" alt="dislike icon" height="30px" width="30px"></a>
-              <a href="#"><img src="assets/Raqash Icon-fav.svg" alt="bookmark icon" height="30px" width="30px"></a>
-              <a href="#"><img src="assets/Raqash Icon-share.svg" alt="share icon" height="30px" width="30px"></a>
+              <img src="assets/Raqash Icon-dislike.svg"  alt="dislike icon " height="30px" width="30px" class="dislike">  
+              <img src="assets/Raqash Icon-like.svg"  alt="like icon " height="30px" width="30px" class = "like"> 
+             <img src="assets/Raqash Icon-fav.svg" alt="fav icon " height="30px" width="30px" id='favbutton' onclick="favButton(this)">    
+             <a href="#">  <img src="assets/Raqash Icon-share.svg" alt= "BOOKMARK icon " height="30px" width="30px">  </a>
+     
             </div>
           </div>
           <!--Grid column-->
 
           <!--Grid column-->
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top img-resize" src="assets/disappointment-one-line-draw-prints.jpg"
+          <div class="card " style="width: 18rem;">
+            <img class="card-img-top img-resize post" src="assets/disappointment-one-line-draw-prints.jpg"
               alt="face line art">
             <div class="card-body">
               <h5 class="card-title">Art </h5>
@@ -202,43 +203,46 @@
                 content.</p>
             </div>
             <div class="card-footer">
-              <a href="#"><img src="assets/Raqash Icon-like.svg" alt="like  icon" width="30px" height="30px"></a>
-              <a href="#"><img src="assets/Raqash Icon-dislike.svg" alt="dislike icon" height="30px" width="30px"></a>
-              <a href="#"><img src="assets/Raqash Icon-fav.svg" alt="bookmark icon" height="30px" width="30px"></a>
-              <a href="#"><img src="assets/Raqash Icon-share.svg" alt="share icon" height="30px" width="30px"></a>
+                      <img src="assets/Raqash Icon-dislike.svg"  alt="dislike icon " height="30px" width="30px" class="dislike">  
+                     <img src="assets/Raqash Icon-like.svg"  alt="like icon " height="30px" width="30px" class = "like"> 
+                    <img src="assets/Raqash Icon-fav.svg" alt="fav icon " height="30px" width="30px" id='favbutton' onclick="favButton(this)">    
+                    <a href="#">  <img src="assets/Raqash Icon-share.svg" alt= "BOOKMARK icon " height="30px" width="30px">  </a>
+            
             </div>
 
           </div>
           <!--Grid column-->
 
           <!--Grid column-->
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top img-resize" src="assets/p9.jpg" alt="wolf line art">
+          <div class="card " style="width: 18rem;">
+            <img class="card-img-top img-resize post" src="assets/p9.jpg" alt="wolf line art">
             <div class="card-body">
               <h5 class="card-title">Art</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
             </div>
             <div class="card-footer">
-              <a href="#"><img src="assets/Raqash Icon-like.svg" alt="like  icon" width="30px" height="30px"></a>
-              <a href="#"><img src="assets/Raqash Icon-dislike.svg" alt="dislike icon" height="30px" width="30px"></a>
-              <a href="#"><img src="assets/Raqash Icon-fav.svg" alt="bookmark icon" height="30px" width="30px"></a>
-              <a href="#"><img src="assets/Raqash Icon-share.svg" alt="share icon" height="30px" width="30px"></a>
+              <img src="assets/Raqash Icon-dislike.svg"  alt="dislike icon " height="30px" width="30px" class="dislike">  
+              <img src="assets/Raqash Icon-like.svg"  alt="like icon " height="30px" width="30px" class = "like"> 
+             <img src="assets/Raqash Icon-fav.svg" alt="fav icon " height="30px" width="30px" id='favbutton' onclick="favButton(this)">    
+             <a href="#">  <img src="assets/Raqash Icon-share.svg" alt= "BOOKMARK icon " height="30px" width="30px">  </a>
+     
             </div>
           </div>
           <!--Grid column-->
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top img-resize" src="assets/Login.jpeg" alt="human line art">
+          <div class="card " style="width: 18rem;">
+            <img class="card-img-top img-resize post" src="assets/Login.jpeg" alt="human line art">
             <div class="card-body">
               <h5 class="card-title">Art</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
             </div>
             <div class="card-footer">
-              <a href="#"><img src="assets/Raqash Icon-like.svg" alt="like  icon" width="30px" height="30px"></a>
-              <a href="#"><img src="assets/Raqash Icon-dislike.svg" alt="dislike icon" height="30px" width="30px"></a>
-              <a href="#"><img src="assets/Raqash Icon-fav.svg" alt="bookmark icon" height="30px" width="30px"></a>
-              <a href="#"><img src="assets/Raqash Icon-share.svg" alt="share icon" height="30px" width="30px"></a>
+              <img src="assets/Raqash Icon-dislike.svg"  alt="dislike icon " height="30px" width="30px" class="dislike">  
+              <img src="assets/Raqash Icon-like.svg"  alt="like icon " height="30px" width="30px" class = "like"> 
+             <img src="assets/Raqash Icon-fav.svg" alt="fav icon " height="30px" width="30px" id='favbutton' onclick="favButton(this)">    
+             <a href="#">  <img src="assets/Raqash Icon-share.svg" alt= "BOOKMARK icon " height="30px" width="30px">  </a>
+     
             </div>
           </div>
 
@@ -253,66 +257,70 @@
 
           <!--Grid column-->
           <div class="card" style="width: 18rem;">
-            <img class="card-img-top img-resize" src="assets/viewArtWorkImg.jpg" alt="planet line art">
+            <img class="card-img-top img-resize post" src="assets/viewArtWorkImg.jpg" alt="planet line art">
             <div class="card-body">
               <h5 class="card-title">Art</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
             </div>
             <div class="card-footer">
-              <a href="#"><img src="assets/Raqash Icon-like.svg" alt="like  icon" width="30px" height="30px"></a>
-              <a href="#"><img src="assets/Raqash Icon-dislike.svg" alt="dislike icon" height="30px" width="30px"></a>
-              <a href="#"><img src="assets/Raqash Icon-fav.svg" alt="bookmark icon" height="30px" width="30px"></a>
-              <a href="#"><img src="assets/Raqash Icon-share.svg" alt="share icon" height="30px" width="30px"></a>
+              <img src="assets/Raqash Icon-dislike.svg"  alt="dislike icon " height="30px" width="30px" class="dislike">  
+              <img src="assets/Raqash Icon-like.svg"  alt="like icon " height="30px" width="30px" class = "like"> 
+             <img src="assets/Raqash Icon-fav.svg" alt="fav icon " height="30px" width="30px" id='favbutton' onclick="favButton(this)">    
+             <a href="#">  <img src="assets/Raqash Icon-share.svg" alt= "BOOKMARK icon " height="30px" width="30px">  </a>
+     
             </div>
           </div>
           <!--Grid column-->
 
           <!--Grid column-->
           <div class="card" style="width: 18rem;">
-            <img class="card-img-top img-resize" src="assets/pic2.jpg" alt="face line art">
+            <img class="card-img-top img-resize post" src="assets/pic2.jpg" alt="face line art">
             <div class="card-body">
               <h5 class="card-title">Art</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
             </div>
             <div class="card-footer">
-              <a href="#"><img src="assets/Raqash Icon-like.svg" alt="like  icon" width="30px" height="30px"></a>
-              <a href="#"><img src="assets/Raqash Icon-dislike.svg" alt="dislike icon" height="30px" width="30px"></a>
-              <a href="#"><img src="assets/Raqash Icon-fav.svg" alt="bookmark icon" height="30px" width="30px"></a>
-              <a href="#"><img src="assets/Raqash Icon-share.svg" alt="share icon" height="30px" width="30px"></a>
+              <img src="assets/Raqash Icon-dislike.svg"  alt="dislike icon " height="30px" width="30px" class="dislike">  
+                     <img src="assets/Raqash Icon-like.svg"  alt="like icon " height="30px" width="30px" class = "like"> 
+                    <img src="assets/Raqash Icon-fav.svg" alt="fav icon " height="30px" width="30px" id='favbutton' onclick="favButton(this)">    
+                    <a href="#">  <img src="assets/Raqash Icon-share.svg" alt= "BOOKMARK icon " height="30px" width="30px">  </a>
+            
             </div>
           </div>
           <!--Grid column-->
 
           <!--Grid column-->
           <div class="card" style="width: 18rem;">
-            <img class="card-img-top img-resize" src="assets/pic3.jpg" alt="wolf line art">
+            <img class="card-img-top img-resize post" src="assets/pic3.jpg" alt="wolf line art">
             <div class="card-body">
               <h5 class="card-title">Art</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
             </div>
             <div class="card-footer">
-              <a href="#"><img src="assets/Raqash Icon-like.svg" alt="like  icon" width="30px" height="30px"></a>
-              <a href="#"><img src="assets/Raqash Icon-dislike.svg" alt="dislike icon" height="30px" width="30px"></a>
-              <a href="#"><img src="assets/Raqash Icon-fav.svg" alt="bookmark icon" height="30px" width="30px"></a>
-              <a href="#"><img src="assets/Raqash Icon-share.svg" alt="share icon" height="30px" width="30px"></a>
+              <img src="assets/Raqash Icon-dislike.svg"  alt="dislike icon " height="30px" width="30px" class="dislike">  
+              <img src="assets/Raqash Icon-like.svg"  alt="like icon " height="30px" width="30px" class = "like"> 
+             <img src="assets/Raqash Icon-fav.svg" alt="fav icon " height="30px" width="30px" id='favbutton' onclick="favButton(this)">    
+             <a href="#">  <img src="assets/Raqash Icon-share.svg" alt= "BOOKMARK icon " height="30px" width="30px">  </a>
+     
             </div>
           </div>
           <!--Grid column-->
           <div class="card" style="width: 18rem;">
-            <img class="card-img-top img-resize" src="assets/pic4.jpg" alt="human line art">
+            <img class="card-img-top img-resize post" src="assets/pic4.jpg" alt="human line art">
             <div class="card-body">
               <h5 class="card-title">Art</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
             </div>
             <div class="card-footer">
-              <a href="#"><img src="assets/Raqash Icon-like.svg" alt="like  icon" width="30px" height="30px"></a>
-              <a href="#"><img src="assets/Raqash Icon-dislike.svg" alt="dislike icon" height="30px" width="30px"></a>
-              <a href="#"><img src="assets/Raqash Icon-fav.svg" alt="bookmark icon" height="30px" width="30px"></a>
-              <a href="#"><img src="assets/Raqash Icon-share.svg" alt="share icon" height="30px" width="30px"></a>
+              <img src="assets/Raqash Icon-dislike.svg"  alt="dislike icon " height="30px" width="30px" class="dislike">  
+              <img src="assets/Raqash Icon-like.svg"  alt="like icon " height="30px" width="30px" class = "like"> 
+             <img src="assets/Raqash Icon-fav.svg" alt="fav icon " height="30px" width="30px" id='favbutton' onclick="favButton(this)">    
+             <a href="#">  <img src="assets/Raqash Icon-share.svg" alt= "BOOKMARK icon " height="30px" width="30px">  </a>
+     
             </div>
           </div>
 
@@ -326,7 +334,7 @@
 
   <!-- footer -->
   <div class="footer">&copy;RAQASH Team 2020</div>
-
+  <div id="bg-model"></div>  
 </body>
 
 </html>

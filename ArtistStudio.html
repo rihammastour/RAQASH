@@ -106,76 +106,76 @@
                 <!-- ADD button -->
                 <!-- <button class ="add"> <img src="assets/Raqash Icon-add.svg" alt="Add button" width="20px" height="20px">  </button> -->
             
-
 <!-- view art work  -->
 <div class = "container" id="viewArt">
+    <button type="button" class="close" aria-label="Close" >
+            <span aria-hidden="true">&times;</span>
+          </button>
+  <div class="left">
+    <img id="userPost" src="assets/viewArtWorkImg.jpg" alt="">
+  </div>
+  <div class="right">
+    <div class=" date">
+        <label class = "title" > <span id = "dot">•</span>Stars<span id = "dot">•</span> </label>
+        <p id="date"> </p>
+    </div>
+   
+    <div class="description">
+        <p>
+             "go where the stars take you" 
+        </p>
+    </div>
+    <div class="artistAccount">
+        <a href="#" id="userName">By: @latifah</a>
+        <br>     <img src="assets/Raqash Icon-dislike.svg"  alt="dislike icon " height="30px" width="30px" class="dislike">  
+        <img src="assets/Raqash Icon-like.svg"  alt="like icon " height="30px" width="30px" class = "like"> 
+       <img src="assets/Raqash Icon-fav.svg" alt="fav icon " height="30px" width="30px" id='favbutton' onclick="favButton(this)">    
+       <a href="#">  <img src="assets/Raqash Icon-share.svg" alt= "BOOKMARK icon " height="30px" width="30px">  </a>
+    </div>
+    <div class="comments">
+    
+      <button class="btn comment-btn " type="button"   onclick="viewArt('commentsView')"  > Comments </button>
+    </div>  
+   
+  </div>
+  
+  
+  </div>   
+  <div class="container" id="commentsPost">
+  
   <button type="button" class="close" aria-label="Close" >
-          <span aria-hidden="true">&times;</span>
-        </button>
-<div class="left">
-  <img id="userPost" src="assets/viewArtWorkImg.jpg" alt="">
-</div>
-<div class="right">
-  <div class=" date">
-      <label class = "title" > <span id = "dot">•</span>Stars<span id = "dot">•</span> </label>
-      <p id="date"> </p>
-  </div>
- 
-  <div class="description">
-      <p>
-           "go where the stars take you" 
-      </p>
-  </div>
-  <div class="artistAccount">
-      <a href="#" id="userName">By: @latifah</a>
-      <br>
-      <a href="#">  <img src="assets/Raqash Icon-dislike.svg"  alt="dislike icon " height="30px" width="30px">  </a>
-      <a href="#">  <img src="assets/Raqash Icon-like.svg"  alt="like icon " height="30px" width="30px">  </a>
-      <a href="#">  <img src="assets/Raqash Icon-fav.svg" alt= "BOOKMARK icon " height="30px" width="30px">  </a>
-      <a href="#">  <img src="assets/Raqash Icon-share.svg" alt= "BOOKMARK icon " height="30px" width="30px">  </a>
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <label class = "title"> <span id = "dot">•</span> Comments<span id = "dot">•</span> </label>
+  
+  
+  <div class="commentsArea">
+  
+  
+  
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action"> <p id="Commentusername">@username:</p>
+          woow! shiny star =)</a>
+        <a href="#" class="list-group-item list-group-item-action"> <p id="Commentusername">@username:</p>
+          Shine bright like a diamond in a sky***</a>
+        <a href="#" class="list-group-item list-group-item-action"><p id="Commentusername">@username:</p>
+          Fairies Wear Boots</a>
+        <a href="#" class="list-group-item list-group-item-action"><p id="Commentusername">@username:</p>
+          Fairies Wear Boots</a>
+        <a href="#" class="list-group-item list-group-item-action"><p id="Commentusername">@username:</p>
+          Fairies Wear Boots</a>
+    </div>
+  <div class="addCommentArea">
+        <textarea name="add Comment" id="commentTextArea" cols="30" rows="4" placeholder="write a comment"></textarea>    
   
   </div>
-  <div class="comments">
+  <div id="submitButton">    <input type="submit" value="submit"  > </div>
   
-    <button class="btn comment-btn " type="button"   onclick="viewArt('commentsView')"  > Comments </button>
-  </div>  
- 
-</div>
-
-
-
-
-</div>   
-<div class="container" id="commentsPost">
-
-<button type="button" class="close" aria-label="Close" >
-  <span aria-hidden="true">&times;</span>
-</button>
-<label class = "title"> <span id = "dot">•</span> Comments<span id = "dot">•</span> </label>
-
-
-<div class="commentsArea">
-
-
-
-  <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action">@latifa </a>
-          <a href="#" class="list-group-item list-group-item-action">Shine bright like a diamond in a sky***</a>
-          <a href="#" class="list-group-item list-group-item-action">Fairies Wear Boots</a>
-          <a href="#" class="list-group-item list-group-item-action">Fairies Wear Boots</a>
-          <a href="#" class="list-group-item list-group-item-action">Fairies Wear Boots</a>
+  
+  
+  </div>   
   </div>
-<div class="addCommentArea">
-      <textarea name="add Comment" id="commentTextArea" cols="30" rows="4" placeholder="write a comment"></textarea>    
-
-</div>
-<div id="submitButton">    <input type="submit" value="submit"  > </div>
-
-
-
-</div>   
-</div>
-
+  
                 <!-- Arts  -->
                 <div class = "content">
 
@@ -188,8 +188,8 @@
                             <div class = "cards-container"> 
                                 <div class="card-deck">
                             <!--Grid column-->
-                            <div class="card post" style="width: 18rem;">
-                              <a class ="lightox" href="#">  <img class="card-img-top img-resize" src="assets/p5.jpg" alt="line art" ></a>
+                            <div class="card " style="width: 18rem;">
+                              <a class ="lightox" >  <img class="card-img-top img-resize post" src="assets/p5.jpg" alt="line art" ></a>
              
                                 <div class="card-body">
                                   <h5 class="card-title">Art</h5>
@@ -203,8 +203,8 @@
                             <!--Grid column-->
                         
                             <!--Grid column-->
-                            <div class="card post" style="width: 18rem;">
-                                <img class="card-img-top img-resize" src="assets/pic1.jpg" alt="face line art">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top img-resize post" src="assets/pic1.jpg" alt="face line art">
                                 <div class="card-body">
                                   <h5 class="card-title">Art </h5>
                                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -217,8 +217,8 @@
                             <!--Grid column-->
                         
                             <!--Grid column-->
-                            <div class="card post" style="width: 18rem;">
-                                <img class="card-img-top img-resize" src="assets/disappointment-one-line-draw-prints.jpg" alt="wolf line art">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top img-resize post" src="assets/disappointment-one-line-draw-prints.jpg" alt="wolf line art">
                                 <div class="card-body">
                                   <h5 class="card-title">Art </h5>
                                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -229,8 +229,8 @@
                                   </div>
                               </div>
                             <!--Grid column-->
-                            <div class="card post" style="width: 18rem;">
-                                <img class="card-img-top img-resize" src="assets/pic2.jpg" alt= "human line art">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top img-resize post" src="assets/pic2.jpg" alt= "human line art">
   
                                 <div class="card-body">
                                   <h5 class="card-title">Art</h5>
@@ -252,9 +252,9 @@
                             <div class="card-deck">
                     
                         <!--Grid column-->
-                        <div class="card post" style="width: 18rem;">
+                        <div class="card" style="width: 18rem;">
             
-                            <img class="card-img-top img-resize" src="assets/Trip.png" alt="planet line art" >
+                            <img class="card-img-top img-resize post" src="assets/Trip.png" alt="planet line art" >
                             <div class="card-body">
                               <h5 class="card-title">Art</h5>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -267,8 +267,8 @@
                         <!--Grid column-->
                     
                         <!--Grid column-->
-                        <div class="card post" style="width: 18rem;">
-                            <img class="card-img-top img-resize" src="assets/pic2.jpg" alt="face line art">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top img-resize post" src="assets/pic2.jpg" alt="face line art">
                             <div class="card-body">
                               <h5 class="card-title">Art</h5>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -281,8 +281,8 @@
                         <!--Grid column-->
                     
                         <!--Grid column-->
-                        <div class="card post" style="width: 18rem;">
-                            <img class="card-img-top img-resize" src="assets/pic3.jpg" alt="wolf line art">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top img-resize post" src="assets/pic3.jpg" alt="wolf line art">
                             <div class="card-body">
                               <h5 class="card-title">Art</h5>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -293,8 +293,8 @@
                               </div>
                           </div>
                         <!--Grid column-->
-                        <div class="card post" style="width: 18rem;">
-                            <img class="card-img-top img-resize" src="assets/pic4.jpg" alt="human line art">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top img-resize post" src="assets/pic4.jpg" alt="human line art">
                             <div class="card-body">
                               <h5 class="card-title">Art</h5>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -315,5 +315,7 @@
          
           <!-- footer -->
           <div class = "footer">&copy;RAQASH Team 2020</div>
+          <div id="bg-model"></div>  
+
 </body>
 </html>
