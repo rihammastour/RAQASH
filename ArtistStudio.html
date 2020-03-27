@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,13 +13,12 @@
     <link rel="stylesheet" type="text/css" href="Studio.css">
 
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
-    <link rel="stylesheet" type="text/css" href="Studio.css">
+   
 
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="JS/onClickButtons.js"></script>
-
-    <script src="ArtistStudio.js"></script>
+     <script src="JS/onClickButtons.js"></script>
+   
     
     
 </head>
@@ -175,68 +175,129 @@
   <div class="left">
     <img id="userPost" src="assets/viewArtWorkImg.jpg" alt="">
   </div>
-  <div class="right">
-    <div class=" date">
-        <label class = "title" > <span id = "dot">•</span>Stars<span id = "dot">•</span> </label>
+
+  </div>
+
+  <!-- Edit card  -->
+
+  <!-- manage artwork -->
+
+
+  <!-- view art work  -->
+  <div class="container" id="viewArt">
+    <button type="button" class="close" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <div class="left">
+      <img id="userPost" src="assets/viewArtWorkImg.jpg" alt="">
+    </div>
+    <div class="right">
+      <div class=" date">
+        <label class="title"> <span id="dot">•</span>Stars<span id="dot">•</span> </label>
         <p id="date"> </p>
-    </div>
-   
-    <div class="description">
+      </div>
+
+      <div class="description">
         <p>
-             "go where the stars take you" 
+          "go where the stars take you"
         </p>
-    </div>
-    <div class="artistAccount">
+      </div>
+      <div class="artistAccount">
         <a href="#" id="userName">By: @latifah</a>
-        <br>     <img src="assets/Raqash Icon-dislike.svg"  alt="dislike icon " height="30px" width="30px" class="dislike">  
-        <img src="assets/Raqash Icon-like.svg"  alt="like icon " height="30px" width="30px" class = "like"> 
-       <img src="assets/Raqash Icon-fav.svg" alt="fav icon " height="30px" width="30px" id='favbutton' onclick="favButton(this)">    
-       <a href="#">  <img src="assets/Raqash Icon-share.svg" alt= "BOOKMARK icon " height="30px" width="30px">  </a>
+        <br> <img src="assets/Raqash Icon-dislike.svg" alt="dislike icon " height="30px" width="30px" class="dislike">
+        <img src="assets/Raqash Icon-like.svg" alt="like icon " height="30px" width="30px" class="like">
+        <img src="assets/Raqash Icon-fav.svg" alt="fav icon " height="30px" width="30px" id='favbutton'
+          onclick="favButton(this)">
+        <a href="#"> <img src="assets/Raqash Icon-share.svg" alt="BOOKMARK icon " height="30px" width="30px"> </a>
+      </div>
+      <div class="comments">
+
+        <button class="btn comment-btn " type="button" onclick="viewArt('commentsView')"> Comments </button>
+      </div>
+
     </div>
-    <div class="comments">
-    
-      <button class="btn comment-btn " type="button"   onclick="viewArt('commentsView')"  > Comments </button>
-    </div>  
-   
+
+
   </div>
-  
-  
-  </div>   
   <div class="container" id="commentsPost">
-  
-  <button type="button" class="close" aria-label="Close" >
-    <span aria-hidden="true">&times;</span>
-  </button>
-  <label class = "title"> <span id = "dot">•</span> Comments<span id = "dot">•</span> </label>
-  
-  
-  <div class="commentsArea">
-  
-  
-  
-    <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action"> <p id="Commentusername">@username:</p>
-          woow! shiny star =)</a>
-        <a href="#" class="list-group-item list-group-item-action"> <p id="Commentusername">@username:</p>
-          Shine bright like a diamond in a sky***</a>
-        <a href="#" class="list-group-item list-group-item-action"><p id="Commentusername">@username:</p>
-          Fairies Wear Boots</a>
-        <a href="#" class="list-group-item list-group-item-action"><p id="Commentusername">@username:</p>
-          Fairies Wear Boots</a>
-        <a href="#" class="list-group-item list-group-item-action"><p id="Commentusername">@username:</p>
-          Fairies Wear Boots</a>
+
+    <button type="button" class="close" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <label class="title"> <span id="dot">•</span> Comments<span id="dot">•</span> </label>
+
+
+    <div class="commentsArea">
+
+
+
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action">
+          <p id="Commentusername">@username:</p>
+          woow! shiny star =)
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <p id="Commentusername">@username:</p>
+          Shine bright like a diamond in a sky***
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <p id="Commentusername">@username:</p>
+          Fairies Wear Boots
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <p id="Commentusername">@username:</p>
+          Fairies Wear Boots
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <p id="Commentusername">@username:</p>
+          Fairies Wear Boots
+        </a>
+      </div>
+      <div class="addCommentArea">
+        <textarea name="add Comment" id="commentTextArea" cols="30" rows="4" placeholder="write a comment"></textarea>
+
+      </div>
+      <div id="submitButton"> <input type="submit" value="submit"> </div>
+
+
+
     </div>
-  <div class="addCommentArea">
-        <textarea name="add Comment" id="commentTextArea" cols="30" rows="4" placeholder="write a comment"></textarea>    
-  
   </div>
-  <div id="submitButton">    <input type="submit" value="submit"  > </div>
-  
-  
-  
-  </div>   
-  </div>
-  
+
+  <!-- Arts  -->
+  <div class="content">
+    <div class="manage-artwork">
+      <div class="right">
+        <div class="uploadbox">
+          <input type="image" src="assets/draw-one-line-art.jpg" width="200px" height="200px" alt="Submit">
+
+          <label class="uploadTitle"> IMAGE TITlE:</label>
+          <p id="imagedate">Created Date:</p>
+
+        </div>
+      </div>
+      <div class="left">
+        <button class="close"><img src="assets/Raqash Icon-close.svg" alt="close button" width="30px"
+            height="30px"></button>
+        <div>
+          <form class="formbox">
+            <input type="text" name="Title" placeholder="Title">
+
+            <textarea name="desc" placeholder="Description" id="desc" cols="17" rows="5"></textarea>
+
+            <input class="modifiedart" name="save" type="button" value="Save">
+          </form>
+        </div>
+        <div class="checkBox">
+          <input type="checkbox" checked /><label> Disable Comment</label>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- page title -->
                 <!-- Arts  -->
                 <div class = "content">
                     <div class="manage-artwork" >
@@ -407,4 +468,5 @@
          <div id="bg-model"></div>  
 
 </body>
+
 </html>
