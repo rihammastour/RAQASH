@@ -13,7 +13,7 @@ body{
 }
 
     
-        /* ADD button */
+        /* button */
   
 .menu-bar{
     background-color: #ede9ea;
@@ -660,7 +660,7 @@ margin-top: 800px;
     
   }
   .artistAccount:hover{
-      color:black;
+      color:#a5afa6;
       text-decoration: none;
   }
 .post-container{
@@ -671,6 +671,7 @@ margin-top: 800px;
 
 .post-artist img {
     float: right;
+  
     clear: right;
     object-fit: cover;
     height: 100%;

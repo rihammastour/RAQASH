@@ -13,7 +13,7 @@ function openForm(clicked) {
 
   
     }
-    
+  
  document.getElementById('bg-model').style.display = 'flex';
 
 

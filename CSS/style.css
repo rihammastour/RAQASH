@@ -23,7 +23,7 @@ body{
     font-size: x-small;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 3;
 }
 
 .menu-bar ul{
@@ -185,17 +185,22 @@ nav ul li a:hover::after{
 #myBtn:hover{
     background-color: #f1f1f1;
   }
-  .container{
-    background: #a49c9a ;
-    position: relative;
-    width: 70%;
-    overflow: hidden;
-    margin: 20px auto;
-    border-radius:10px;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.13);
-    }
+  .Addcard,.manage-artwork{
+    
+      z-index: 2;
+/*     
+     top: 100px;  */
+      left: 0;
+      right: 0;
+      bottom: 10; 
+      margin: 0 auto;
+      background: #a49c9a ;
+      position: relative;
+      width: 70%;
+   
 
-.container .left{
+    } 
+.addCard .left{
     float: left;
     margin: 0 0 0 -20px;
     width: 50%;
@@ -204,7 +209,7 @@ nav ul li a:hover::after{
     overflow: hidden;
     }
 
-.container .right{
+.addCard .right{
     float: right;
     margin: 0 -20px 0 0;
     width: 50%;
@@ -236,7 +241,7 @@ nav ul li a:hover::after{
     height: 100px;
     }
     
-.container .left .formbox input{
+.addCard .left .formbox input{
     margin-bottom: 30px;
     height: 30px;
     width: 300px;
@@ -264,22 +269,111 @@ textarea{
     }
 
     
-.container .left .formbox input[type = "text"]:focus,
-.container .left .formbox input[type = "password"]:focus,
-.container .left .formbox input[type = "date"]:focus,
+.addCard .left .formbox input[type = "text"]:focus,
+.addCard .left .formbox input[type = "password"]:focus,
+.addCard .left .formbox input[type = "date"]:focus,
 textarea:focus{
     border-bottom: 3px solid #ede9ea;
     }
     
-.container .left .formbox input[type = "button"]:hover{
-    background-color: #ede9ea;
+.addCard .left .formbox input[type = "button"]:hover{
+background-color: #ede9ea;
     }
-    .checkBox{
+.checkBox{
 position: absolute;
-  top: 61%;
+  top: 55%;
   left: 12%;
 
     }
+    ::placeholder{
+        color:#5c5c5c;
+        font-size: 18px;
+    }
+
+/* manage artwork */
+
+
+.manage-artwork .left{
+    float: left;
+    margin: 0 0 0 -20px;
+    width: 50%;
+    height:718px;
+    background:#a49c9a ;
+    overflow: hidden;
+    }
+
+.manage-artwork .right{
+    float: right;
+    margin: 0 -20px 0 0;
+    width: 50%;
+    height:718px;
+    background:#f8f8f8 ;
+    overflow: hidden;
+    }
+
+.formbox{
+    position: relative;
+    text-align: left;
+    padding: 190px 150px;
+    margin-left: -10px;
+    box-sizing: border-box;
+    height: 718px;
+    }
+
+.uploadbox{
+    position: relative;
+    text-align: center;
+    padding: 220px 150px;
+    box-sizing: border-box;
+    height: 718px;
+    }
+
+
+.textarea{
+    margin-bottom: 50px;
+    height: 100px;
+    }
+    
+.manage-artwork .left .formbox input{
+    margin-bottom: 30px;
+    height: 30px;
+    width: 300px;
+    }
+
+.formbox input[type = "text"],
+.formbox input[type = "password"],
+.formbox input[type = "date"],
+textarea{  
+    border: none;
+    border-bottom: 1px solid #5c5c5c;
+    outline: none;
+    width: 300px;
+    background: transparent;
+    }
+    
+.formbox input[type = "button"]{
+    width: 100%;
+    margin-top:50px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+
+    }
+
+    
+.manage-artwork .left .formbox input[type = "text"]:focus,
+.manage-artwork .left .formbox input[type = "password"]:focus,
+.manage-artwork .left .formbox input[type = "date"]:focus,
+textarea:focus{
+    border-bottom: 3px solid #ede9ea;
+    }
+    
+.manage-artwork .left .formbox input[type = "button"]:hover{
+background-color: #ede9ea;
+    }
+
+     
     /*
 .checkBox .disableCommentL{
     display: block;
@@ -316,7 +410,7 @@ position: absolute;
     transform: scale(0.99);
     } */
     
-.footer{
+/* .footer{
     left: 0;
     bottom: 0;
     width: 100%;
@@ -325,4 +419,4 @@ position: absolute;
     color: #5c5c5c;
     text-align: center;
     font-size: x-small;
-    }
+    } */
