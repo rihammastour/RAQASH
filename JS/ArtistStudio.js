@@ -75,7 +75,23 @@ function start(){
 
           })
         });
-      
+        $(document).mouseup(function (e) {
+          var container = $("#addCard");
+       
+
+          // if the target of the click isn't the container nor a descendant of the container
+          if (!container.is(e.target) && container.has(e.target).length === 0 ) {
+            if($("#addCard").is(":visible")){
+            container.hide();
+             $("#bg-model").hide();
+             $(".bio,.Artist-image").show();
+                
+                  
+            }
+
+          }
+
+  });
 
       
 

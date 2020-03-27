@@ -68,12 +68,15 @@ $(document).ready(function () {
         $(document).mouseup(function (e) {
                 var container = $("#viewArt");
                 var container2 = $("#commentsPost");
+ 
 
                 // if the target of the click isn't the container nor a descendant of the container
-                if (!container.is(e.target) && container.has(e.target).length === 0 && container2.has(e.target).length === 0) {
+                if (!container.is(e.target) && container.has(e.target).length === 0 && container2.has(e.target).length === 0&&!container2.is(e.target)) {
+                        if($("#viewArt").is(":visible")){
                         container.hide();
                         $("#bg-model").hide();
-                        $("#commentsPost,").hide();
+                        $("#commentsPost").hide();
+                        }
 
                 }
 
