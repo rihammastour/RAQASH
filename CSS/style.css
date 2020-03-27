@@ -23,7 +23,7 @@ body{
     font-size: x-small;
     position: fixed;
     width: 100%;
-    z-index: 3;
+    z-index: 10;
 }
 
 .menu-bar ul{
@@ -185,11 +185,25 @@ nav ul li a:hover::after{
 #myBtn:hover{
     background-color: #f1f1f1;
   }
-  .Addcard,.manage-artwork{
-    
-      z-index: 2;
-/*     
-     top: 100px;  */
+  .manage-artwork
+  {
+    display: none;
+    z-index: 5;
+    top:880; 
+    left: 0;
+    right: 0;
+     margin-top: 800px;;  
+    margin: 0 auto;
+    background: #a49c9a ;
+    position: absolute;
+    width: 70%; 
+    height:610px;
+  }
+  #Addcard{
+    display: none;
+      z-index: 5;
+     
+      top: 80; 
       left: 0;
       right: 0;
       bottom: 10; 
@@ -197,23 +211,23 @@ nav ul li a:hover::after{
       background: #a49c9a ;
       position: relative;
       width: 70%;
-   
-
     } 
-.addCard .left{
+
+#addCard .left{
     float: left;
     margin: 0 0 0 -20px;
     width: 50%;
-    height:718px;
+    height:610px;
     background:#a49c9a ;
     overflow: hidden;
+  
     }
 
-.addCard .right{
+#addCard .right{
     float: right;
     margin: 0 -20px 0 0;
     width: 50%;
-    height:718px;
+    height:610px;
     background:#f8f8f8 ;
     overflow: hidden;
     }
@@ -241,7 +255,7 @@ nav ul li a:hover::after{
     height: 100px;
     }
     
-.addCard .left .formbox input{
+#addCard .left .formbox input{
     margin-bottom: 30px;
     height: 30px;
     width: 300px;
@@ -269,25 +283,27 @@ textarea{
     }
 
     
-.addCard .left .formbox input[type = "text"]:focus,
-.addCard .left .formbox input[type = "password"]:focus,
-.addCard .left .formbox input[type = "date"]:focus,
+#addCard .left .formbox input[type = "text"]:focus,
+#addCard .left .formbox input[type = "password"]:focus,
+#addCard .left .formbox input[type = "date"]:focus,
 textarea:focus{
     border-bottom: 3px solid #ede9ea;
     }
     
-.addCard .left .formbox input[type = "button"]:hover{
+#addCard .left .formbox input[type = "button"]:hover{
 background-color: #ede9ea;
     }
-.checkBox{
+    .checkBox{
 position: absolute;
-  top: 55%;
+  top: 63%;
   left: 12%;
 
     }
+   
     ::placeholder{
         color:#5c5c5c;
         font-size: 18px;
+        text-align: left;
     }
 
 /* manage artwork */
@@ -391,13 +407,16 @@ background-color: #ede9ea;
     margin-right: 20px;
     }
 */
-.colse{
-    background: none;
-    border: 0;
+.close{
+  background: transparent;
     cursor:pointer;
-    overflow: hidden;
-    outline:none;
+    top: 0;
+    /* padding:10px; */
+    /* overflow: hidden; */
+     outline:none; 
+     border: none;
     margin: 20px;
+ float: left;
     }
 /* 
 .close:hover,
