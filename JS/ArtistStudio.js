@@ -47,7 +47,8 @@ function start(){
            
           });
           $(".close").click(function(){
-            $(".manage-artwork","#bg-model").hide();
+            $(".manage-artwork","#bg-model",).hide();
+
           
            
           });
