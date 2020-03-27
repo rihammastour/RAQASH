@@ -188,11 +188,11 @@ nav ul li a:hover::after{
   .manage-artwork
   {
     display: none;
-    z-index: 5;
-    top:880; 
+    z-index: 3;
+    top:80; 
     left: 0;
     right: 0;
-     margin-top: 800px;;  
+     /* margin-top: 800px;;   */
     margin: 0 auto;
     background: #a49c9a ;
     position: absolute;
@@ -407,10 +407,11 @@ background-color: #ede9ea;
     margin-right: 20px;
     }
 */
-.close{
+.closebtn{
   background: transparent;
     cursor:pointer;
     top: 0;
+    left:   0;
     /* padding:10px; */
     /* overflow: hidden; */
      outline:none; 

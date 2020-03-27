@@ -41,12 +41,12 @@ function start(){
             $(".bio,.Artist-image").show();
            
           });
-          $(".close").click(function(){
+          $(".closebtn").click(function(){
             $("#addCard,#bg-model").hide();
             $(".bio,.Artist-image").show();
            
           });
-          $(".close").click(function(){
+          $(".closebtn").click(function(){
             $(".manage-artwork","#bg-model",).hide();
 
           
@@ -75,6 +75,8 @@ function start(){
 
           })
         });
+      
+
       
 
 
