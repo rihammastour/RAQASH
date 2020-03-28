@@ -195,11 +195,31 @@ nav ul li a:hover::after{
     box-shadow: 0 14px 28px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.13);
     }
 
+.Msgcontainer{
+    background: #a49c9a ;
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+    margin: 20px auto;
+    border-radius:10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.13);
+        }
+    
+
 .container .left{
     float: left;
     margin: 0 0 0 -20px;
     width: 50%;
     height:718px;
+    background:#a49c9a ;
+    overflow: hidden;
+    }
+
+.Msgcontainer .left{
+    float: left;
+    margin: 0 0 0 -20px;
+    width: 50%;
+    height:500px;
     background:#a49c9a ;
     overflow: hidden;
     }
@@ -213,6 +233,15 @@ nav ul li a:hover::after{
     overflow: hidden;
     }
 
+.Msgcontainer .right{
+    float: right;
+    margin: 0 -20px 0 0;
+    width: 50%;
+    height:500px;
+    background:#f8f8f8 ;
+    overflow: hidden;
+    }
+
 .formbox{
     position: relative;
     text-align: left;
@@ -222,6 +251,15 @@ nav ul li a:hover::after{
     height: 718px;
     }
 
+.Msgformbox{
+    position: relative;
+    text-align: left;
+    padding: 60px 70px;
+    margin-left: -10px;
+    box-sizing: border-box;
+    height: 500px;
+}
+
 .uploadbox{
     position: relative;
     text-align: center;
@@ -230,21 +268,35 @@ nav ul li a:hover::after{
     height: 718px;
     }
 
+.Msgbox{
+    position: relative;
+    text-align: center;
+    padding: 115px 20px;
+    box-sizing: border-box;
+    height: 500px;
+}
 
 .textarea{
     margin-bottom: 50px;
     height: 100px;
     }
     
-.container .left .formbox input{
+.container .left input{
     margin-bottom: 30px;
     height: 30px;
     width: 300px;
     }
 
-.formbox input[type = "text"],
-.formbox input[type = "password"],
-.formbox input[type = "date"],
+        
+.Msgcontainer .left input{
+    margin-bottom: 30px;
+    height: 30px;
+    width: 300px;
+    }
+
+input[type = "text"],
+input[type = "password"],
+input[type = "email"],
 textarea{  
     border: none;
     border-bottom: 1px solid #5c5c5c;
@@ -253,7 +305,7 @@ textarea{
     background: transparent;
     }
     
-.formbox input[type = "button"]{
+input[type = "button"]{
     width: 100%;
     margin-top:50px;
     border: none;
@@ -264,14 +316,26 @@ textarea{
     }
 
     
-.container .left .formbox input[type = "text"]:focus,
-.container .left .formbox input[type = "password"]:focus,
-.container .left .formbox input[type = "date"]:focus,
+.container .left input[type = "text"]:focus,
+.container .left input[type = "password"]:focus,
+.container .left input[type = "email"]:focus,
 textarea:focus{
     border-bottom: 3px solid #ede9ea;
     }
     
-.container .left .formbox input[type = "button"]:hover{
+.container .left input[type = "button"]:hover{
+    background-color: #ede9ea;
+    }
+
+        
+.Msgcontainer .left input[type = "text"]:focus,
+.Msgcontainer .left input[type = "password"]:focus,
+.Msgcontainer .left input[type = "email"]:focus,
+textarea:focus{
+    border-bottom: 3px solid #ede9ea;
+    }
+    
+.Msgcontainer .left input[type = "button"]:hover{
     background-color: #ede9ea;
     }
     .checkBox{
