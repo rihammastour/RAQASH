@@ -2,6 +2,7 @@
 $(document).ready(function () {
         $("#viewArt").hide();
 
+
         //open art work
         $(".post").click(function () {
 
@@ -34,15 +35,18 @@ $(document).ready(function () {
 
                 
                //position of the view artwork  in ghe document
-                var pos = $(this).css("padding");
-                var width = $(this).outerWidth();
-
+       
+                var loc = $(this).offset();
+                
+              
                 $("#viewArt ").css("position", "absolute");
-                $("#viewArt ").css("top", pos.top + "px");
-                $("#viewArt ").css("left", 25 + "%");
+                $("#viewArt ").css("top",loc.top+"px");
+                 $("#viewArt ").css("left", 25 + "%");
+              
+
 
                 $("#commentsPost").css("position", "absolute");
-                $("#commentsPost ").css("top", pos.top + "px");
+                $("#commentsPost ").css("top", loc.top+ "px");
                 $("#commentsPost").css("left", 25 + "%");
                 $("#bg-model").show();
                 $("#viewArt").show();

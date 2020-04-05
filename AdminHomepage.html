@@ -65,7 +65,7 @@
 
 
 <!-- view art work  -->
-<div class = "container" id="viewArt">
+<div class = "container" id="viewArt"  data-role="popup">
   <button type="button" class="close" aria-label="Close" >
           <span aria-hidden="true">&times;</span>
         </button>
@@ -140,7 +140,7 @@
     <div class="image-gallery">
 
     
-            <div class="div1 post" >
+            <div class="div1 post"  data-role="popup" herf="#viewArt">
            
                 <div class="imginfo1 disable" >
 
@@ -199,7 +199,7 @@
                             <img src="assets/Raqash Icon-dislike.svg"  alt="dislike icon " height="30px" width="30px" class="dislike">  
                             <img src="assets/Raqash Icon-like.svg"  alt="like icon " height="30px" width="30px" class = "like"> 
                            <img src="assets/Raqash Icon-fav.svg" alt="fav icon " height="30px" width="30px" class = "favbutton">    
-                           <a href="#">  <img src="assets/Raqash Icon-share.svg" alt= "BOOKMARK icon " height="30px" width="30px">  </a>
+                           <a href="#">  <img src="assets/Raqash Icon-share.svg" alt= "BOOKMARK icon " height="30px" width="30px" class="share">  </a>
 
                         </div>
             </div>
@@ -207,6 +207,24 @@
 
         </div>
 
+        <!-- <div class="shareModel">
+          <h1>hello </h1>
+          <button>share</button>
+        </div>
+<script>
+   const shareButton = document.querySelector(".share");
+   const shareModel = ducoment.querySelector(".shareModel");
+   const title = window.document.title;
+   const url = window.location.href;
+shareButton.addEventListener("click", async () => {
+  try {
+    await navigator.share({ title: , url: "" });
+    console.log("Data was shared successfully");
+  } catch (err) {
+    console.error("Share failed:", err.message);
+  }
+});
+</script> -->
 <!-- end -->
 <!-- Artist -->
 <label class = "title-artist "> <span id = "dot">•</span>  OUR ARTISTS <span id = "dot">•</span> </label>
@@ -291,10 +309,11 @@
          </footer>
 
 
+         <div id="bg-model"></div>  
 
 </body>
 </html>
 
-<div id="bg-model"></div>  
+
 </body>
 </html>

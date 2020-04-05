@@ -487,13 +487,12 @@ z-index: 2;
 
 
 .container .left img {
- 
-  position:relative;
-   top: 0px;
-  left: 0px; 
-  height: 100%;
-  margin-left: -30px;
- 
+  height: 300px;
+  object-fit: cover;
+  object-position: center center;
+  
+
+
  }
 
 .container .right {
@@ -650,3 +649,7 @@ background-color: #5c5c5c36;
             top: 0;
             display: none;
           }
+
+button:focus {
+  outline:0;
+}
