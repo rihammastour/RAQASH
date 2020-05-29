@@ -10,9 +10,16 @@
   <link rel="stylesheet" type="text/css" href="bootstrap.bundle.min.js">
   <link rel="icon" href="assets/raqash_icon.png">
   <link rel="stylesheet" type="text/css" href="HomePage.css">
+<<<<<<< HEAD
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+=======
+  <script src="JS/viewArtwork.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="JS/onClickButtons.js"></script>
+
+>>>>>>> 5b25cdd531c79a441a73287912c3601642f77504
 </head>
 
 
@@ -67,14 +74,105 @@
 
   <!-- image gallery -->
   <label class="title"> <span id="dot">•</span> ARTS <span id="dot">•</span> </label>
+
+  <!-- view art work  -->
+  <div class="container" id="viewArt">
+    <button type="button" class="close" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <div class="left">
+      <img id="userPost" src="assets/viewArtWorkImg.jpg" alt="">
+    </div>
+    <div class="right">
+      <div class=" date">
+        <label class="title"> <span id="dot">•</span>Stars<span id="dot">•</span> </label>
+        <p id="date"> </p>
+      </div>
+
+      <div class="description">
+        <p>
+          "go where the stars take you"
+          "go where the stars take you"
+          "go where the stars take you"
+        </p>
+      </div>
+      <div class="artistAccount">
+        <a href="#" id="userName">By: @latifah</a>
+        <br>
+        <a> <img src="assets/Raqash Icon-dislike.svg" alt="dislike icon " height="30px" width="30px" id="dislike"> </a>
+        <a> <img src="assets/Raqash Icon-like.svg" alt="like icon " height="30px" width="30px" id="like"> </a>
+        <a> <img src="assets/Raqash Icon-fav.svg" alt="fav icon " height="30px" width="30px" id='favbutton'
+            onclick="favButton(this)"> </a>
+        <a href="#"> <img src="assets/Raqash Icon-share.svg" alt="BOOKMARK icon " height="30px" width="30px"> </a>
+
+      </div>
+      <div class="comments">
+
+        <button class="btn comment-btn " type="button" onclick="viewArt('commentsView')"> Comments </button>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+
+  </div>
+  <div class="container" id="commentsPost">
+
+    <button type="button" class="close" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <label class="title"> <span id="dot">•</span> Comments<span id="dot">•</span> </label>
+
+
+    <div class="commentsArea">
+
+
+
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action">
+          <p id="Commentusername">@username:</p>
+          woow! shiny star =)
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <p id="Commentusername">@username:</p>
+          Shine bright like a diamond in a sky***
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <p id="Commentusername">@username:</p>
+          Fairies Wear Boots
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <p id="Commentusername">@username:</p>
+          Fairies Wear Boots
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <p id="Commentusername">@username:</p>
+          Fairies Wear Boots
+        </a>
+      </div>
+      <div class="addCommentArea">
+        <textarea name="add Comment" id="commentTextArea" cols="30" rows="4" placeholder="write a comment"></textarea>
+
+      </div>
+      <div id="submitButton"> <input type="submit" value="submit"> </div>
+
+
+
+    </div>
+  </div>
+  </div>
+  </div>
+
   <div class="image-gallery">
 
 
-    <div class="div1">
+    <div class="div1 post">
       <div class="imginfo1">
 
         <h5>title</h5>
         <h6> artist1</h6>
+<<<<<<< HEAD
         <a href="#"> <img src="assets/Raqash Icon-dislike.svg" alt="dislike icon " height="30px" width="30px"> </a>
         <a href="#"> <img src="assets/Raqash Icon-like.svg" alt="like icon " height="30px" width="30px"> </a>
         <a href="#"> <img src="assets/Raqash Icon-fav.svg" alt="BOOKMARK icon " height="30px" width="30px"> </a>
@@ -90,38 +188,53 @@
     </script>
     
     <div class="div2">
+=======
+        <a> <img src="assets/Raqash Icon-dislike.svg" alt="dislike icon " height="30px" width="30px" id="dislike"> </a>
+        <a> <img src="assets/Raqash Icon-like.svg" alt="like icon " height="30px" width="30px" id="like"> </a>
+        <a> <img src="assets/Raqash Icon-fav.svg" alt="fav icon " height="30px" width="30px" id='favbutton'
+            onclick="favButton(this)"> </a>
+        <a href="#"> <img src="assets/Raqash Icon-share.svg" alt="BOOKMARK icon " height="30px" width="30px"> </a>
+
+      </div>
+    </div>
+
+    <div class="div2 post">
+>>>>>>> 5b25cdd531c79a441a73287912c3601642f77504
       <div class="imginfo2">
 
         <h5>title</h5>
         <h6> artist2</h6>
-        <a href="#"> <img src="assets/Raqash Icon-dislike.svg" alt="dislike icon " height="30px" width="30px"> </a>
-        <a href="#"> <img src="assets/Raqash Icon-like.svg" alt="like icon " height="30px" width="30px"> </a>
-        <a href="#"> <img src="assets/Raqash Icon-fav.svg" alt="BOOKMARK icon " height="30px" width="30px"> </a>
+        <a> <img src="assets/Raqash Icon-dislike.svg" alt="dislike icon " height="30px" width="30px" id="dislike"> </a>
+        <a> <img src="assets/Raqash Icon-like.svg" alt="like icon " height="30px" width="30px" id="like"> </a>
+        <a> <img src="assets/Raqash Icon-fav.svg" alt="fav icon " height="30px" width="30px" id='favbutton'
+            onclick="favButton(this)"> </a>
         <a href="#"> <img src="assets/Raqash Icon-share.svg" alt="BOOKMARK icon " height="30px" width="30px"> </a>
 
       </div>
     </div>
 
-    <div class="div3">
+    <div class="div3 post">
       <div class="imginfo3">
 
         <h5>title</h5>
         <h6> artist3</h6>
-        <a href="#"> <img src="assets/Raqash Icon-dislike.svg" alt="dislike icon " height="30px" width="30px"> </a>
-        <a href="#"> <img src="assets/Raqash Icon-like.svg" alt="like icon " height="30px" width="30px"> </a>
-        <a href="#"> <img src="assets/Raqash Icon-fav.svg" alt="BOOKMARK icon " height="30px" width="30px"> </a>
+        <a> <img src="assets/Raqash Icon-dislike.svg" alt="dislike icon " height="30px" width="30px" id="dislike"> </a>
+        <a> <img src="assets/Raqash Icon-like.svg" alt="like icon " height="30px" width="30px" id="like"> </a>
+        <a> <img src="assets/Raqash Icon-fav.svg" alt="fav icon " height="30px" width="30px" id='favbutton'
+            onclick="favButton(this)"> </a>
         <a href="#"> <img src="assets/Raqash Icon-share.svg" alt="BOOKMARK icon " height="30px" width="30px"> </a>
 
       </div>
     </div>
-    <div class="div4">
+    <div class="div4 post">
       <div class="imginfo4">
 
         <h5>title</h5>
         <h6> artist4</h6>
-        <a href="#"> <img src="assets/Raqash Icon-dislike.svg" alt="dislike icon " height="30px" width="30px"> </a>
-        <a href="#"> <img src="assets/Raqash Icon-like.svg" alt="like icon " height="30px" width="30px"> </a>
-        <a href="#"> <img src="assets/Raqash Icon-fav.svg" alt="BOOKMARK icon " height="30px" width="30px"> </a>
+        <a> <img src="assets/Raqash Icon-dislike.svg" alt="dislike icon " height="30px" width="30px" id="dislike"> </a>
+        <a> <img src="assets/Raqash Icon-like.svg" alt="like icon " height="30px" width="30px" id="like"> </a>
+        <a> <img src="assets/Raqash Icon-fav.svg" alt="fav icon " height="30px" width="30px" id='favbutton'
+            onclick="favButton(this)"> </a>
         <a href="#"> <img src="assets/Raqash Icon-share.svg" alt="BOOKMARK icon " height="30px" width="30px"> </a>
 
 
@@ -129,114 +242,109 @@
 
       </div>
     </div>
-    <div class="div5">
+    <div class="div5 post">
       <div class="imginfo5">
 
         <h5>title</h5>
         <h6> artist5</h6>
-        <a href="#"> <img src="assets/Raqash Icon-dislike.svg" alt="dislike icon " height="30px" width="30px"> </a>
-        <a href="#"> <img src="assets/Raqash Icon-like.svg" alt="like icon " height="30px" width="30px"> </a>
-        <a href="#"> <img src="assets/Raqash Icon-fav.svg" alt="BOOKMARK icon " height="30px" width="30px"> </a>
+        <a> <img src="assets/Raqash Icon-dislike.svg" alt="dislike icon " height="30px" width="30px" id="dislike"> </a>
+        <a> <img src="assets/Raqash Icon-like.svg" alt="like icon " height="30px" width="30px" id="like"> </a>
+        <a> <img src="assets/Raqash Icon-fav.svg" alt="fav icon " height="30px" width="30px" id='favbutton'
+            onclick="favButton(this)"> </a>
         <a href="#"> <img src="assets/Raqash Icon-share.svg" alt="BOOKMARK icon " height="30px" width="30px"> </a>
 
-
       </div>
     </div>
-
-
   </div>
+    <!-- end -->
+    <!-- Artist -->
+    <label class="title-artist "> <span id="dot">•</span> OUR ARTISTS <span id="dot">•</span> </label>
+    <div class="artist-box">
 
-  <!-- end -->
-  <!-- Artist -->
-  <label class="title-artist "> <span id="dot">•</span> OUR ARTISTS <span id="dot">•</span> </label>
-  <div class="artist-box">
+      <div class="flex-container">
+        <div class="post-container">
+          <div class="post-artist"><img src="assets/701185780bf347d224c493d89bfe24a0.jpg" /></div>
+          <div class="post-title">Artist1 </div>
+          <a class="artistAccount" href="ArtistSudioVistor.html">@artist1</a>
 
-    <div class="flex-container">
-      <div class="post-container">
-        <div class="post-artist"><img src="assets/701185780bf347d224c493d89bfe24a0.jpg" /></div>
-        <div class="post-title">Artist1 </div>
-        <a class="artistAccount" href="ArtistSudioVistor.html">@artist1</a>
+        </div>
+        <div class="post-container">
+
+          <div class="post-artist"><img src="assets/WhatsApp Image 2020-02-24 at 9.04.01 PM.jpeg" /></div>
+          <div class="post-title">Artist2 </div>
+          <a class="artistAccount" href="ArtistSudioVistor.html">@artist2</a>
+
+
+        </div>
+
+
 
       </div>
-      <div class="post-container">
+      <div class="flex-container">
 
-        <div class="post-artist"><img src="assets/WhatsApp Image 2020-02-24 at 9.04.01 PM.jpeg" /></div>
-        <div class="post-title">Artist2 </div>
-        <a class="artistAccount" href="ArtistSudioVistor.html">@artist2</a>
+        <div class="post-container">
+          <div class="post-artist1"><img src="assets/disappointment-one-line-draw-prints.jpg" /></div>
+          <div class="post-title">Artist3 </div>
+          <a class="artistAccount" href="ArtistSudioVistor.html">@artist3</a>
+        </div>
+        <div class="post-container">
+
+          <div class="post-artist1"><img src="assets/pic2.jpg" /></div>
+          <div class="post-title">Artist4 </div>
+          <a class="artistAccount" href="ArtistSudioVistor.html">@artist4</a>
 
 
+
+
+        </div>
       </div>
+
+
+
+
 
 
 
     </div>
-    <div class="flex-container">
+    <!-- about us -->
 
-      <div class="post-container">
-        <div class="post-artist1"><img src="assets/disappointment-one-line-draw-prints.jpg" /></div>
-        <div class="post-title">Artist3 </div>
-        <a class="artistAccount" href="ArtistSudioVistor.html">@artist3</a>
-      </div>
-      <div class="post-container">
+    <div id="AboutUs">
+      <label class="title"> <span id="dot">•</span> ABOUT US<span id="dot">•</span> </label>
 
-        <div class="post-artist1"><img src="assets/pic2.jpg" /></div>
-        <div class="post-title">Artist4 </div>
-        <a class="artistAccount" href="ArtistSudioVistor.html">@artist4</a>
+      <p>
 
+        <strong>RAQASH </strong>Means in Arabic (خط), Line art is any image that consists of distinct straight or
+        curved
+        lines <br>
+        placed against a (usually plain) background without gradations in shade (darkness) or hue (color) to <br>
+        represent two-dimensional or three-dimensional objects. <br>
+        <strong>Our website is a great place for artists to represent their work and share it with others!</strong>
 
+      </p>
 
-
-      </div>
     </div>
+    <!-- footer with contact us -->
+    <footer id="RAQASHTEAM">
+
+      <div id="contactUs">
+        <label class="title"> <span id="dot">•</span> CONTACT US <span id="dot">•</span> </label>
+
+        <ul class="list-unstyled">
+          <li> <img src="assets/tele icon.png" alt="twitter icon" width="30px" height="30px"> 0558807732 </li>
+          <li> <img src="assets/Raqash Icon-email.svg" alt="twitter icon" width="25px" height="25px"> <a
+              href="mailto:RAQASH@gmail.com">
+              Contact us</a></li>
+          <a href="https://twitter.com/RAQASH381"><img src="assets/Raqash Icon-twitter.svg" alt="twitter icon"
+              width="30px" height="30px"> twitter</a>
+          <li><img src="assets/Raqash Icon-loc.svg" alt="twitter icon" width="30px" height="30px">Riyadh</li>
+
+        </ul>
+      </div>
+      &copy;RAQASH Team 2020
+    </footer>
 
 
 
-
-
-
-
-  </div>
-  <!-- about us -->
-
-  <div id="AboutUs">
-    <label class="title"> <span id="dot">•</span> ABOUT US<span id="dot">•</span> </label>
-
-    <p>
-
-      <strong>RAQASH </strong>Means in Arabic (خط), Line art is any image that consists of distinct straight or curved
-      lines <br>
-      placed against a (usually plain) background without gradations in shade (darkness) or hue (color) to <br>
-      represent two-dimensional or three-dimensional objects. <br>
-      <strong>Our website is a great place for artists to represent their work and share it with others!</strong>
-
-    </p>
-
-  </div>
-  <!-- footer with contact us -->
-  <footer id="RAQASHTEAM">
-
-    <div id="contactUs">
-      <label class="title"> <span id="dot">•</span> CONTACT US <span id="dot">•</span> </label>
-
-      <ul class="list-unstyled">
-        <li> <img src="assets/tele icon.png" alt="twitter icon" width="30px" height="30px"> 0558807732 </li>
-        <li> <img src="assets/Raqash Icon-email.svg" alt="twitter icon" width="25px" height="25px"> <a
-            href="mailto:RAQASH@gmail.com">
-            Contact us</a></li>
-        <a href="https://twitter.com/RAQASH381"><img src="assets/Raqash Icon-twitter.svg" alt="twitter icon"
-            width="30px" height="30px"> twitter</a>
-        <li><img src="assets/Raqash Icon-loc.svg" alt="twitter icon" width="30px" height="30px">Riyadh</li>
-
-      </ul>
-    </div>
-    &copy;RAQASH Team 2020
-  </footer>
-
-
-
-</body>
-
-</html>
 
 </body>
 

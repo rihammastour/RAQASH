@@ -23,7 +23,7 @@ body{
     font-size: x-small;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 10;
 }
 
 .menu-bar ul{
@@ -185,16 +185,120 @@ nav ul li a:hover::after{
 #myBtn:hover{
     background-color: #f1f1f1;
   }
-  .container{
+  .manage-artwork
+  {
+    display: none;
+    z-index: 3;
+    top:80; 
+    left: 0;
+    right: 0;
+     /* margin-top: 800px;;   */
+    margin: 0 auto;
     background: #a49c9a ;
-    position: relative;
-    width: 70%;
+    position: absolute;
+    width: 70%; 
+    height:610px;
+  }
+  #Addcard{
+    display: none;
+      z-index: 5;
+     
+      top: 80; 
+      left: 0;
+      right: 0;
+      bottom: 10; 
+      margin: 0 auto;
+      background: #a49c9a ;
+      position: relative;
+      width: 70%;
+    } 
+
+#addCard .left{
+    float: left;
+    margin: 0 0 0 -20px;
+    width: 50%;
+    height:610px;
+    background:#a49c9a ;
     overflow: hidden;
-    margin: 20px auto;
-    border-radius:10px;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.13);
+  
     }
 
+#addCard .right{
+    float: right;
+    margin: 0 -20px 0 0;
+    width: 50%;
+    height:610px;
+    background:#f8f8f8 ;
+    overflow: hidden;
+    }
+
+.formbox{
+    position: relative;
+    text-align: left;
+    padding: 190px 150px;
+    margin-left: -10px;
+    box-sizing: border-box;
+    height: 718px;
+    }
+
+.uploadbox{
+    position: relative;
+    text-align: center;
+    padding: 220px 150px;
+    box-sizing: border-box;
+    height: 718px;
+    }
+
+
+.textarea{
+    margin-bottom: 50px;
+    height: 100px;
+    }
+    
+#addCard .left .formbox input{
+    margin-bottom: 30px;
+    height: 30px;
+    width: 300px;
+    }
+
+.formbox input[type = "text"],
+.formbox input[type = "password"],
+.formbox input[type = "date"],
+textarea{  
+    border: none;
+    border-bottom: 1px solid #5c5c5c;
+    outline: none;
+    width: 300px;
+    background: transparent;
+    }
+    
+.formbox input[type = "button"]{
+    width: 100%;
+    margin-top:50px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+
+    }
+
+    
+#addCard .left .formbox input[type = "text"]:focus,
+#addCard .left .formbox input[type = "password"]:focus,
+#addCard .left .formbox input[type = "date"]:focus,
+textarea:focus{
+    border-bottom: 3px solid #ede9ea;
+    }
+    
+#addCard .left .formbox input[type = "button"]:hover{
+background-color: #ede9ea;
+    }
+    .checkBox{
+position: absolute;
+  top: 63%;
+  left: 12%;
+
+<<<<<<< HEAD
 .Msgcontainer{
     background: #a49c9a ;
     position: relative;
@@ -207,6 +311,20 @@ nav ul li a:hover::after{
     
 
 .container .left{
+=======
+    }
+   
+    ::placeholder{
+        color:#5c5c5c;
+        font-size: 18px;
+        text-align: left;
+    }
+
+/* manage artwork */
+
+
+.manage-artwork .left{
+>>>>>>> 5b25cdd531c79a441a73287912c3601642f77504
     float: left;
     margin: 0 0 0 -20px;
     width: 50%;
@@ -215,6 +333,7 @@ nav ul li a:hover::after{
     overflow: hidden;
     }
 
+<<<<<<< HEAD
 .Msgcontainer .left{
     float: left;
     margin: 0 0 0 -20px;
@@ -225,6 +344,9 @@ nav ul li a:hover::after{
     }
 
 .container .right{
+=======
+.manage-artwork .right{
+>>>>>>> 5b25cdd531c79a441a73287912c3601642f77504
     float: right;
     margin: 0 -20px 0 0;
     width: 50%;
@@ -281,6 +403,7 @@ nav ul li a:hover::after{
     height: 100px;
     }
     
+<<<<<<< HEAD
 .container .left input{
     margin-bottom: 30px;
     height: 30px;
@@ -289,6 +412,9 @@ nav ul li a:hover::after{
 
         
 .Msgcontainer .left input{
+=======
+.manage-artwork .left .formbox input{
+>>>>>>> 5b25cdd531c79a441a73287912c3601642f77504
     margin-bottom: 30px;
     height: 30px;
     width: 300px;
@@ -316,6 +442,7 @@ input[type = "button"]{
     }
 
     
+<<<<<<< HEAD
 .container .left input[type = "text"]:focus,
 .container .left input[type = "password"]:focus,
 .container .left input[type = "email"]:focus,
@@ -331,19 +458,25 @@ textarea:focus{
 .Msgcontainer .left input[type = "text"]:focus,
 .Msgcontainer .left input[type = "password"]:focus,
 .Msgcontainer .left input[type = "email"]:focus,
+=======
+.manage-artwork .left .formbox input[type = "text"]:focus,
+.manage-artwork .left .formbox input[type = "password"]:focus,
+.manage-artwork .left .formbox input[type = "date"]:focus,
+>>>>>>> 5b25cdd531c79a441a73287912c3601642f77504
 textarea:focus{
     border-bottom: 3px solid #ede9ea;
     }
     
+<<<<<<< HEAD
 .Msgcontainer .left input[type = "button"]:hover{
     background-color: #ede9ea;
+=======
+.manage-artwork .left .formbox input[type = "button"]:hover{
+background-color: #ede9ea;
+>>>>>>> 5b25cdd531c79a441a73287912c3601642f77504
     }
-    .checkBox{
-position: absolute;
-  top: 61%;
-  left: 12%;
 
-    }
+     
     /*
 .checkBox .disableCommentL{
     display: block;
@@ -361,13 +494,17 @@ position: absolute;
     margin-right: 20px;
     }
 */
-.colse{
-    background: none;
-    border: 0;
+.closebtn{
+  background: transparent;
     cursor:pointer;
-    overflow: hidden;
-    outline:none;
+    top: 0;
+    left:   0;
+    /* padding:10px; */
+    /* overflow: hidden; */
+     outline:none; 
+     border: none;
     margin: 20px;
+ float: left;
     }
 /* 
 .close:hover,
@@ -380,7 +517,7 @@ position: absolute;
     transform: scale(0.99);
     } */
     
-.footer{
+/* .footer{
     left: 0;
     bottom: 0;
     width: 100%;
@@ -389,4 +526,4 @@ position: absolute;
     color: #5c5c5c;
     text-align: center;
     font-size: x-small;
-    }
+    } */

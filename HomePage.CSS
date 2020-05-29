@@ -13,7 +13,7 @@ body{
 }
 
     
-        /* ADD button */
+        /* button */
   
 .menu-bar{
     background-color: #ede9ea;
@@ -191,17 +191,16 @@ nav ul li a:hover::after{
 }
 
 .image-gallery .div1{
+  background-image:url("assets/pic4.jpg");
+  background-position: center ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column:1/3; 
+  grid-row: 1/5; 
+  transition: .8s ease-out; 
+  box-shadow: 0 5px 10px rgba(0, 0,0, 0.5);
 
-    grid-column:1/3; 
-    grid-row: 1/5; 
-    background-image:url("assets/pic4.jpg");
-    background-position: center ;
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: .8s ease-out; 
-    box-shadow: 0 5px 10px rgba(0, 0,0, 0.5);
 }
-
 
 .image-gallery.div1::before {
     content: '';
@@ -479,6 +478,7 @@ opacity: 1;
   } 
 .image-gallery .div5{
     grid-column:1/5;
+  
     grid-row:5/7; 
     background-image: url("assets/pic1.jpg"); 
     background-position: center ;
@@ -489,6 +489,7 @@ opacity: 1;
   
 
 }
+
 .image-gallery.div5::before {
     content: '';
     position: absolute;
@@ -659,7 +660,7 @@ margin-top: 800px;
     
   }
   .artistAccount:hover{
-      color:black;
+      color:#a5afa6;
       text-decoration: none;
   }
 .post-container{
@@ -670,6 +671,7 @@ margin-top: 800px;
 
 .post-artist img {
     float: right;
+  
     clear: right;
     object-fit: cover;
     height: 100%;
@@ -732,12 +734,14 @@ margin-top: 800px;
 
 
 #viewArt , #commentsPost{
+  position:fixed;
+  z-index: 2;
   background: #ede9ea ;
   position:relative;
   overflow: hidden;
   width: 800px;
   margin: 0 auto;
-    height: 650px;
+  height: 650px;
   border-radius:10px ;
   box-shadow: 0 14px 28px rgba(0,0,0,0.15),
   0 10px 10px rgba(0,0,0,0.13);
@@ -748,6 +752,7 @@ margin-top: 800px;
   position:relative;
  top: 0px;
 
+ 
   float: left;
   width: 350px;
   height:100%;
@@ -900,3 +905,16 @@ background-color: #5c5c5c36;
 
  }
 
+ #bg-model{
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position:fixed;
+  top: 0;
+  display: none;
+}
+
+.list-group a #Commentusername{
+  display: inline;
+}

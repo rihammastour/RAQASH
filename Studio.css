@@ -19,7 +19,7 @@ body{
     font-size: x-small;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 4;
 
 
 }
@@ -124,7 +124,7 @@ nav ul li a:hover::after{
        background-size: cover;
        background-position: center;
        height: 550px;
-       margin-bottom: 170px;
+       margin-bottom: 45px;
        margin-top: 0px;
        max-width: 100%;
     /* new */
@@ -139,7 +139,7 @@ nav ul li a:hover::after{
     padding: 50px;
    margin-left: 700px;
   background-color: #ffffff8c;
-    margin-bottom: 190px;
+    /* margin-bottom: 190px; */
     border-radius: 5px;
     height: 350px;
     line-height: 20px;
@@ -149,7 +149,11 @@ nav ul li a:hover::after{
  
  } 
  .bio p{
-    padding-top:20px;
+    padding-top:15px;
+}
+
+.bio h3{
+ padding-bottom: 0px;
 }
 
 .Artist-image{
@@ -167,46 +171,203 @@ nav ul li a:hover::after{
 .icon{
     max-height: 30px;
 }
-.edit {
+.edit,.save,.cancel {
 line-height: 2px;
 text-align: center;
-font-size: 20px;
+font-size: 15px;
 border: none; 
 outline: none; 
 background-color: #a49c9a;
 cursor: pointer; 
-padding:20px;
+padding:15px;
 border-radius: 20px;
 width: 120px;
 height: 10px;
-margin-top: -8px;
+margin-top: 8px;
  margin-right: 0px; 
  left: 200px;  
       
         }
+     
+        .text{
+            margin-left: 0px;
+            background-color: transparent;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-align: left;
+            border: none;
+            outline: none;
+            width: 15rem;
+         border-bottom: 2px solid #ddd;
+         position: relative;
+
+        }
+        .edit-card{
+            width: 500px;
+     margin-top:-640px;
+    padding: 50px;
+   margin-left: 700px;
+  background-color: #ffffff8c;
+    margin-bottom: 250px;
+    border-radius: 5px;
+    height: 500px;
+    line-height: 20px;
+    position: relative;
+    z-index: 3;
+
+        }
+        .editname,.editemail ,.edittwitter,.editbio{
+            position: relative;
+
+        }
+        .editname input,.editemail input,.edittwitter input,.editbio textarea{
+            width: 100%;
+             padding: 10px 0 ;
+             height: 30px;
+             font-size: 10px;
+             margin-bottom: 10px;
+             margin-top: 2px;
+             /* color: #5c5c5c; */
+             background: transparent;
+             border: none;
+             border-bottom: 1px solid black;
+             outline: none;
+
+
+          
+        }
+        .editname label,.editemail label,.edittwitter label{
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px 0 ;
+            font-size: 15;
+            pointer-events: none;
+            transition: .5s;
+        }
+        .editbio label{
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px 0 ;
+            font-size: 20px;
+            color: black;
+            pointer-events: none;
+            transition: .5s;
+        }
+    
       
+        .editname input:focus ~label, .editname  input:valid ~label,
+        .edittwitter input:focus ~label, .edittwitter  input:valid ~label,
+        .editemail input:focus ~label, .editemail  input:valid ~label {
+            top: -20px;
+            left: 0;
+            color: #f48fb1;
+           
+           
+
+        }
+         .editbio textarea:focus ~label, .editbio  textarea:valid ~label{
+               top: -20px;
+               left: 0;
+               color: #a5afa6;
+    
+           }  
+ 
+      
+
+     
+   
+    
  .add {
 
   position: fixed;
   padding-left: 20px;
-  bottom: 660px; 
+  bottom: 680px; 
    right: -20px;
-   z-index: 99; 
+   z-index: 2; 
 border: none; 
 outline: none; 
  background-color:#ede9ea;
 cursor: pointer; 
 padding:20px ;
 border-radius: 50px; 
- padding-top: 3px;
+ padding-top: 7px;
 padding-left: 2.1px;
-width: 65px;
-height: 32px;
+width: 90px;
+height: 50px;
             
         }
- .add:hover {
+       .addtext{
+           display: none;
+           padding-top: 5px;
+           font-size: 20px;
+
+       }
+       
+ .add:hover  {
+
  background-color: #f1f1f1;
         }
+        .add:hover img{
+            display: none;
+
+        }
+      .add:hover .addtext{
+            display:block;
+            
+        }
+#add-image{
+position: relative;
+/* padding-left: 10px; */
+top: 570px; 
+right: 225px;
+z-index: 1;
+border: none; 
+outline: none; 
+ background-color:#ede9ea;
+cursor: pointer; 
+padding:20px ;
+border-radius: 50px; 
+ padding-top: 7px;
+padding-left: 10px;
+width: 50px;
+height: 50px;
+}
+#add-image:hover{
+    background-color: #f1f1f1;
+
+}
+
+#Addcard{
+    
+z-index: 2;
+  position: relative;
+   top: 120px; 
+  left: 0;
+  right: 0;
+  bottom: 10; 
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius:10px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.15),
+  0 10px 10px rgba(0,0,0,0.13);
+} 
+.manage-artwork{
+    z-index: 2;
+  position: absolute;
+   top: 900px; 
+  left: 0;
+  right: 0;
+  bottom: 10; 
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius:10px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.15),
+  0 10px 10px rgba(0,0,0,0.13);
+} 
+
+
 
     /* ART  */
 .title{
@@ -214,9 +375,9 @@ height: 32px;
     letter-spacing: 2px;
     content: ""; 
      display: block; 
-     margin: 20px auto;
-    width: 50%; 
-    padding-top: 30px; 
+     margin: 0px auto;
+     width: 50%; 
+    padding-top: 0px; 
     border-bottom: 1.5px solid #a5afa6 ;
       }
       #dot{
@@ -224,11 +385,15 @@ height: 32px;
     }
     .content{
         overflow-x: hidden;
+       
     }
     .cards-container{
-        position: relative;
+        /* position: relative; */
         width: 70%;
+        top: 0;
+     bottom: 200;   
         margin:0 auto;
+        
         font-size: x-small; 
     }
     .cards-container .card{
@@ -247,6 +412,7 @@ height: 32px;
         margin: 0;
     }
     .img-resize{
+       
         height: 300px;
         object-fit: cover;
         object-position: center center;
@@ -284,3 +450,203 @@ height: 32px;
         text-align: center;
         font-size: x-small;
         }
+
+
+/* view art work */
+
+
+#viewArt , #commentsPost{
+  position:fixed;
+  z-index: 2;
+  background: #ede9ea ;
+  position:relative;
+  overflow: hidden;
+  width: 800px;
+  margin: 0 auto;
+  height: 650px;
+  border-radius:10px ;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.15),
+  0 10px 10px rgba(0,0,0,0.13);
+
+}
+
+.container .left {
+  position:relative;
+ top: 0px;
+
+ 
+  float: left;
+  width: 350px;
+  height:100%;
+  background:#ede9ea ;
+  margin-left: -20px;
+  overflow: hidden;
+
+
+}
+
+
+.container .left img {
+ 
+  position:relative;
+   top: 0px;
+  left: 0px; 
+  height: 100%;
+  margin-left: -30px;
+ 
+ }
+
+.container .right {
+  position:relative;
+ top: 0px;
+ right: 0px;
+  float: right;
+  width: 350px;
+  height:650px;
+  background:#ede9ea ;
+  overflow: hidden;
+}
+.container .right .description{
+  position: relative;
+  text-align: left;
+  font-size: 20px;
+  padding: 0 30px 0 30px;
+  height: 40%;
+  overflow-y:scroll;
+  
+}
+
+.right #date{
+  position: relative;
+  text-align: center;
+  padding-bottom: 55px;
+  font-size: 15px;
+}
+.right .artistAccount a{
+    text-align: center;
+   color:  #5c5c5c;
+}
+.right .artistAccount {
+  text-align: right;
+ 
+}
+.comment-btn{
+margin-top: 20px;
+border: none;
+border-radius: 8px;
+outline: none;
+cursor: pointer;
+background:#a49c9a;
+
+
+
+
+}
+.comment-btn:hover{
+  background-color: #a5afa69f;
+ 
+
+  }
+  .comments{
+  padding-left: 30%;
+ 
+  }
+ 
+  .addCommentArea{
+
+     padding-top: 10px;
+    padding-left: 100px; 
+    overflow: scroll;
+
+  }
+ 
+ 
+  #commentTextArea{
+      background-color: #ede9ea;
+      margin-bottom: 20px;
+  
+  }
+  
+  #commentTextArea:hover{
+      background-color: #f8f8f8b7;
+      border: #a5afa6;
+  }
+  #commentTextArea:focus {
+      outline: none !important;
+     
+      box-shadow: 0 0 10px #5c5c5c ;
+  }
+  .usersComments{
+      padding: 80px 0 0 100px;
+      overflow-y: scroll;
+  }
+      
+input[type = "submit"]:hover{
+ background-color: #a5afa6;
+ padding-top: 30px;
+  
+  }
+  
+
+  .usersComments a{
+     color: #5c5c5c;
+  }
+input[type = "submit"]{
+  height: 30px;
+  width: 200px;
+letter-spacing: 1px;
+ border: none;
+border-radius: 8px;
+outline: none;
+cursor: pointer;
+position: absolute;
+left: 415px;
+margin-left: -50px;
+cursor: pointer;
+
+
+  }
+  .list-group-item{
+    background: none;
+    overflow: scroll;
+  }
+
+  .list-group{
+    margin-bottom: 20px;
+    padding-top: 30px;
+    overflow: scroll;
+  }
+.list-group :hover{
+
+background-color: #5c5c5c36;
+}   
+
+
+ #commentsPost{
+   display: none;
+
+ }
+
+ #bg-model{
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position:fixed;
+  top: 0;
+  display: none;
+}
+
+.list-group a #Commentusername{
+  display: inline;
+}
+        
+        #bg-model{
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            position:fixed;
+            top: 0;
+            display: none;
+          }

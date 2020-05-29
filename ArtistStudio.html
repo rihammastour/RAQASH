@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,15 +7,26 @@
     <title>ARTIST STUDIO</title>
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="icon" href="assets/raqash_icon.png">
-    <link rel="stylesheet" type="text/css" href="Studio.css"">
-    <!-- <link rel="stylesheet" type="text/css" href="ArtistStudio.css"> -->
-    
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/ArtistStudio.js"></script>
+    <link rel="stylesheet" type="text/css" href="Studio.css">
+
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+   
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="JS/onClickButtons.js"></script>
+     <script src="JS/viewArtwork.js"></script>
+    
+    
 </head>
 
 
 <body>
 <!-- nav bar  -->
+
         <header class="menu-bar">
                 <nav>
                     <ul>
@@ -40,25 +52,7 @@
             </header>
              <!-- to top button -->
     <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="assets/Raqash Icon-up.svg" width="30px" height="30px" alt="up"></button>
-    <script>//Get the button:
-        mybutton = document.getElementById("myBtn");
-        
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {scrollFunction()};
-        
-        function scrollFunction() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-          } else {
-            mybutton.style.display = "none";
-          }
-        }
-        
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-          document.body.scrollTop = 0; // For Safari
-          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        }</script>
+    <!-- <div id="bg-model"></div> -->
  
  
 
@@ -66,46 +60,239 @@
 
          
         
-                <button class ="add"> 
             
-                      <img src="assets/Raqash Icon-add.svg" alt="Add button" width="25px" height="25px">
-                 
-                </button> 
+        <!--  add artwork card  -->
+ 
+            <!-- page title -->
+         
+  
+         
         
 
-            
+          
+                             <button class="add"  type="button"> 
+                              <div class="addtext">ADD</div>
+                               <img src="assets/Raqash Icon-add.svg" alt="Add button" width="25px" height="40px">
+                                        
+                                       </button> 
+                                       <button id ="add-image" type="button"> 
+                                        <!-- <input type="file" id="file" name="" multiple /> -->
+                    
+                                                <img src="assets/camera.svg "alt="Add image" width="30px" height="40px">
+                                                  
+                                                 </button> 
 
             <div class="account">
+      
                     <div class="row">
+                        <div id="addCard" >
+                            <div class ="right">
+                              <div class ="uploadbox">
+                                <input type="image"  src="assets/Raqash Icon-upload.svg" width="200px" height="200px" alt="Submit">
+                                <label class="uploadTitle"> UPLOAD AN IMAGE</label>
+                                
+                             </div>
+                             </div>
+                             <div class ="left">
+                                <button id ="add"  type="button"> 
+                                 
+                         <button  class  = "closebtn" type="button" ><img src="assets/Raqash Icon-close.svg" alt="close button" width="30px" height="30px"></button> 
+                       <div>
+                               <form class ="formbox">
+                                  <input type="text" name="Title" placeholder="Title">
+                                 
+                                  <textarea name="desc" placeholder="Description" id="desc" cols="17" rows="5"></textarea>
+                                
+                                  <input id = "post" type="button" value="Post" >
+                               </form> </div>
+                               <div class = "checkBox">
+                                 <input type="checkbox" checked/><label>  Disable Comment</label>
+                                 <!-- class="disableCommentL" <span>Disable Comment</span>--> 
+                               </div>
+                               
+                            </div>
+                          
+                           </div>
                         <div class="col-md-6 text-center">
                             <img  class= "Artist-image"src="assets/pic4.jpg" alt="artist image">
                           
                             <div class="bio">
-                              <h3>A Few Words About Me </h3>
-                              <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate consequuntur doloribus quae iusto consectetur repellendus quis dolorem provident quam laudantium.</p>
-                             <p class="contact-info">
-                                 contact me: 
-                                 <a   href="#"><img src="assets/Raqash Icon-twitter.svg" alt="twitter icon" width="30px" height="30px"></a>
-                                 <a   href="#"><img src="assets/Raqash Icon-email.svg" alt="Email icon" width="30px" height="30px"></a> </p>
-                             
+                                <h3>Artist</h3>
+                              <h4>A Few Words About Me </h4>
+                              <p>  Lorem ipsum dolor sit amet consectetuiusto consectetur repellendus quis dolorem provident quam laudantium.</p>
+                        
+                                <div class="editname">
+                                  <input type="text" name="name" required="">
+                                  <label >Name</label>
+                                </div>
+                                <div class="editbio">
+                                   <textarea  name="bio"  cols="30" rows="2"></textarea>
+                                    <label >Bio</label>
+                                  </div>
+                                  <h6>Contact Information </h6>
+                                  <div class="editemail">
+                                      <input type="text" name="email" required="">
+                                      <label >Email</label>
+                                    </div>
+                                    <div class="edittwitter">
+                                        <input type="text" name="twitter" required="">
+                                        <label >Twitter</label>
+                                      </div>
                               
-                                 
-                                 
+                             <p class="contact-info">
+
+                                 contact me: 
+                                 <a    href="https://twitter.com/RAQASH381"><img src="assets/Raqash Icon-twitter.svg" alt="twitter icon" width="30px" height="30px"></a>
+                                 <a  href="mailto:RAQASH@gmail.com"><img src="assets/Raqash Icon-email.svg" alt="Email icon" width="30px" height="30px"></a> </p>
+                                
+                             
+                              <div>
+                                 <button class ="save">  Save  </button>
+                                 <button class ="cancel">  Cancel  </button>
                                  <button class ="edit">  Edit  </button>
                                 </div>
+                                </div>
+                                
+
                              
             
                             </div>
                         </div>
                     </div>
+                    
                 </div>
-
-                <!-- ADD button -->
-                <!-- <button class ="add"> <img src="assets/Raqash Icon-add.svg" alt="Add button" width="20px" height="20px">  </button> -->
+                
+                   <!-- Edit card  -->
             
-                <!-- Arts  -->
-                <div class = "content">
+                   <!-- manage artwork -->
+         
+            
+<!-- view art work  -->
 
+
+  <!-- Edit card  -->
+
+  <!-- manage artwork -->
+
+
+  <!-- view art work  -->
+  <div class="container" id="viewArt">
+    <button type="button" class="close" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <div class="left">
+      <img id="userPost" src="assets/viewArtWorkImg.jpg" alt="">
+    </div>
+    <div class="right">
+      <div class=" date">
+        <label class="title"> <span id="dot">•</span>Stars<span id="dot">•</span> </label>
+        <p id="date"> </p>
+      </div>
+
+      <div class="description">
+        <p>
+          "go where the stars take you"
+        </p>
+      </div>
+      <div class="artistAccount">
+        <a href="#" id="userName">By: @latifah</a>
+        <br> <img src="assets/Raqash Icon-dislike.svg" alt="dislike icon " height="30px" width="30px" class="dislike">
+        <img src="assets/Raqash Icon-like.svg" alt="like icon " height="30px" width="30px" class="like">
+        <img src="assets/Raqash Icon-fav.svg" alt="fav icon " height="30px" width="30px" id='favbutton'
+          onclick="favButton(this)">
+        <a href="#"> <img src="assets/Raqash Icon-share.svg" alt="BOOKMARK icon " height="30px" width="30px"> </a>
+      </div>
+      <div class="comments">
+
+        <button class="btn comment-btn " type="button" onclick="viewArt('commentsView')"> Comments </button>
+      </div>
+
+    </div>
+
+
+  </div>
+  <div class="container" id="commentsPost">
+
+    <button type="button" class="close" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <label class="title"> <span id="dot">•</span> Comments<span id="dot">•</span> </label>
+
+
+    <div class="commentsArea">
+
+
+
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action">
+          <p id="Commentusername">@username:</p>
+          woow! shiny star =)
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <p id="Commentusername">@username:</p>
+          Shine bright like a diamond in a sky***
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <p id="Commentusername">@username:</p>
+          Fairies Wear Boots
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <p id="Commentusername">@username:</p>
+          Fairies Wear Boots
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <p id="Commentusername">@username:</p>
+          Fairies Wear Boots
+        </a>
+      </div>
+      <div class="addCommentArea">
+        <textarea name="add Comment" id="commentTextArea" cols="30" rows="4" placeholder="write a comment"></textarea>
+
+      </div>
+      <div id="submitButton"> <input type="submit" value="submit"> </div>
+
+
+
+    </div>
+  </div>
+
+  <!-- Arts  -->
+  <div class="content">
+    <div class="manage-artwork">
+      <div class="right">
+        <div class="uploadbox">
+          <input type="image" src="assets/draw-one-line-art.jpg" width="200px" height="200px" alt="Submit">
+
+          <label class="uploadTitle"> IMAGE TITlE:</label>
+          <p id="imagedate">Created Date:</p>
+
+        </div>
+      </div>
+      <div class="left">
+        <button class="close"><img src="assets/Raqash Icon-close.svg" alt="close button" width="30px"
+            height="30px"></button>
+        <div>
+          <form class="formbox">
+            <input type="text" name="Title" placeholder="Title">
+
+            <textarea name="desc" placeholder="Description" id="desc" cols="17" rows="5"></textarea>
+
+            <input class="modifiedart" name="save" type="button" value="Save">
+          </form>
+        </div>
+        <div class="checkBox">
+          <input type="checkbox" checked /><label> Disable Comment</label>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- page title -->
+                <!-- Arts  -->
+           
+                
                         <!-- page title -->
                         <label class = "title"> <span id = "dot">•</span> ARTS <span id = "dot">•</span> </label>
                     
@@ -115,15 +302,15 @@
                             <div class = "cards-container"> 
                                 <div class="card-deck">
                             <!--Grid column-->
-                            <div class="card" style="width: 18rem;">
-                              <a class ="lightox" href="#">  <img class="card-img-top img-resize" src="assets/p5.jpg" alt="line art" ></a>
+                            <div class="card " style="width: 18rem;">
+                              <a class ="lightox" >  <img class="card-img-top img-resize post" src="assets/p5.jpg" alt="line art" ></a>
              
                                 <div class="card-body">
                                   <h5 class="card-title">Art</h5>
                                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <div class="card-footer">
-                                    <a href="#"><img src="assets/Raqash Icon-edit.svg" alt="edit icon" width="30px" height="30px"></a>
+                                    <a  class="manage"><img src="assets/Raqash Icon-edit.svg" alt="edit icon" width="30px" height="30px"></a>
                                     <a href="#"><img src="assets/Raqash Icon-remove.svg" alt ="delete icon" height="30px" width="30px"></a>
                                   </div>
                               </div>
@@ -131,13 +318,13 @@
                         
                             <!--Grid column-->
                             <div class="card" style="width: 18rem;">
-                                <img class="card-img-top img-resize" src="assets/pic1.jpg" alt="face line art">
+                                <img class="card-img-top img-resize post" src="assets/pic1.jpg" alt="face line art">
                                 <div class="card-body">
                                   <h5 class="card-title">Art </h5>
                                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <div class="card-footer">
-                                    <a href="#"><img src="assets/Raqash Icon-edit.svg" alt="edit icon" width="30px" height="30px"></a>
+                                    <a  class="manage"><img src="assets/Raqash Icon-edit.svg" alt="edit icon" width="30px" height="30px"></a>
                                     <a href="#"><img src="assets/Raqash Icon-remove.svg" alt ="delete icon" height="30px" width="30px"></a>
                                   </div>
                               </div>
@@ -145,26 +332,26 @@
                         
                             <!--Grid column-->
                             <div class="card" style="width: 18rem;">
-                                <img class="card-img-top img-resize" src="assets/disappointment-one-line-draw-prints.jpg" alt="wolf line art">
+                                <img class="card-img-top img-resize post" src="assets/disappointment-one-line-draw-prints.jpg" alt="wolf line art">
                                 <div class="card-body">
                                   <h5 class="card-title">Art </h5>
                                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <div class="card-footer">
-                                    <a href="#"><img src="assets/Raqash Icon-edit.svg" alt="edit icon" width="30px" height="30px"></a>
+                                    <a  class="manage"><img src="assets/Raqash Icon-edit.svg" alt="edit icon" width="30px" height="30px"></a>
                                     <a href="#"><img src="assets/Raqash Icon-remove.svg" alt ="delete icon" height="30px" width="30px"></a>
                                   </div>
                               </div>
                             <!--Grid column-->
                             <div class="card" style="width: 18rem;">
-                                <img class="card-img-top img-resize" src="assets/pic2.jpg" alt= "human line art">
+                                <img class="card-img-top img-resize post" src="assets/pic2.jpg" alt= "human line art">
   
                                 <div class="card-body">
                                   <h5 class="card-title">Art</h5>
                                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <div class="card-footer">
-                                    <a href="#"><img src="assets/Raqash Icon-edit.svg" alt="edit icon" width="30px" height="30px"></a>
+                                    <a  class="manage"><img src="assets/Raqash Icon-edit.svg" alt="edit icon" width="30px" height="30px"></a>
                                     <a href="#"><img src="assets/Raqash Icon-remove.svg" alt ="delete icon" height="30px" width="30px"></a>
                                   </div>
                               </div>
@@ -181,13 +368,13 @@
                         <!--Grid column-->
                         <div class="card" style="width: 18rem;">
             
-                            <img class="card-img-top img-resize" src="assets/Trip.png" alt="planet line art" >
+                            <img class="card-img-top img-resize post" src="assets/Trip.png" alt="planet line art" >
                             <div class="card-body">
                               <h5 class="card-title">Art</h5>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                             <div class="card-footer">
-                                <a href="#"><img src="assets/Raqash Icon-edit.svg" alt="edit icon" width="30px" height="30px"></a>
+                                <a class="manage"><img src="assets/Raqash Icon-edit.svg" alt="edit icon" width="30px" height="30px"></a>
                                 <a href="#"><img src="assets/Raqash Icon-remove.svg" alt ="delete icon" height="30px" width="30px"></a>
                               </div>
                           </div>
@@ -195,13 +382,13 @@
                     
                         <!--Grid column-->
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top img-resize" src="assets/pic2.jpg" alt="face line art">
+                            <img class="card-img-top img-resize post" src="assets/pic2.jpg" alt="face line art">
                             <div class="card-body">
                               <h5 class="card-title">Art</h5>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                             <div class="card-footer">
-                                <a href="#"><img src="assets/Raqash Icon-edit.svg" alt="edit icon" width="30px" height="30px"></a>
+                                <a  class="manage"><img src="assets/Raqash Icon-edit.svg" alt="edit icon" width="30px" height="30px"></a>
                                 <a href="#"><img src="assets/Raqash Icon-remove.svg" alt ="delete icon" height="30px" width="30px"></a>
                               </div>
                           </div>
@@ -209,25 +396,25 @@
                     
                         <!--Grid column-->
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top img-resize" src="assets/pic3.jpg" alt="wolf line art">
+                            <img class="card-img-top img-resize post" src="assets/pic3.jpg" alt="wolf line art">
                             <div class="card-body">
                               <h5 class="card-title">Art</h5>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                             <div class="card-footer">
-                                <a href="#"><img src="assets/Raqash Icon-edit.svg" alt="edit icon" width="30px" height="30px"></a>
+                                <a class="manage"><img src="assets/Raqash Icon-edit.svg" alt="edit icon" width="30px" height="30px"></a>
                                 <a href="#"><img src="assets/Raqash Icon-remove.svg" alt ="delete icon" height="30px" width="30px"></a>
                               </div>
                           </div>
                         <!--Grid column-->
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top img-resize" src="assets/pic4.jpg" alt="human line art">
+                            <img class="card-img-top img-resize post" src="assets/pic4.jpg" alt="human line art">
                             <div class="card-body">
                               <h5 class="card-title">Art</h5>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                             <div class="card-footer">
-                                <a href="#"><img src="assets/Raqash Icon-edit.svg" alt="edit icon" width="30px" height="30px"></a>
+                                <a class="manage"><img src="assets/Raqash Icon-edit.svg" alt="edit icon" width="30px" height="30px"></a>
                                 <a href="#"><img src="assets/Raqash Icon-remove.svg" alt ="delete icon" height="30px" width="30px"></a>
                               </div>
                           </div>
@@ -239,8 +426,11 @@
                     </div>
                  <!-- end -->
 
-         
+                 
           <!-- footer -->
           <div class = "footer">&copy;RAQASH Team 2020</div>
+         <div id="bg-model"></div>  
+
 </body>
+
 </html>

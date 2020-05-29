@@ -1,4 +1,9 @@
+function start(){
 
+  window.addEventListener("scroll",scrollFunction,false);
+  // document.getElementById("close").addEventListener("click",close);
+
+}
 
 function openForm(clicked) {
     if(clicked=="signUp"){
@@ -9,14 +14,9 @@ function openForm(clicked) {
     }else if(clicked=="login"){
       document.getElementById("login").style.display = "block";
       document.getElementById("signup").style.display = "none";
-      document.getElementById("forgetPassword").style.display = "none";
-
+      document.getElementById("forgetPassword").style.display = "none";   }
   
-    }
-    
  document.getElementById('bg-model').style.display = 'flex';
-
-
     }
 
     
@@ -57,21 +57,34 @@ function openForm(clicked) {
       document.body.scrollTop = 0; // For Safari
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
-    window.addEventListener("scroll",scrollFunction,false);
   
   
     function signUp(){
    if(document.getElementById("artistCheck").checked == true){ 
-     alert("please wait for the approval email")
+     alert("please wait for the approval email");
 
    }
 
   }
 
-     function close(){
-  document.getElementById("loging").style.display = none ;
-  document.getElementById("signup").style.display = none ;
-  document.getElementById("forgetPassword").style.display = none ;
+  //    function close(clicked){
+  //     if(clicked=="signUp"){
+  //       document.getElementById("signup").style.display = "none";
+  //     }else if(clicked=="login"){
+  //       document.getElementById("login").style.display = "none";
+  //      }else{
+  //       document.getElementById("forgetPassword").style.display = "none";
+  //      }
+    
+  //  document.getElementById('bg-model').style.display = 'none';
+  //   }
 
-  
-  }
+  $(document).ready(function(){
+$('#close1 , #close2 , #close3').click(function (){
+$(this).parent().hide();
+$('#bg-model').hide();
+});
+
+});
+
+  window.addEventListener("load",start,false)
