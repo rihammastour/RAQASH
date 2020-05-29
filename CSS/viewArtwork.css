@@ -1,0 +1,381 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+  padding: 0;
+  margin: 0;
+    background-color: #f8f8f8 ;
+    font-family: Geneva;
+    letter-spacing: 2px;
+
+
+}
+
+.menu-bar{
+    background-color: #ede9ea;
+    height: 100px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: x-small;
+    position: fixed;
+    width: 100%;
+     z-index: 1;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #5c5c5c;
+}
+
+.menu-bar ul li{
+    width: 90px;
+    padding-bottom: 3px;
+    margin: 40px 50px 5px 50px;
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #5c5c5c;
+    padding: 0.5rem 0;
+    margin: 0 ;
+    position: relative;
+
+}
+
+.menu-bar ul img{
+    width: 100px;
+    height: 100px;
+
+}
+
+nav ul li a::before,
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #a5afa6;
+    left: 0;
+    transform: scale(0);
+    transition: all .5s;
+}
+
+nav ul li a::before{
+    top: 0;
+    transform-origin: left;
+}
+
+nav ul li a::after{
+    bottom: 0;
+    transform-origin: right;
+}
+
+nav ul li a:hover::before,
+nav ul li a:hover::after{
+    transform: scale(1);
+}
+
+.drop{
+    height: 0;
+    padding-bottom: 3px;
+    margin: -3px 1px 5px 0px ;
+    transition: all .0s;
+}
+
+.dropAccount {
+    position: relative;
+    display: inline-block;
+    margin-top: 40px;
+    /* background-color: #5c5c5c; */
+  }
+
+.dropContent {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 130px;
+    margin-left: 27px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+.dropContent a {
+    color: #5c5c5c;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+  }
+
+.dropContent a:hover {
+    background-color: #ddd;
+}
+
+.drop:hover .dropContent {
+    display: block;
+    /* transition: all .20s; */
+}
+/* art gallery  */
+.container {
+    background: #f9f9f9;
+}
+
+.flex-column {
+    max-width: 260px;
+}
+
+img {
+    margin: 5px;
+}
+
+.scale {
+    transform: scaleY(1.05);
+    padding-top: 5px;
+}
+
+/*admin page content  */
+/* titles */
+.title{
+  font-size: x-large;
+  text-align: center;
+  letter-spacing: 2px;
+  content: ""; 
+  display: block; 
+  margin: 0 auto;
+  width: 50%; 
+  padding-top: 20px; 
+  border-bottom: 1.5px solid #a5afa6 ;
+}
+
+#dot{
+  color: #a5afa6;
+}
+
+.content{
+  padding-top: 50px;
+  overflow-x: hidden;
+  text-align: center;
+  /* overflow: scroll; */
+}
+.container{
+  background: #ede9ea ;
+  position:relative;
+  overflow: hidden;
+  width: 70%;
+  margin: 0 auto;
+  max-width:100%;
+  max-height: 600px;
+  height: 600px;
+  border-radius:10px ;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.15),
+  0 10px 10px rgba(0,0,0,0.13);
+  margin-bottom: 5%;
+
+}
+
+.container .left {
+  position:relative;
+ top: 0px;
+ left: 0px;
+  float: left;
+  width: 50%;
+  height:100%;
+  background:#ede9ea ;
+  margin-left: -20px;
+  overflow: hidden;
+
+
+}
+
+.container .left img {
+ 
+ position:relative;
+  top: 0px;
+ left: 0px; 
+ height: 100%;
+ margin-left: -30px;
+
+}
+
+.container .right {
+  position:relative;
+ top: 0px;
+ right: 0px;
+  float: right;
+  width: 50%;
+  height:100%;
+  background:#ede9ea ;
+  overflow: hidden;
+}
+.container .right .description{
+  position: relative;
+  text-align: left;
+  font-size: 20px;
+  padding: 0 30px 0 30px;
+  height: 40%;
+  overflow-y:scroll;
+  
+}
+
+.right #date{
+  position: relative;
+  text-align: center;
+  padding-bottom: 55px;
+  font-size: 15px;
+}
+.right .artist a{
+    text-align: center;
+   color:  #5c5c5c;
+}
+.right .artist {
+  text-align: right;
+ 
+}
+.comment-btn{
+  margin-bottom: 70px;
+border: none;
+border-radius: 8px;
+outline: none;
+cursor: pointer;
+background:#a49c9a;
+
+
+
+
+}
+.comment-btn:hover{
+  background-color: #a5afa69f;
+ 
+
+  }
+  .comments{
+  padding-left: 30%;
+  padding-top: 80px;
+  }
+ 
+  .addCommentArea{
+
+    padding-top: 30px;
+    padding-left: 300px;
+    overflow: scroll;
+
+  }
+  .list-group a #Commentusername{
+    display: inline;
+  }
+ 
+  #commentTextArea{
+      background-color: #ede9ea;
+      border: none;
+      border-bottom: 1px solid #5c5c5c;
+      outline: none;
+      width: 500px;
+      background: transparent;
+      margin-right: 150px;
+
+  
+  }
+  
+  #commentTextArea:hover{
+      border: #a5afa6;
+  }
+  #commentTextArea:focus {
+      outline: none !important;
+     
+  }
+  .usersComments{
+      padding: 80px 0 0 100px;
+      overflow-y: scroll;
+  }
+      
+input[type = "submit"]:hover{
+ background-color: #a5afa6;
+  
+  }
+  
+
+  .usersComments a{
+     color: #5c5c5c;
+  }
+
+input[type = "submit"]{
+  height: 30px;
+  width: 200px;
+letter-spacing: 1px;
+ border: none;
+border-radius: 8px;
+outline: none;
+cursor: pointer;
+position: absolute;
+left: 50%;
+margin-left: -50px;
+margin-top: 20px;
+border: none;
+outline: none;
+cursor: pointer;
+  }
+  .list-group-item{
+    background: none;
+    overflow: scroll;
+  }
+
+  .list-group{
+    padding-top: 30px;
+    overflow: scroll;
+  }
+.list-group :hover{
+
+background-color: #5c5c5c36;
+}   
+
+.title{
+font-size: xx-large;
+letter-spacing: 2px;
+content: ""; 
+display: block; 
+margin: 0 auto;
+width: 50%; 
+padding-top: 20px; 
+border-bottom: 1.5px solid #a5afa6 ;
+padding-left: 50px;
+
+}
+
+#dot{
+color: #a5afa6;
+}
+
+#commentsPost{
+  display: none;
+}
+
+#submitButton{
+  position: absolute;
+  left: 45%;
+  padding-right: 30px;
+  /* margin-top: 20%; */
+
+
+}
+.footer{
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    min-height: 5%;
+    padding: 0.5%;
+    background-color: #f1f1f1;
+    color: #5c5c5c;
+    text-align: center;
+    font-size: x-small;
+    
+    }
+#back{
+  float: left;
+}
+

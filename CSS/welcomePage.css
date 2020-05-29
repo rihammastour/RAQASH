@@ -1,5 +1,4 @@
 
-
 *{
   color: #5c5c5c;
   font-family: Geneva;
@@ -118,7 +117,7 @@ nav ul li a:hover::after{
 }
 
 .hello{
-padding-top: 200px;
+padding-top: 150px;
   min-height: 100%;
   display: -webkit-box;
   display: flex;
@@ -145,6 +144,7 @@ padding-top: 200px;
  font-size: 50px;
    border:none;
    background: transparent;
+   outline: none;
 }
 
 
@@ -211,7 +211,7 @@ z-index: 2;
   right: 0;
   bottom: 10;
   width: 800px;
-  min-height: 480px;
+  min-height: 550px;
   margin: 0 auto;
   max-width:800px;
   height: 480px;
@@ -219,20 +219,37 @@ z-index: 2;
   border-radius:10px;
   box-shadow: 0 14px 28px rgba(0,0,0,0.15),
   0 10px 10px rgba(0,0,0,0.13);
-
+  
 }
 
 
+#error {
+  width: 80%;
+background-color: #ffffff8c;
+margin: 5%;
+padding: 5%;
+ border-radius: 5px;
+ line-height: 10px;
+   display:none; 
+  color: #FF0000 ;
+border: 15px;
 
+}
 
 #signup , #forgetPassword{
   display: none;
   background:#a5afa6 ;
   }
 
+  #forgetPassword .formbox{
+margin-top: 10%;
+
+  }
+
   #login{
     display: none;
     background: #ede9ea ;
+    padding: 0%;
   }
 
 .container .Lleft ,.container .Sright{
@@ -292,9 +309,10 @@ z-index: 2;
 
  .formbox input[type = "text"],
  .formbox input[type = "password"],
- .formbox input[type = "submit"]{
+ .formbox input[type = "submit"],
+ .check textarea{
  
-  height: 30px;
+
   width: 200px;
 
 }
@@ -319,16 +337,33 @@ background: transparent;
 border-bottom: 1px solid #a5afa6;
 }
 
- .formbox input[type = "submit"]{
 
-  margin-top: 10px;
-  margin-bottom: 10px;
+.check textarea{
+  display: none;
+margin-top: 5px;
+overflow-x: scroll;
+border: none;
+border-bottom: 1px solid #5c5c5c;
+outline: none;
+width: 200px;
+height: 90px;
+background: transparent;
+}
+
+ .formbox input[type = "submit"]{
+  /* margin-bottom: 10px; */
+  margin-top: 20px;
   border: none;
   border-radius: 8px;
   outline: none;
   cursor: pointer;
 
 }
+/* .Sright .formbox input[type = "submit"]{
+margin-top: 20px;}
+
+.Lright .formbox input[type = "submit"]{
+margin-top: 10%;} */
 
 .container .Lright .formbox input[type = "submit"]:focus{
 background-color: #a5afa6;
@@ -368,7 +403,8 @@ color: #ede9ea;
 
 
 .container .Sright .formbox input[type = "text"]:focus,
-.container .Sright .formbox input[type = "password"]:focus{
+.container .Sright .formbox input[type = "password"]:focus,
+.check textarea:focus{
 border-bottom: 3px solid #ede9ea;
 }
 
@@ -388,7 +424,8 @@ background-color: #ede9ea;
 
 #AboutUs {
   background-color:  #f8f8f8;
-  padding-top: 400px;
+  margin-top: 120px;
+  margin-bottom: 74px;
   text-align: center;
 }
   
@@ -406,6 +443,7 @@ background-color: #ede9ea;
   text-decoration: none;
   background-color: #b1a6a4;
   border:none;
+  padding-bottom: 40px;
 }
 #contactUs a {
   background-color: transparent;
@@ -466,3 +504,116 @@ background-color: #ede9ea;
     top: 0;
     display: none;
   }
+
+  .Msgcontainer{
+    background: #a49c9a ;
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+    margin: 20px auto;
+    border-radius:10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.13);
+        }
+
+.Msgcontainer .left{
+    float: left;
+    margin: 0 0 0 -20px;
+    width: 50%;
+    height:500px;
+    background:#a49c9a ;
+    overflow: hidden;
+    }
+
+.Msgcontainer .right{
+    float: right;
+    margin: 0 -20px 0 0;
+    width: 50%;
+    height:500px;
+    background:#f8f8f8 ;
+    overflow: hidden;
+    }
+
+.Msgformbox{
+    position: relative;
+    text-align: left;
+    padding: 60px 70px;
+    margin-left: -10px;
+    box-sizing: border-box;
+    height: 500px;
+}
+
+
+.Msgbox{
+  position: relative;
+  text-align: center;
+  padding: 115px 20px;
+  box-sizing: border-box;
+  height: 500px;
+}
+
+#msg{
+  margin-bottom: 10px;
+  height: 150px;
+  }
+
+          
+.Msgcontainer .left input{
+  margin-bottom: 30px;
+  height: 30px;
+  width: 300px;
+}
+
+.Msgcontainer input[type = "text"],
+.Msgcontainer input[type = "password"],
+.Msgcontainer input[type = "email"],
+#msg{  
+    border: none;
+    border-bottom: 1px solid #5c5c5c;
+    outline: none;
+    width: 300px;
+    background: transparent;
+    }
+
+        
+.Msgcontainer input[type = "submit"]{
+  width: 100%;
+  margin-top:50px;
+  margin-left: 10%;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+
+  }
+
+  
+.Msgcontainer input[type = "text"]:focus,
+.Msgcontainer input[type = "password"]:focus,
+.Msgcontainer input[type = "email"]:focus,
+.Msgcontainer #msg:focus{
+  border-bottom: 3px solid #ede9ea;
+  }
+  
+  .Msgcontainer input[type = "submit"]:hover{
+  background-color: #ede9ea;
+  }
+
+.Msgcontainer .left input[type = "text"]:focus,
+.Msgcontainer .left input[type = "password"]:focus,
+.Msgcontainer .left input[type = "email"]:focus,
+#msg:focus{
+    border-bottom: 3px solid #ede9ea;
+    }
+
+    .Msgcontainer .left input[type = "submit"]:hover{
+      background-color: #ede9ea;
+  }
+
+.Icon-twitter{
+  font-size: small;
+    margin-left: 19%;
+    margin-top: 0%;
+      }
+
+
+

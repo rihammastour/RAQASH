@@ -1,9 +1,9 @@
-function start(){
+// function start(){
 
-    var currentDate = new Date();
-    document.getElementById("imagedate").innerHTML=innerHTMl+currentDate.getDate()+"-"+currentDate.getMonth()+"-"+currentDate.getFullYear();
+//     var currentDate = new Date();
+//     document.getElementById("imagedate").innerHTML=innerHTMl+currentDate.getDate()+"-"+currentDate.getMonth()+"-"+currentDate.getFullYear();
  
-}
+// }
 
 function viewArt(clicked ){
     if(clicked=="artView"){

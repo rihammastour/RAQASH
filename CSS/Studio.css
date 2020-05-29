@@ -1,0 +1,689 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #5c5c5c;
+}
+body{
+    background-color: #f8f8f8 ;
+    font-family: Geneva;
+}
+.menu-bar{
+    background-color: #ede9ea;
+    height: 100px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: x-small;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+
+
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    position: relative;
+}
+.menu-bar ul li{
+    width: 90px;
+    padding-bottom: 3px;
+    margin: 40px 50px 5px 50px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #5c5c5c;
+    padding: 0.5rem 0;
+    margin: 0 ;
+    position: relative;
+}
+nav ul li a::before,
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #a5afa6;
+    left: 0;
+    transform: scale(0);
+    transition: all .5s;
+}
+nav ul li a::before{
+    top: 0;
+    transform-origin: left;
+}
+nav ul li a::after{
+    bottom: 0;
+    transform-origin: right;
+}
+nav ul li a:hover::before,
+nav ul li a:hover::after{
+    transform: scale(1);
+}
+.drop{
+    height: 0;
+    padding-bottom: 3px;
+    margin: -3px 1px 5px 0px ;
+    transition: all .2s;
+}
+.dropAccount {
+    position: relative;
+    display: inline-block;
+    margin-top: 40px;
+  }
+  .dropContent {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 130px;
+    margin-left: 27px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropContent a {
+    color: #5c5c5c;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropContent a:hover {
+    background-color: #ddd;
+    color: #5c5c5c;
+    text-decoration: none;
+}
+
+/* .drop:hover .dropContent {
+} */
+#myBtn{
+    display: none; 
+    position: fixed; 
+    bottom: 35px;
+    right: 30px; 
+    z-index: 99;
+    border: none;
+    outline: none; 
+    background-color: #ede9ea;
+    color: white; 
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 100px; 
+    font-size: 18px; 
+  }
+
+#myBtn:hover{
+    background-color: #f1f1f1;
+  }
+  #bio,.account{
+
+
+    background-color:#a49c9a;
+       background-size: cover;
+       background-position: center;
+       height: 550px;
+       margin-bottom: 45px;
+       margin-top: 0px;
+       max-width: 100%;
+    /* new */
+   }
+
+   .account.row{
+    margin-top: 750px;
+} 
+
+.bio{
+    width: 500px;
+     margin-top:-340px;
+    padding: 50px;
+   margin-left: 700px;
+  background-color: #ffffff8c;
+    /* margin-bottom: 190px; */
+    border-radius: 5px;
+    height: 350px;
+    line-height: 20px;
+    position: relative;
+    
+    
+ 
+ } 
+ .bio p{
+    padding-top:15px;
+}
+
+.bio h3{
+ padding-bottom: 0px;
+}
+
+#Artist-image{
+    margin-top:250px;
+    margin-bottom: -165px;
+    border-radius: 5px;
+    height: 400px;
+    width: 280px;
+}
+.contact-info{
+    text-align: left;
+    margin-left: 20px;
+
+}
+.icon{
+    max-height: 30px;
+}
+.edit,.save,.cancel {
+line-height: 2px;
+text-align: center;
+font-size: 15px;
+border: none; 
+outline: none; 
+background-color: #a49c9a;
+cursor: pointer; 
+padding:15px;
+border-radius: 20px;
+width: 120px;
+height: 10px;
+margin-top: 8px;
+ margin-right: 0px; 
+ left: 200px;  
+      
+        }
+     
+        .text{
+            margin-left: 0px;
+            background-color: transparent;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-align: left;
+            border: none;
+            outline: none;
+            width: 15rem;
+         /* border-bottom: 2px solid #ddd; */
+         position: relative;
+
+        }
+        .edit-card{
+            width: 500px;
+     margin-top:-640px;
+    padding: 50px;
+   margin-left: 700px;
+  background-color: #ffffff8c;
+    margin-bottom: 250px;
+    border-radius: 5px;
+    height: 500px;
+    line-height: 20px;
+    position: relative;
+    z-index: 3;
+
+        }
+        .editname,.editemail ,.edittwitter,.editbio{
+            position: relative;
+
+        }
+        .editname input,.editemail input,.edittwitter input,.editbio textarea {
+            width: 100%;
+             padding: 10px 0 ;
+             height: 30px;
+             font-size: 10px;
+             margin-bottom: 10px;
+             margin-top: 5px;
+             /* color: #5c5c5c; */
+             background: transparent;
+             border: none;
+             border-bottom: 1px solid #5c5c5c;
+             outline: none;
+
+
+          
+        }
+        
+
+        .editname label,.editemail label,.edittwitter label,.editbio label{
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px 0 ;
+            font-size: 12;
+            pointer-events: none;
+            transition: .6s;
+        }
+        .editbio label{
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 12px 0 ;
+            font-size: 12px;
+            color: #5c5c5c;
+            pointer-events: none;
+            transition: .7s;
+        }
+    
+      
+        .editname input:focus ~label, .editname  input:valid ~label,
+        .edittwitter input:focus ~label, .edittwitter  input:valid ~label,
+        .editemail input:focus ~label, .editemail  input:valid ~label,
+       .editbio textarea:focus ~label, .editbio input:valid  ~label { 
+            top: -20px;
+            left: 0;
+            color: white;
+            
+
+        }
+        .editname input:focus ,.editname  input:valid ,
+        .edittwitter input:focus, .edittwitter  input:valid ,
+        .editemail input:focus , .editemail  input:valid{
+       /* .editbio textarea:focus, .editbio    {  */
+              border-bottom: 2px solid #ede9ea;
+         
+
+        }
+         /* .editbio textarea:focus ~label, .editbio  textarea:valid ~label{*/
+    .card{
+      max-width: 13.5rem;
+    }
+     
+    
+ .add {
+
+  position: fixed;
+  padding-left: 20px;
+  bottom: 590px; 
+   right: -20px;
+   z-index: 1; 
+border: none; 
+outline: none; 
+ background-color:#ede9ea;
+cursor: pointer; 
+padding:20px ;
+border-radius: 50px; 
+ padding-top: 7px;
+padding-left: 2.1px;
+width: 90px;
+height: 50px;
+            
+        }
+       .addtext{
+           display: none;
+           padding-top: 5px;
+           font-size: 20px;
+
+       }
+      
+       
+ .add:hover  {
+
+ background-color: #f1f1f1;
+        }
+        .add:hover img{
+            display: none;
+
+        }
+      .add:hover .addtext{
+            display:block;
+            
+        }
+        #close1,#close2{
+          background-color:transparent;
+          /* border: none; */
+          z-index: 2;
+          color:#5c5c5c;
+          font-size: 50px;
+            border:none;
+            position: absolute;
+            float: left;
+            outline: none;
+            left:20;
+   
+     
+
+        }
+#addImge{
+position: relative;
+/* padding-left: 10px; */
+top: 570px; 
+right: 200px;
+z-index: 1;
+border: none; 
+outline: none; 
+ background-color:#ede9ea;
+cursor: pointer; 
+padding:20px ;
+border-radius: 50px; 
+ padding-top: 7px;
+padding-left: 10px;
+width: 50px;
+height: 50px;
+}
+#add-image:hover{
+    background-color: #f1f1f1;
+
+}
+
+.addbox{
+    position: fixed;
+    z-index: 3;
+    left:90;
+
+}
+.addCardbox{
+    position: fixed;
+    z-index: 2;
+}
+#Addcard{
+
+  position: fixed;
+  top: 100px; 
+  left: 0;
+  right: 0;
+  bottom: 10; 
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius:10px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.15),
+  0 10px 10px rgba(0,0,0,0.13);
+} 
+.manage-artwork{
+    z-index: 2;
+  position: absolute;
+   top: 500px; 
+  left: 0;
+  right: 0;
+  bottom: 10; 
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius:10px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.15),
+  0 10px 10px rgba(0,0,0,0.13);
+} 
+
+
+
+    /* ART  */
+.title{
+   font-size: x-large;
+    letter-spacing: 2px;
+    content: ""; 
+     display: block; 
+     margin: 0px auto;
+     width: 50%; 
+    padding-top: 0px; 
+    margin-top: 180px;;
+    border-bottom: 1.5px solid #a5afa6 ;
+      }
+      #dot{
+        color: #a5afa6;
+    }
+    .content{
+        overflow-x: hidden;
+       
+    }
+    .cards-container{
+        /* position: relative; */
+        width: 70%;
+        top: 0;
+     bottom: 200;   
+        margin:0 auto;
+        
+        font-size: x-small; 
+    }
+    .cards-container .card{
+        display: inline-block;
+        padding: 0;
+    }
+       /* Shadow hover*/
+       .cards-container .card:hover{
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        transition:  box-shadow .3s;
+        transform: translate3D(0,-15px,0) scale(1.03);
+     }
+        
+     .card-footer{
+        padding: 0px;
+        margin: 0;
+    }
+    .img-resize{
+       
+        height: 300px;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    #AboutUs {
+        background-color:  #f8f8f8;
+        padding-top: 180px;
+        text-align: center;
+      }
+      #contactUs {
+   
+        text-decoration: none;
+        background-color: #ede9ea;
+        text-align:left;
+        
+      }
+      #contactUs a {
+        color: #5c5c5c;
+        text-decoration: none;
+        background-color: #ede9ea;
+        
+      
+      }
+      #contactUs a:hover {
+        color: #a5afa6;
+      }
+      .footer{
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 0.5%;
+        background-color: #f1f1f1;
+        color: #5c5c5c;
+        text-align: center;
+        font-size: x-small;
+        }
+
+
+/* view art work */
+.viewCard{
+    position: fixed;
+    z-index: 3;
+    top: 120;
+    left: 300;
+    bottom: 100;
+}
+
+
+#viewArt , #commentsPost{
+  /* position:fixed; */
+  z-index: 2;
+  background: #ede9ea ;
+   position:relative;  
+  overflow: hidden;
+  width: 800px;
+  margin: 0 auto;
+  height: 650px;
+  border-radius:10px ;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.15),
+  0 10px 10px rgba(0,0,0,0.13);
+
+}
+
+.container .left {
+  position:relative; 
+ top: 0px;
+
+ 
+  float: left;
+  width: 350px;
+  height:100%;
+  background:#ede9ea ;
+  margin-left: -20px;
+  overflow: hidden;
+
+
+}
+
+
+.container .left img {
+ 
+  position:relative;
+   top: 0px;
+  left: 0px; 
+  height: 100%;
+  margin-left: -30px;
+ 
+ }
+
+.container .right {
+  position:relative;
+ top: 0px;
+ right: 0px;
+  float: right;
+  width: 350px;
+  height:650px;
+  background:#ede9ea ;
+  overflow: hidden;
+}
+.container .right .description{
+  position: relative;
+  text-align: left;
+  font-size: 20px;
+  padding: 0 30px 0 30px;
+  height: 40%;
+  overflow-y:scroll;
+  
+}
+
+.right #date{
+  position: relative;
+  text-align: center;
+  padding-bottom: 55px;
+  font-size: 15px;
+}
+.right .artistAccount a{
+    text-align: center;
+   color:  #5c5c5c;
+}
+.right .artistAccount {
+  text-align: right;
+ 
+}
+.comment-btn{
+margin-top: 20px;
+border: none;
+border-radius: 8px;
+outline: none;
+cursor: pointer;
+background:#a49c9a;
+
+
+
+
+}
+.comment-btn:hover{
+  background-color: #a5afa69f;
+ 
+
+  }
+  .comments{
+  padding-left: 30%;
+ 
+  }
+ 
+  .addCommentArea{
+
+     padding-top: 10px;
+    padding-left: 100px; 
+    overflow: scroll;
+
+  }
+ 
+ 
+  #commentTextArea{
+      background-color: #ede9ea;
+      margin-bottom: 20px;
+  
+  }
+  
+  #commentTextArea:hover{
+      background-color: #f8f8f8b7;
+      border: #a5afa6;
+  }
+  #commentTextArea:focus {
+      outline: none !important;
+     
+      box-shadow: 0 0 10px #5c5c5c ;
+  }
+  .usersComments{
+      padding: 80px 0 0 100px;
+      overflow-y: scroll;
+  }
+      
+/* input[type = "submit"]:hover{
+ background-color: #a5afa6;
+ padding-top: 30px;
+  
+  } */
+  
+
+  .usersComments a{
+     color: #5c5c5c;
+  }
+/* input[type = "submit"]{
+  height: 30px;
+  width: 200px;
+letter-spacing: 1px;
+ border: none;
+border-radius: 8px;
+outline: none;
+cursor: pointer;
+position: absolute;
+left: 415px;
+margin-left: -50px;
+cursor: pointer;
+
+
+  } */
+  .list-group-item{
+    background: none;
+    overflow: scroll;
+  }
+
+  .list-group{
+    margin-bottom: 20px;
+    padding-top: 30px;
+    overflow: scroll;
+  }
+.list-group :hover{
+
+background-color: #5c5c5c36;
+}   
+
+
+ #commentsPost{
+   display: none;
+
+ }
+
+ #bg-model{
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position:fixed;
+  top: 0;
+  display: none;
+}
+
+.list-group a #Commentusername{
+  display: inline;
+}
+        
+        #bg-model{
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            position:fixed;
+            top: 0;
+            display: none;
+          }
