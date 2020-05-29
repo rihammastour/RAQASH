@@ -946,6 +946,7 @@ background-color: #5c5c5c36;
 
 button:focus {
   outline:0;
+<<<<<<< HEAD:CSS/HomePage.CSS
 }
 
 .artists-box{
@@ -1014,3 +1015,6 @@ padding: 20px 0px;
 
 }
 
+=======
+}
+>>>>>>> d515ec3f5fc1f628fd65497929f16d95a22ade8b:HomePage.CSS
